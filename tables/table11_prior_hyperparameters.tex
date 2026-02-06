@@ -1,0 +1,34 @@
+% Table S4: Prior Hyperparameters Used in Simulation
+\begin{tabular}{lllrllll}
+\toprule
+ & Method & Confidence & Target μ_K & (a, b) & Induced E[K] & P(w₁>0.5) & Note \\
+\midrule
+0 & vague & none & NaN & (1.000, 1.000) & 4.84 & 0.591 & Gamma(1,1) \\
+1 & tsmm & low & 5.000000 & (0.623, 0.561) & 5.00 & 0.606 & DPprior_fit(method=A2-MN) \\
+2 & dual & low & 5.000000 & (2.442, 1.276) & 7.81 & 0.347 & DPprior_dual(lambda=0.70, loss=adaptive) \\
+3 & tsmm & medium & 5.000000 & (1.666, 1.646) & 5.00 & 0.557 & DPprior_fit(method=A2-MN) \\
+4 & dual & medium & 5.000000 & (5.653, 3.435) & 7.20 & 0.354 & DPprior_dual(lambda=0.70, loss=adaptive) \\
+5 & tsmm & high & 5.000000 & (4.351, 4.471) & 5.00 & 0.534 & DPprior_fit(method=A2-MN) \\
+6 & dual & high & 5.000000 & (21.867, 14.530) & 6.85 & 0.361 & DPprior_dual(lambda=0.70, loss=adaptive) \\
+7 & tsmm & low & 10.000000 & (1.179, 0.400) & 10.00 & 0.306 & DPprior_fit(method=A2-MN) \\
+8 & dual & low & 10.000000 & (1.179, 0.400) & 10.00 & 0.306 & Dominance below trigger; returned TSMM parameters \\
+9 & tsmm & medium & 10.000000 & (2.992, 1.100) & 10.00 & 0.232 & DPprior_fit(method=A2-MN) \\
+10 & dual & medium & 10.000000 & (2.992, 1.100) & 10.00 & 0.232 & Dominance below trigger; returned TSMM parameters \\
+11 & tsmm & high & 10.000000 & (7.185, 2.728) & 10.00 & 0.197 & DPprior_fit(method=A2-MN) \\
+12 & dual & high & 10.000000 & (7.185, 2.728) & 10.00 & 0.197 & Dominance below trigger; returned TSMM parameters \\
+13 & tsmm & low & 30.000000 & (2.198, 0.135) & 30.00 & 0.018 & DPprior_fit(method=A2-MN) \\
+14 & dual & low & 30.000000 & (2.198, 0.135) & 30.00 & 0.018 & Dominance below trigger; returned TSMM parameters \\
+15 & tsmm & medium & 30.000000 & (5.178, 0.344) & 30.00 & 0.003 & DPprior_fit(method=A2-MN) \\
+16 & dual & medium & 30.000000 & (5.178, 0.344) & 30.00 & 0.003 & Dominance below trigger; returned TSMM parameters \\
+17 & tsmm & high & 30.000000 & (10.931, 0.750) & 30.00 & 0.001 & DPprior_fit(method=A2-MN) \\
+18 & dual & high & 30.000000 & (10.931, 0.750) & 30.00 & 0.001 & Dominance below trigger; returned TSMM parameters \\
+19 & doro_uniform & none & 5.000000 & (2.434, 2.461) & 4.99 & 0.547 & DPprior_a2_kl(method=pmf, Dorazio-uniform) \\
+20 & doro_uniform & none & 10.000000 & (1.531, 0.543) & 9.91 & 0.284 & DPprior_a2_kl(method=pmf, Dorazio-uniform) \\
+21 & doro_uniform & none & 30.000000 & (0.956, 0.051) & 29.40 & 0.077 & DPprior_a2_kl(method=pmf, Dorazio-uniform) \\
+22 & chi2_doro & none & 5.000000 & (1.848, 1.812) & 5.04 & 0.550 & DPprior_a2_kl(method=chisq, target Var=2*mu) \\
+23 & chi2_doro & none & 10.000000 & (3.837, 1.426) & 10.01 & 0.219 & DPprior_a2_kl(method=chisq, target Var=2*mu) \\
+24 & chi2_doro & none & 30.000000 & (6.943, 0.468) & 30.02 & 0.002 & DPprior_a2_kl(method=chisq, target Var=2*mu) \\
+\bottomrule
+\end{tabular}
+
+% Note: TSMM and Dual-Anchor methods use different hyperparameters depending on confidence level and target K.
