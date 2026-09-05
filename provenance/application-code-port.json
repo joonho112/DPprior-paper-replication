@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "source": "Original application analysis: build data",
+      "sha256": "039be7130afa429190553bc945f2b8c3c4f0e1447b7594ef89abb9e239c9990b"
+    },
+    {
+      "source": "Original application analysis: publication",
+      "sha256": "300cba976a04885efc4655e517c685456412b43c83ef9b76f09bdd9d54fc3b58"
+    },
+    {
+      "source": "Original application analysis: phase06 synthesize verified applications",
+      "sha256": "0b36a065bc6c1892ca906c442650d8ef48778c39aff882ec2b8723a16529d403"
+    },
+    {
+      "source": "Original analysis: 01 data prep",
+      "sha256": "dcf322085a8ad679d4d359f08685560cd8e8af999cc3e97305a215aad4604385"
+    }
+  ],
+  "adaptations": [
+    "portable root and output functions",
+    "source package and explicit OCRS public-use loader",
+    "no participant export or private archive paths",
+    "recompute sensitivity differences from fit summaries",
+    "remove erroneous restricted-only OCRS wording; preserve descriptive complete-case estimator"
+  ],
+  "scientific_estimators_changed": false
+}

@@ -1,0 +1,26 @@
+schema_version: 1
+model: rasch
+prior: dpm
+parameterization: irt
+identification: constrained_item
+item_difficulty_sum: 0
+item_prior_variance: 3
+base_measure:
+  s2_mu: 2
+  nu1: 2.01
+  nu2: 1.01
+M: 100
+rescale: true
+compute_waic: false
+compute_dp_density_during_fit: false
+chains_per_command: 1
+production_density_grid:
+  from: -10
+  to: 14
+  by: 0.025
+diagnostics:
+  rhat_max: 1.01
+  ess_bulk_min: 400
+  ess_tail_min: 400
+  gated_groups: [alpha, K, maxshare, loglik, beta, thetabar, density]
+  theta_individual_gated: false

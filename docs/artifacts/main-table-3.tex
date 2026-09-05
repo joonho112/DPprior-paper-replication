@@ -1,0 +1,21 @@
+% Requires booktabs and longtable. Numeric source is the adjacent CSV.
+\begin{longtable}{lllllll}
+\toprule
+K* & Prior & Mean K (SD) & Bias & RMSE & Collapse probability & Coverage \\
+\midrule\endhead
+5 & Vague & 1.50 (0.11) & -3.50 & 3.50 & 0.725 & 0.535 \\ \addlinespace[3pt]
+5 & DORO-Unif & 1.94 (0.17) & -3.06 & 3.07 & 0.536 & 1.000 \\ \addlinespace[3pt]
+5 & TSMM & 1.75 (0.14) & -3.25 & 3.25 & 0.616 & 0.965 \\ \addlinespace[3pt]
+5 & Dual-Anchor & 3.00 (0.27) & -2.00 & 2.02 & 0.315 & 1.000 \\ \addlinespace[3pt]
+5 & SSI-Weight & 3.41 (0.37) & -1.59 & 1.63 & 0.383 & 1.000 \\ \addlinespace[3pt]
+10 & Vague & 1.51 (0.12) & -8.49 & 8.49 & 0.723 & 0.000 \\ \addlinespace[3pt]
+10 & DORO-Unif & 2.60 (0.31) & -7.40 & 7.40 & 0.516 & 0.980 \\ \addlinespace[3pt]
+10 & TSMM & 4.26 (0.40) & -5.74 & 5.76 & 0.269 & 1.000 \\ \addlinespace[3pt]
+10 & Dual-Anchor & 4.26 (0.39) & -5.74 & 5.75 & 0.269 & 1.000 \\ \addlinespace[3pt]
+10 & SSI-Weight & 3.42 (0.38) & -6.58 & 6.59 & 0.382 & 1.000 \\ \addlinespace[3pt]
+30 & Vague & 1.51 (0.13) & -28.49 & 28.49 & 0.723 & 0.000 \\ \addlinespace[3pt]
+30 & DORO-Unif & 3.57 (0.57) & -26.43 & 26.44 & 0.600 & 0.097 \\ \addlinespace[3pt]
+30 & TSMM & 25.17 (0.32) & -4.83 & 4.84 & 0.001 & 1.000 \\ \addlinespace[3pt]
+30 & Dual-Anchor & 25.18 (0.31) & -4.82 & 4.83 & 0.001 & 1.000 \\ \addlinespace[3pt]
+30 & SSI-Weight & 3.39 (0.41) & -26.61 & 26.61 & 0.386 & 0.000 \\ \addlinespace[3pt]
+\bottomrule\end{longtable}

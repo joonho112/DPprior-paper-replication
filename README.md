@@ -1,199 +1,76 @@
-# Replication Package: Design-Conditional Prior Elicitation for Dirichlet Process Mixtures
+# Dirichlet process prior elicitation: replication materials
 
-**Paper:** "Design-Conditional Prior Elicitation for Dirichlet Process Mixtures: A Unified Framework for Cluster Counts and Weight Control"
+JoonHo Lee (jlee296@ua.edu)
 
-**Author:** JoonHo Lee
+This repository accompanies **Design-Conditional Prior Elicitation for Dirichlet Process Mixtures: A Unified Framework for Cluster Counts and Weight Control**. The [preprint is available on arXiv](https://arxiv.org/abs/2602.06301).
 
-**Software:** [`DPprior` R package](https://github.com/joonho112/DPprior)
+We provide code for calibrating concentration priors, examining mixture weights, and reproducing simulation and application results. The standard build creates **41 tables and figures** from the supplied summaries. Separate scripts prepare source data, calculate conditional WLE reliability and fit selected models.
 
----
+## Rebuild the results
 
-## Overview
+We used R 4.6.0. From this directory, check the required packages:
 
-This repository contains code, data, and pre-rendered outputs to reproduce all figures and tables in the paper. The paper introduces Design-Conditional Elicitation (DCE), a framework that translates practitioner beliefs about cluster structure into coherent Gamma hyperpriors for Dirichlet process mixture models. Key contributions include Two-Stage Moment Matching (TSMM) for efficient calibration, a Dual-Anchor protocol for weight dominance control, and the open-source `DPprior` R package.
+~~~sh
+Rscript 00_setup.R --profile rebuild
+~~~
 
-## Repository Structure
+To inspect the installation plan, run:
 
-```
-dpprior-replication/
-├── code/
-│   ├── figure_01/                  # Figure 1: Framework diagram (TikZ)
-│   ├── figure_02/                  # Figure 2: Unintended prior phenomenon
-│   ├── figure_03_simulation/       # Figure 3 + simulation study
-│   │   ├── R/                      #   Core R modules (10 files)
-│   │   ├── scripts/                #   Step-by-step runner scripts (14 files)
-│   │   ├── analysis/               #   Post-hoc analysis pipeline (Python + R)
-│   │   ├── config/                 #   Simulation design YAML
-│   │   └── Makefile                #   Automated execution
-│   ├── figure_04/                  # Figure E05: Pareto frontier
-│   ├── appendix_E/                 # Appendix E pointer (→ figure_04)
-│   ├── appendix_F/                 # Appendix F: 5 supplementary figures
-│   └── appendix_G/                 # Appendix G: Software implementation figures
-├── data/
-│   ├── prior_table.csv             # Calibrated Gamma(a,b) hyperpriors
-│   └── simulation_results/
-│       ├── main_results.csv        # Aggregated simulation results (I=0.2)
-│       └── preprocessed_results.csv # Full preprocessed dataset
-├── figures/
-│   ├── main/                       # Figures 1–4 (pre-rendered)
-│   └── supplement/                 # Figures E05, F01–F14, G01–G04
-├── tables/                         # 16 code-generated tables (CSV + LaTeX)
-├── .gitignore
-├── LICENSE                         # MIT License
-└── README.md
-```
+~~~sh
+Rscript common/install_dependencies.R --profile rebuild
+~~~
 
-## Figure-to-Code Mapping
+Add `--execute` to install the specified source versions into `.library/`. A compiler and system libraries may be required. Then rebuild and verify the results:
 
-### Main Text Figures
+~~~sh
+Rscript exhibits/00_build_all.R
+Rscript verify_reproduction.R
+~~~
 
-| Figure | Description | Code | How to Run |
-|--------|-------------|------|------------|
-| Figure 1 | Framework diagram | `code/figure_01/Figure_01_framework.tex` | Compile with `pdflatex` |
-| Figure 2 | Unintended prior phenomenon | `code/figure_02/figure_02_unintended_prior.R` | `Rscript figure_02_unintended_prior.R` |
-| Figure 3 | Simulation results (3×3 grid) | `code/figure_03_simulation/` | See simulation pipeline below |
-| Figure 4 | Collapse probability P(K=1) | `code/figure_03_simulation/analysis/02_figures_generation.py` | `python 02_figures_generation.py` |
+Intermediate summaries are written to `data-derived/` and completed tables and figures to `outputs/`. Tables are provided as CSV, HTML and LaTeX; figures as CSV, PDF and PNG. The [reproduction map](provenance/reproduction-map.csv) identifies the input and script for each result. The supplied inputs in `data-frozen/` remain unchanged.
 
-### Appendix Figures
+## Read the guide
 
-| Figure | Description | Code |
-|--------|-------------|------|
-| E05 | Dual-Anchor Pareto frontier | `code/figure_04/figure_04_pareto_frontier.R` |
-| F01–F14 | Extended simulation results | Pipeline + `code/appendix_F/appendix_F_supplementary_figures.R` |
-| G01–G04 | DPprior software demos | `code/appendix_G/appendix_G_figures.R` |
+The Quarto Book explains the analyses, commands and interpretation. With Quarto 1.9.37, run:
 
-### Tables
+~~~sh
+quarto render docs
+python3 verification/check_book.py
+~~~
 
-Table 2 (Main Text) and 15 supplementary tables are generated by
-`code/figure_03_simulation/analysis/03_tables_generation.py`.
-See `tables/README.md` for the complete mapping.
+Open `docs/_book/index.html`. The examples are included in the repository, so the guide can be rendered before running the numerical calculations.
 
-## Quick Start
+| Task | Guide chapter | Dependency profile |
+|---|---|---|
+| Rebuild tables and figures | `docs/01-start.qmd` | `rebuild` |
+| Calibrate counts and examine weights | `docs/03-prior-elicitation.qmd` | `calibration` |
+| Reconstruct the simulation comparisons | `docs/04-simulation.qmd` | `rebuild` |
+| Prepare STAR, writing-to-learn or OCRS data | `docs/05-applications.qmd` | `public-data` |
+| Calculate WLE reliability | `docs/06-rasch-wle.qmd` | `rebuild` |
+| Fit a selected model | `docs/07-verification-refit.qmd` | `refit` |
 
-### Prerequisites
+The index includes analyses developed after the initial preprint. Its table and figure numbers identify the results supplied with this repository.
 
-**R** (≥ 4.1) with packages:
+## Data and verification
 
-```r
-install.packages(c("ggplot2", "dplyr", "tidyr", "patchwork",
-                    "nimble", "future", "future.apply",
-                    "yaml", "scales"))
+The standard build uses simulation metrics and school, study, score, item and model summaries. To repeat source preparation or fit an application model, obtain the data described in [DATA_ACCESS.md](DATA_ACCESS.md). For example, after downloading the official **AIR/ICPSR public-use OCRS file**, run:
 
-# DPprior package (required)
-remotes::install_github("joonho112/DPprior")
-```
+~~~sh
+Rscript applications/05_prepare_ocrs.R --input "/your/data/OCRS_publicuse_impactanalysisdata.csv"
+~~~
 
-**Python** (≥ 3.9) with packages:
+The OCRS analysis estimates descriptive schoolwise contrasts among complete cases. The original study's blocked intention-to-treat analysis has a different target. Student records and person-level posterior draws are not distributed here.
 
-```bash
-pip install pandas numpy matplotlib seaborn scipy
-```
+The numerical checks compare the reconstructed results with independent expected values, including 68 selected numbers. These checks and an isolated rebuild passed on macOS arm64. Short model runs tested the fitting code; full production refits have not been repeated for this package. See [verification](verification/README.md) and the [platform record](provenance/platform-matrix.csv).
 
-### Reproducing Individual Figures
-
-```bash
-# Figure 2: Unintended prior
-cd code/figure_02
-Rscript figure_02_unintended_prior.R
-
-# Figure E05: Pareto frontier
-cd code/figure_04
-Rscript figure_04_pareto_frontier.R
-
-# Appendix G figures
-cd code/appendix_G
-Rscript appendix_G_figures.R
-```
-
-### Reproducing the Full Simulation Study
-
-The simulation study (Figures 3–4, Table 2, Appendix F) is the largest
-component. Follow the step-by-step pipeline in `code/figure_03_simulation/scripts/`:
-
-```bash
-cd code/figure_03_simulation
-
-# Step 0: Verify environment
-Rscript scripts/step0_check_env.R
-
-# Step 1: Calibrate informativeness levels
-Rscript scripts/step1_calibrate_I.R
-
-# Step 2: Build prior hyperparameter table
-Rscript scripts/step2_build_priors.R
-
-# Step 3a: Smoketest (< 3 minutes)
-Rscript scripts/step3_smoketest.R
-
-# Step 3b: Pilot run (5–30 minutes)
-Rscript scripts/step3_run_pilot_parallel.R
-
-# Step 3c: Full simulation (4–8 hours, parallelized)
-Rscript scripts/step3_run_full_parallel.R
-
-# Step 3d: Merge results
-Rscript scripts/step3_merge_results.R
-
-# Step 4: Generate Figure 3
-Rscript scripts/step4_plot_fig3.R
-```
-
-Then run the Python analysis pipeline for Figure 4 and all tables:
-
-```bash
-cd analysis
-python 01_data_preparation.py
-python 02_figures_generation.py
-python 03_tables_generation.py
-```
-
-Alternatively, use `make` to run the entire pipeline:
-
-```bash
-cd code/figure_03_simulation
-make all
-```
-
-### Simulation Design
-
-The simulation study evaluates 5 prior specification methods across 9 scenarios:
-
-- **Methods:** Vague (Gamma(1,1)), DORO-Uniform, TSMM, Dual-Anchor, χ²-DORO
-- **True K\*:** 5, 10, 30 clusters
-- **Informativeness (I):** 0.2 (low), 0.5 (medium), 0.8 (high)
-- **Replications:** 200 per condition
-- **MCMC:** NIMBLE with 10,000 iterations (5,000 warmup)
-
-Design parameters are configured in `code/figure_03_simulation/config/fig3_design.yaml`.
-
-## Pre-Rendered Outputs
-
-All figures and tables are included as pre-rendered files, so you can
-inspect the results without running any code:
-
-- `figures/main/` — Figures 1–4 (PDF + PNG)
-- `figures/supplement/` — Figures E05, F01–F14, G01–G04
-- `tables/` — 16 tables (CSV + LaTeX)
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
+Table 2 contains a rounding difference: the tail probability from unrounded parameters is .144969, which gives .14, while the printed reference gives .15. The rebuilt table uses .14; the [numerical note](provenance/manuscript-discrepancies.csv) records the comparison.
 
 ## Citation
 
-If you use this code or data, please cite:
+Lee, J. (2026). *Design-Conditional Prior Elicitation for Dirichlet Process Mixtures: A Unified Framework for Cluster Counts and Weight Control*. arXiv:2602.06301. [Preprint](https://arxiv.org/abs/2602.06301).
 
-```bibtex
-@article{lee2026dce,
-  title   = {Design-Conditional Prior Elicitation for Dirichlet Process
-             Mixtures: A Unified Framework for Cluster Counts and
-             Weight Control},
-  author  = {Lee, JoonHo},
-  year    = {2026},
-  journal = {arXiv preprint}
-}
-```
+[CITATION.cff](CITATION.cff) provides the citation metadata. The DOI [10.48550/arXiv.2602.06301](https://doi.org/10.48550/arXiv.2602.06301) identifies the preprint.
 
-## Contact
+## Terms of use
 
-JoonHo Lee — jlee296@ua.edu
+Original replication code is licensed under MIT. Documentation, author-created outputs and source data have separate terms: see [LICENSE-SCOPE.md](LICENSE-SCOPE.md), [LICENSE-DATA](LICENSE-DATA) and [DATA_ACCESS.md](DATA_ACCESS.md).

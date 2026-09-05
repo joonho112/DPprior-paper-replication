@@ -1,0 +1,2 @@
+artifact_id,location,printed,recomputed,proposed_display,reason,status
+main-table-2,VIF 1.25 tail above .9,0.15,0.144969241944006,0.14,Exact unrounded calibrated shape-rate implies .14 at two decimals; rounded shape-rate explains .15,requires-author-review; manuscript unchanged

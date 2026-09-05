@@ -1,0 +1,8 @@
+{
+  "source_id": "analysis/sim_code/prior_calibration_v2.R",
+  "source_sha256": "e100c02aa421cf4012ee6cc1463b23a83323161f9f1847a855fa05db955c9da7",
+  "ported_functions": "policy load; capture; boundary and acceptance gates; count calibration; soft grid and selection; hard sensitivity; SSI solver; prior summary",
+  "excluded": "filesystem artifact hashing; DORO audit wrappers; production manifest formatting",
+  "scientific_function_bodies_modified": false,
+  "public_package": "DPprior 2.0.0 at pinned commit; policy is a separate analysis layer"
+}

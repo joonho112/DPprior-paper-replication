@@ -1,0 +1,48 @@
+{
+  "deposit": "ICPSR 202181 V1",
+  "release_date": "2024-06-28",
+  "checked_utc": "2026-09-05T04:17:03.083090+00:00",
+  "classification": "public-use",
+  "source_url": "https://www.openicpsr.org/openicpsr/project/202181/version/V1/view",
+  "files": [
+    {
+      "file": "OCRS_PublicUseData_Documentation_README.pdf",
+      "bytes": 1505590,
+      "sha256": "38d71e669ab514055d7064c657c4fce071c5ff650f2baadb3175bc6945afdfa9",
+      "required_for_paper": false
+    },
+    {
+      "file": "OCRS_publicuse_classleveldata.csv",
+      "bytes": 59916,
+      "sha256": "98e1e400013802dec87721e211f7d0ade9140edc406db2404fc97f5f736b911a",
+      "required_for_paper": false
+    },
+    {
+      "file": "OCRS_publicuse_impactanalysisdata.csv",
+      "bytes": 1244055,
+      "sha256": "d20cbbaaf07ee8e7aad7e5d0e516b74f0a1114617fb3c7db9a4c7c2afcb681c7",
+      "required_for_paper": true
+    },
+    {
+      "file": "OCRS_publicuse_studentsurveydata.csv",
+      "bytes": 250765,
+      "sha256": "6a152cc0cb9232e3f09796a57d71629e654dc9da74bbe7d3dac9eaeca7ea6f78",
+      "required_for_paper": false
+    },
+    {
+      "file": "OCRS_publicuse_studenttestdata.csv",
+      "bytes": 420514,
+      "sha256": "6f38c4c1a4b30a27fa0a59cccc6e97f7215a6dcd4d3b478c09bc4dabf3d7e536",
+      "required_for_paper": false
+    }
+  ],
+  "source_to_existing_input_check": {
+    "source_observations": 1737,
+    "complete_case_observations": 1063,
+    "schools": 24,
+    "max_abs_effect_difference": 2.442491e-15,
+    "max_abs_SE_difference": 4.440892e-16
+  },
+  "full_posterior_refit_performed": false,
+  "documentation_redistributed": false
+}

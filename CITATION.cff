@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying preprint when using these replication materials."
+type: software
+title: "Replication Materials for Design-Conditional Prior Elicitation for Dirichlet Process Mixtures: A Unified Framework for Cluster Counts and Weight Control"
+authors:
+  - family-names: Lee
+    given-names: JoonHo
+    email: jlee296@ua.edu
+repository-code: "https://github.com/joonho112/DPprior-paper-replication"
+abstract: "Code and a replication guide for prior elicitation in Dirichlet process mixtures. Includes count calibration, weight diagnostics, simulation and application summaries, weighted-likelihood scoring, and model-fitting scripts."
+license: MIT
+preferred-citation:
+  type: article
+  title: "Design-Conditional Prior Elicitation for Dirichlet Process Mixtures: A Unified Framework for Cluster Counts and Weight Control"
+  authors:
+    - family-names: Lee
+      given-names: JoonHo
+      email: jlee296@ua.edu
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2602.06301"
+  url: "https://arxiv.org/abs/2602.06301"
+keywords:
+  - Dirichlet process
+  - prior elicitation
+  - replication
+  - cluster counts
+  - mixture weights

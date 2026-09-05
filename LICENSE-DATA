@@ -1,0 +1,20 @@
+# License for original documentation and derived materials
+
+Author: JoonHo Lee (jlee296@ua.edu)
+
+The author's original replication guide, calibration results, synthetic simulation
+summaries, and regenerated exhibits are licensed under Creative Commons Attribution
+4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/.
+
+This grant covers only rights the author holds. It does not relicense third-party
+study data, assessment content, software, or journal publications. Attribution and
+applicable upstream terms travel with derived material. In particular, IRW records
+CC BY 4.0 as the vocabulary table's derived license while recording the original
+license as missing. Neither field is treated as a public-domain declaration.
+
+No response-level IRW or pupil-level STAR data are redistributed. OCRS has an official public-use release; analytical derivatives retain upstream
+terms. The author’s grant does not relicense its raw files or AIR documentation.
+See DATA_ACCESS.md, LICENSE-SCOPE.md, and provenance/data-rights.csv.
+
+Please cite the paper and this replication release, as well as the source studies
+and software relevant to the material reused. Code is licensed separately in LICENSE.

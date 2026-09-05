@@ -1,0 +1,27 @@
+schema_version: 1
+source_table: gcbs_brotherton_2013_vcl
+source_rows: 2495
+source_items: 16
+analysis_rows: 500
+analysis_items: 13
+sampling:
+  sort: character IDs in source wide-matrix order
+  seed: 81770971
+  rng_kind: Mersenne-Twister
+  normal_kind: Inversion
+  sample_kind: Rejection
+  operation: sort(sample.int(2495L, 500L))
+  exclude_after_sampling: [VCL6, VCL9, VCL12]
+items: [VCL1, VCL2, VCL3, VCL4, VCL5, VCL7, VCL8, VCL10, VCL11, VCL13, VCL14, VCL15, VCL16]
+raw_scores: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+frequencies: [3, 1, 2, 4, 2, 3, 9, 17, 52, 70, 116, 89, 69, 63]
+missing_responses: 0
+public_snapshot: score, item, fit and model aggregates only
+item_convention: sum-to-zero difficulty; p = logistic(theta - beta)
+wle:
+  item_estimates_fixed: true
+  equation: r - sum(p) + I_prime / (2 * I) = 0
+  standard_error: 1 / sqrt(I)
+  reliability: 1 - weighted_mean(SE^2) / sample_variance(WLE)
+  variance_denominator: N - 1
+  retain_extreme_scores: true

@@ -1,0 +1,6 @@
+dataset,material,decision,reason,effect_on_reproduction
+star,pupil-level source rows,acquire-through-mlmRev,avoid duplicate personal records,first-stage/refit needs source package
+vocabulary,original response rows; IDs; ages; person EAPs,acquire-through-IRW,minimum necessary aggregate and indirect raw-score disclosure,conditional WLE remains runnable; full refit needs source input
+ocrs,Unnecessary student-level source copies; copyrighted documentation; unnecessary pairwise payloads,source-obtained-separately; minimize-default-snapshot,Public-use source available; no blanket relicensing; avoid duplicate raw records,Public input preparation and optional refitting available; selected school/model derivatives may ship
+all,private execution logs; receipts; manuscript and response files; OCR references; cloud config,excluded-from-package,outside required public scope,sanitized scientific provenance retained
+simulation,raw posterior draws,omitted-from-default-release,size and no need for metric reaggregation,full fit runners documented separately

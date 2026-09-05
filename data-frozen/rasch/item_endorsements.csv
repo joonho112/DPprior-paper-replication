@@ -1,0 +1,17 @@
+key,label,excluded,sample_value,full_value,note
+VCL1,boat,0,0.976,0.972344689378758,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL2,incoherent,0,0.94,0.94188376753507,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL3,pallid,0,0.552,0.549098196392786,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL4,robot,0,0.976,0.975551102204409,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL5,audible,0,0.95,0.952705410821643,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL6,cuivocal,1,0.098,0.104609218436874,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL7,paucity,0,0.27,0.272545090180361,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL8,epistemology,0,0.462,0.453306613226453,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL9,florted,1,0.052,0.0593186372745491,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL10,decide,0,0.958,0.967134268537074,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL11,pastiche,0,0.312,0.313426853707415,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL12,verdid,1,0.144,0.167134268537074,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL13,abysmal,0,0.81,0.788376753507014,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL14,lucid,0,0.932,0.92625250501002,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL15,betray,0,0.972,0.970741482965932,proportion checked; excluded = 1 marks the non-word validity-check entries
+VCL16,funny,0,0.98,0.982765531062124,proportion checked; excluded = 1 marks the non-word validity-check entries

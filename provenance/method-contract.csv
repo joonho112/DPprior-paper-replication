@@ -1,0 +1,11 @@
+method_id,document,locator,purpose,source_basename,status
+main-box-1,main,Box 1,Six-step prior elicitation recipe,"Main paper, Box 1",reference-specification
+main-algorithm-1,main,Algorithm 1,TSMM initialization and refinement,"Main paper, Algorithm 1",reference-specification
+main-algorithm-2,main,Algorithm 2,Dual-Anchor selection,"Main paper, Algorithm 2",reference-specification
+osm-example-A,osm,Appendix A,Exact finite-J PMF and Gamma-mixed count moments,"Supplementary material, Appendix A",reference-specification
+osm-example-B,osm,Appendix B,J=50 Stage 1 mismatch and exact correction,"Supplementary material, Appendix B",reference-specification
+osm-example-C,osm,Appendix C,Independent quadrature and failure handling,"Supplementary material, Appendix C",reference-specification
+osm-example-D,osm,Appendix D,Finite-J approximation bounds and limitations,"Supplementary material, Appendix D",reference-specification
+osm-example-E,osm,Appendix E,Weight identities; largest-weight bounds; reporting example,"Supplementary material, Appendix E",reference-specification
+osm-frontier-29,osm,Appendix G,All 29 lambda candidates including failed/ineligible points,"Supplementary material, Appendix G",reference-specification
+osm-denominators-45,osm,Table F.5 panel B,All 45 headline denominators,"Supplementary material, Table F.5 panel B",reference-specification

@@ -1,0 +1,79 @@
+role,source_arm,item_order,item,posterior_mean_difficulty,item_parameter_convention,retained_item_parameter_draws,source_fit_sha256
+Vague,main,1,VCL1,-2.62241648183754,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,2,VCL2,-1.17604183186433,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,3,VCL3,2.76834047564956,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,4,VCL4,-2.61738943275346,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,5,VCL5,-1.47022624370522,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,6,VCL7,4.62839069274887,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,7,VCL8,3.33534961094392,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,8,VCL10,-1.74880859030067,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,9,VCL11,4.32148193047177,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,10,VCL13,0.826031245217526,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,11,VCL14,-0.968442820396949,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,12,VCL15,-2.38762053867613,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Vague,main,13,VCL16,-2.88864801549736,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,edeaef6857049870b5fe8614b4302792cfd3b5bc24ba8f62655cc9c1bb7a5f23
+Literature default,main,1,VCL1,-2.6222903689826,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,2,VCL2,-1.1748994688133,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,3,VCL3,2.76895806228297,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,4,VCL4,-2.62487302560178,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,5,VCL5,-1.46812844681138,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,6,VCL7,4.62923904470893,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,7,VCL8,3.33591597430018,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,8,VCL10,-1.74859038836849,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,9,VCL11,4.32165327116141,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,10,VCL13,0.825576320476824,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,11,VCL14,-0.966231276097072,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,12,VCL15,-2.38687812193607,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+Literature default,main,13,VCL16,-2.88945157631962,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,307f641d31cfb5436fb2ed76c0403f83e5177ae99d4d6cd676478da7ade9616e
+TSMM,main,1,VCL1,-2.61414499831801,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,2,VCL2,-1.17573120887473,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,3,VCL3,2.76452056263927,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,4,VCL4,-2.60929857182045,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,5,VCL5,-1.4715851384903,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,6,VCL7,4.62187441816744,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,7,VCL8,3.33079190191023,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,8,VCL10,-1.7476664192702,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,9,VCL11,4.31457160314048,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,10,VCL13,0.82106040247011,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,11,VCL14,-0.969634623893491,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,12,VCL15,-2.378529448887,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+TSMM,main,13,VCL16,-2.88622847877335,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,2bdae34fc8eafa5bb813ec0e0d5c0cc21822d270acc67806eddf2d5127d709e7
+Dual-Anchor,main,1,VCL1,-2.61223817383167,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,2,VCL2,-1.17332251310441,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,3,VCL3,2.76407705455981,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,4,VCL4,-2.61858500417777,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,5,VCL5,-1.47075398785126,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,6,VCL7,4.62299414834793,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,7,VCL8,3.32989068952282,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,8,VCL10,-1.74898886433122,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,9,VCL11,4.31393001134889,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,10,VCL13,0.824070370115572,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,11,VCL14,-0.970108253564506,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,12,VCL15,-2.37959583585938,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor,main,13,VCL16,-2.88136964117481,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,ca52b2dbfd423f786b06757be9ad767c5325c420171529515286a8f625ff96c1
+Dual-Anchor (hard),main,1,VCL1,-2.61535622163662,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,2,VCL2,-1.17319688700847,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,3,VCL3,2.76264718849797,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,4,VCL4,-2.6147783283232,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,5,VCL5,-1.47000022148642,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,6,VCL7,4.62134971817617,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,7,VCL8,3.32730051137992,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,8,VCL10,-1.74287362877642,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,9,VCL11,4.31624921541853,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,10,VCL13,0.821808000176738,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,11,VCL14,-0.970979999422823,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,12,VCL15,-2.38317576187016,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Dual-Anchor (hard),main,13,VCL16,-2.87899358512521,posterior mean; sum-to-zero difficulties; fixed for WLE,16000,8563d492327ad77dcb31f167395454161bcecc0b41db8fea48291fdf650c258e
+Gaussian benchmark,gaussian_benchmark,1,VCL1,-2.5604164181925,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,2,VCL2,-1.23182498698111,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,3,VCL3,2.73269115509773,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,4,VCL4,-2.55702378874276,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,5,VCL5,-1.51758324048908,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,6,VCL7,4.68655190146688,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,7,VCL8,3.32487917152,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,8,VCL10,-1.77773999250649,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,9,VCL11,4.36432397547147,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,10,VCL13,0.727190425174361,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,11,VCL14,-1.04623618671586,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,12,VCL15,-2.35268090289211,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2
+Gaussian benchmark,gaussian_benchmark,13,VCL16,-2.79213111221047,posterior mean; sum-to-zero difficulties; fixed for WLE,8000,c29d39ac9dc45d163a04b7eb3ecef079b765501555a572415d65b4dd276e0cb2

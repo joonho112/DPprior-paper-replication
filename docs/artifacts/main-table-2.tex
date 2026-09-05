@@ -1,0 +1,11 @@
+% Requires booktabs and longtable. Numeric source is the adjacent CSV.
+\begin{longtable}{lllllll}
+\toprule
+Setting & Variance & Gamma (shape, rate) & E(alpha) & P(W\_SB > .5) & P(W\_SB > .9) & P(alpha < .1) \\
+\midrule\endhead
+VIF = 1.25 & 5 & (7.13, 7.41) & 0.96 & 0.53 & 0.14 & 0.000 \\ \addlinespace[3pt]
+VIF = 1.5 & 6 & (4.35, 4.47) & 0.97 & 0.53 & 0.16 & 0.001 \\ \addlinespace[3pt]
+VIF = 2.5 & 10 & (1.67, 1.65) & 1.01 & 0.56 & 0.23 & 0.030 \\ \addlinespace[3pt]
+VIF = 5 & 20 & (0.62, 0.56) & 1.11 & 0.61 & 0.36 & 0.182 \\ \addlinespace[3pt]
+Gamma(1, 1) default & -- & (1.00, 1.00) & 1.00 & 0.59 & 0.30 & 0.095 \\ \addlinespace[3pt]
+\bottomrule\end{longtable}

@@ -1,0 +1,171 @@
+{
+  "exports": [
+    {
+      "source": "Original Rasch analysis: c4 vcl analysis sample",
+      "source_sha256": "804c74da567f49034ae728487faa8f9fa02e13cf232d9cc15b7207b34f89f406",
+      "export": "data-frozen/rasch/score_counts.csv",
+      "export_sha256": "6db0b52d18e0344298a17b605be69ac29d4f43bc76e4ab7d4a9362ede914bdeb",
+      "rows": 14,
+      "columns": 2,
+      "aggregation": "score/item only; respondent IDs not exported"
+    },
+    {
+      "source": "Original Rasch analysis: c4 vcl analysis sample",
+      "source_sha256": "804c74da567f49034ae728487faa8f9fa02e13cf232d9cc15b7207b34f89f406",
+      "export": "data-frozen/rasch/item_counts.csv",
+      "export_sha256": "2c79073e3c4f6cda320c1ad99a88548469ac3803eb9497f4fba825ae19abe91d",
+      "rows": 13,
+      "columns": 5,
+      "aggregation": "score/item only; respondent IDs not exported"
+    },
+    {
+      "source": "Original Rasch analysis: wle item difficulties all sources",
+      "source_sha256": "47a0716ad0bfbfbe7272caea02f4321e04ca608bb10c7b96a150dd4910b5c47c",
+      "export": "data-frozen/rasch/wle_item_difficulties.csv",
+      "export_sha256": "a540d4cf630869fb322c63943bcdd371b05bb40baaba4f568f832e8de82281d8",
+      "rows": 78,
+      "columns": 8,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: wle by score all sources",
+      "source_sha256": "cac4f63da735d2ecfe0ee055ca2c6f91daa5731269fafe3a2166f11f2d5b169e",
+      "export": "verification/expected/rasch_wle_scores.csv",
+      "export_sha256": "28979b9b9f77c8840488e98ede2828d6458c094e1d03e4711d767dbc486b9e01",
+      "rows": 84,
+      "columns": 6,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: wle verification metrics",
+      "source_sha256": "d6e19044bfe98ccc3a6a853bb85deb0d0a807dd2af568152d8c503d9c0af1c49",
+      "export": "verification/expected/rasch_wle_metrics.csv",
+      "export_sha256": "877d2f91ce3b30b6f193d6ec7ed960a5b0cba8a931b37cfd8655c8ce22e7a3d6",
+      "rows": 6,
+      "columns": 5,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: posterior summary irt",
+      "source_sha256": "a627302ca9a0c1dec03e5b6b7b620182991927857e2d709b0b34fcd1fbf2a1a1",
+      "export": "data-frozen/rasch/posterior_summary.csv",
+      "export_sha256": "70932ca3beb6060d794c00d8ecf14370d8edf1b677faebb9ca1097c8a86b9fe6",
+      "rows": 10,
+      "columns": 106,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: fit diagnostics irt",
+      "source_sha256": "4956341e0655be0c0edadd72e10515e994c2c9dc9b64c22be37d1866b9d6f4e9",
+      "export": "data-frozen/rasch/fit_diagnostics.csv",
+      "export_sha256": "f3acd4228b5974eab75dbb6535cfcf2aeb26dad8f19e45b04de0eaf8d8496d63",
+      "rows": 10,
+      "columns": 81,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: osm h3 score groups irt",
+      "source_sha256": "e5fa5f946798d6059e98ff3be454be86f649db198bc8585b5dbc49dfdaec65b8",
+      "export": "data-frozen/rasch/score_groups.csv",
+      "export_sha256": "02328f4192a41956ac7a1c01b80ef761f17cb89c272d181c1b89c56349472d40",
+      "rows": 140,
+      "columns": 15,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: priors irt",
+      "source_sha256": "2b8f7d9cf4f3eb261301d3f12eddfb509f92d614a19606d5a965dba5c587454c",
+      "export": "data-frozen/rasch/priors.csv",
+      "export_sha256": "276f3337adc134a55dd720ad22a40555676d519e428ca7647c19f897f8e8ed47",
+      "rows": 11,
+      "columns": 59,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: achieved judgment irt",
+      "source_sha256": "c397cd41f8119861824063e2cf2d851d1a3f4937b89eb0dc71f7303f8af3ddc1",
+      "export": "data-frozen/rasch/achieved_judgments.csv",
+      "export_sha256": "609aa4dcb7bb9f79b10a15d9bbccfb3f8fa51ae211da877e81076dd9c862a1b5",
+      "rows": 6,
+      "columns": 30,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: figure irt K",
+      "source_sha256": "c4c1bb43316f6977abe8e78d8755d880155aa2b11b0abfdadac377a8e055e96c",
+      "export": "data-frozen/rasch/count_pmf.csv",
+      "export_sha256": "6fdcf643cb1f49e3d3dfd39ca1b58a76ec3c5618200643045e9c19e0ee68656f",
+      "rows": 117,
+      "columns": 4,
+      "row_filter_applied": true
+    },
+    {
+      "source": "Original Rasch analysis: figure irt density",
+      "source_sha256": "d61509187b98c9579cfcff2ac89ea2216e80aee3d3cb29c0a44a239f338dff96",
+      "export": "data-frozen/rasch/model_density.csv",
+      "export_sha256": "f99db561fcedf26eb36a058ddd28e84e7ae73b5a113a886b7ffb1fa5d9a05c1d",
+      "rows": 5766,
+      "columns": 6,
+      "row_filter_applied": true
+    },
+    {
+      "source": "Original Rasch analysis: benchmark density",
+      "source_sha256": "2d6464f49881ce21b441e5e5dc43c9fa27319be54394d292450372a13e6a94fb",
+      "export": "data-frozen/rasch/gaussian_density.csv",
+      "export_sha256": "cc99f853627c2d09038375a2435099d8e56947c6fb4790e33136b5c585bbd588",
+      "rows": 961,
+      "columns": 4,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: benchmark diagnostics",
+      "source_sha256": "45ca98dacf8d3ce0a239c256eef17544fe091f48e96408b20383e546be35ad18",
+      "export": "data-frozen/rasch/gaussian_diagnostics.csv",
+      "export_sha256": "d6d5c49925acd26b04a337136ef726fe51859be35833bb19337b63a7493b2b75",
+      "rows": 438,
+      "columns": 16,
+      "row_filter_applied": true
+    },
+    {
+      "source": "Original Rasch analysis: osm h3 mcse delta irt",
+      "source_sha256": "83e439d6695fbdd2e1f67f5f2cfd1c0eeb425f6996e90bb74627d8a0dbb4a24e",
+      "export": "verification/expected/rasch_score_contrasts.csv",
+      "export_sha256": "f22425d45dd63f0599bfd3a871b6aab4c182e88b36055cc82849c97197ac54f6",
+      "rows": 140,
+      "columns": 14,
+      "row_filter_applied": false
+    },
+    {
+      "source": "Original Rasch analysis: posterior summary irt",
+      "source_sha256": "a627302ca9a0c1dec03e5b6b7b620182991927857e2d709b0b34fcd1fbf2a1a1",
+      "export": "verification/expected/rasch_posterior_metrics.csv",
+      "export_sha256": "381c1416750b4796cd5b6dc9f0cbcd41dd3616786f53b948e8e26ed3e3940f9b",
+      "rows": 10,
+      "columns": 11,
+      "row_filter_applied": false
+    },
+    {
+      "source": "derived registry from exported posterior_summary and fit_diagnostics",
+      "source_sha256": null,
+      "export": "data-frozen/rasch/prior_and_fit_registry.csv",
+      "export_sha256": "fbae153a7e82df4907fcd2e64439d0659528461115765cc399f930b724e77195",
+      "rows": 10,
+      "columns": 19,
+      "aggregation": "joins role metadata; third attempt explicitly labeled deviation from original two-schedule plan",
+      "schedule_source": "Locked OSM H.3 sampling and diagnostics subsection; initial 12000/4000/thin2, rerun36000/12000/thin6, third120000/60000/thin15"
+    },
+    {
+      "source": "Original Rasch analysis: summary c4",
+      "source_sha256": "7bef0273c689519d54f590f2c1cf66379a714a94bf53c7e7d8f6b3b2aa6a2a4b",
+      "export": "data-frozen/rasch/item_endorsements.csv",
+      "export_sha256": "faf4bdfd39fcd9049ddf6f2cb18e6e7717737d1c5370e1422138430bc2c81776",
+      "rows": 16,
+      "columns": 6,
+      "aggregation": "Only item endorsement rows for OSM H.8; no ages or demographic summaries"
+    }
+  ],
+  "unit": "score/item/fit/model grids only; no respondent rows or IDs",
+  "raw_response_data_shipped": false,
+  "posterior_refit_performed": false,
+  "sampling_order": "500 sampled from character-ID-sorted 2495x16 before removal of VCL6,VCL9,VCL12"
+}

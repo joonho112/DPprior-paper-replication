@@ -1,0 +1,5 @@
+path,status,scope,elapsed_seconds,result_sha256,production_status
+refit/simulation/run_one_fit.R,bounded-smoke-tested,one fit; four chains; 200/100/thin 1,26.378,e7ea2e07e96e9d9e82e954fe099dd02c73242fec40537ebe8abe84b20afbc0cf,not run in public package
+refit/applications/run_one_fit.R,bounded-smoke-tested,OCRS Vague primary; four chains; 200/100,17.721,a5c1bb92fcbfb7a9a89f250a557eb93ade8ac835f44953ccaa168296599d2dc3,not run in public package
+refit/rasch/run_one_chain.R,bounded-smoke-tested,main Vague attempt 1 chain 1; 60/30/thin 1,62.397,c2033c4c2308716370e0243f8e43335c3e40889362b69e8d8f582afab2d1964f,not run in public package
+refit/rasch/combine_and_check.R,dry-run-and-component-tested,30-draw conditional density and identity guards tested; four real chain combination not run,,,not run in public package

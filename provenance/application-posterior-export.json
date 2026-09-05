@@ -1,0 +1,128 @@
+{
+  "exports": [
+    {
+      "source": "Original application analysis: official application fit summary",
+      "source_sha256": "97c41e5afa137418433bf02cb1b58982054068553de66fe55879e831e4df3983",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/fit_summary.csv",
+      "export_sha256": "a02e07dd7de63b04bff3a225188565bdac5409567144b7ef04bff19200d857b8",
+      "rows": 35,
+      "columns": 41
+    },
+    {
+      "source": "Original application analysis: official application unit summary",
+      "source_sha256": "26232ad5662bc4afb3776c3f92186c15deefca2cdf59928bad7c2a58a5c9083d",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/unit_summary.csv",
+      "export_sha256": "edb3ee7c07387288927ebaa6aca082e9f43a408307de4965252a4e60cf747aa8",
+      "rows": 1905,
+      "columns": 39
+    },
+    {
+      "source": "Original application analysis: official application diagnostic summary",
+      "source_sha256": "cc8ddeb7a752c88ac9c6188d7ade7644549c2c673979113471680c1fd2341254",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/diagnostic.csv",
+      "export_sha256": "15078139bb0587be728e4cc4b6e6433a189e7b78896c16099cb060f292c17d06",
+      "rows": 3018,
+      "columns": 34
+    },
+    {
+      "source": "Original analysis: star location profiles",
+      "source_sha256": "19bb71bd26dc16efb5506e7696754bdbca7ae3c4042442366bd69feda6c792a2",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/star_profiles.csv",
+      "export_sha256": "24549a1d458cfc399bfb690c4d1294f289130549eccf5eac538b714a302f8f82",
+      "rows": 20,
+      "columns": 28
+    },
+    {
+      "source": "Original analysis: bangert drowns moderator alignment",
+      "source_sha256": "c9d5409755d518c8ed23885d0d72d3db8450678c83edc9a9978f37810f54d341",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/bd_profiles.csv",
+      "export_sha256": "92dca79815be55afccd648972a6238186ed6d82e14b91e27d63dfed673428ac7",
+      "rows": 10,
+      "columns": 32
+    },
+    {
+      "source": "Original application analysis: official application attempt summary",
+      "source_sha256": "0b078225a2b4767ef9d29e63ab3895eb5dfdd6fc5ae042a1a84c2d218da6bebc",
+      "collector_registry_match": true,
+      "export": "data-frozen/applications/attempts.csv",
+      "export_sha256": "e57468be1c1ecba65f28a5e4c9f126e1a4d67e3c2713529c3e4b5b5de3997700",
+      "rows": 45,
+      "columns": 12
+    },
+    {
+      "source": "Original application analysis: application fit manifest",
+      "source_sha256": "a6964c370b83a53a0d683aae5a8686051159a06454a8876cd639bfa57e61735e",
+      "collector_registry_match": false,
+      "export": "data-frozen/applications/base_manifest.csv",
+      "export_sha256": "dff7765210dd352f1d9112d69fcf473eb532c3b73187786358013401d5f7df84",
+      "rows": 15,
+      "columns": 12
+    },
+    {
+      "source": "Original application analysis: application execution manifest",
+      "source_sha256": "3d5596fbf4bf2f631baca46d451d1a28ab1c3841de256fe3a5f7481eedee8f33",
+      "collector_registry_match": false,
+      "export": "data-frozen/applications/execution_manifest.csv",
+      "export_sha256": "672e16fa540282e6b3216ff787380f2c539bb243a13c7305a8565e6464acd0ef",
+      "rows": 35,
+      "columns": 26
+    },
+    {
+      "source": "Original analysis: normal re benchmarks",
+      "source_sha256": "955a748c871325cccc1f283d8d15f9d1f94b845989a87225cce82d69b2865fa9",
+      "collector_registry_match": false,
+      "export": "data-frozen/applications/normal_benchmark.csv",
+      "export_sha256": "513611d2b67a29c3579513675daf643b06dbbbb00c4fd00e1b2c3c180fae9719",
+      "rows": 3,
+      "columns": 11
+    }
+  ],
+  "expected": [
+    {
+      "name": "primary",
+      "source": "Original application analysis: table application primary results",
+      "sha256": "aab2ec5a9ff86327baf614158c08dbfacc41a6ed5eccd2d351c63cfcc641a456",
+      "expected": "verification/expected/applications_primary.csv"
+    },
+    {
+      "name": "sensitivity",
+      "source": "Original application analysis: table application sensitivity results",
+      "sha256": "0c04a8bb95550f9716b311183e45a80162e829fe8cb41ec3ece1758c88078ff5",
+      "expected": "verification/expected/applications_sensitivity.csv"
+    },
+    {
+      "name": "diagnostic",
+      "source": "Original application analysis: table application diagnostic summary",
+      "sha256": "95016e97fb87f5ed492571cad0f231153ebcbce5fa8a3feae32d6d05d17e7438",
+      "expected": "verification/expected/applications_diagnostic.csv"
+    },
+    {
+      "name": "star_profiles",
+      "source": "Original application analysis: table star location profiles",
+      "sha256": "e000d7090586b689a2c6a5fdc9f2203c71d2badd732d1801fdc1ea6f443648cf",
+      "expected": "verification/expected/applications_star_profiles.csv"
+    },
+    {
+      "name": "bd_profiles",
+      "source": "Original application analysis: table bd moderator alignment",
+      "sha256": "4deb3057662f4aee90772360eec51d09e78cbf3089aaef9220dd3ae6ffc08287",
+      "expected": "verification/expected/applications_bd_profiles.csv"
+    },
+    {
+      "name": "unit_stability",
+      "source": "Original application analysis: table application unit stability",
+      "sha256": "c9076863e3b48e2427512f3fd755863966eecf573029683f9bea77d02377ae0d",
+      "expected": "verification/expected/applications_unit_stability.csv"
+    }
+  ],
+  "raw_mcmc_shipped": false,
+  "person_records_shipped": false,
+  "coclustering_pairs_shipped": false,
+  "profile_intervals": "Frozen posterior profile intervals from the original collector; not reconstructed from marginal unit intervals",
+  "summary_source_sha256": "300cba976a04885efc4655e517c685456412b43c83ef9b76f09bdd9d54fc3b58"
+}

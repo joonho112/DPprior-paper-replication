@@ -1,0 +1,33 @@
+schema_version: 1
+paper_url: https://arxiv.org/abs/2602.06301
+root_marker: .replication-root
+frozen_dir: data-frozen
+derived_dir: data-derived
+output_dir: outputs
+profiles:
+  core:
+    purpose: Check paths and perform base-R calculations; no downloads or fitting.
+    fit: false
+    download: false
+  rebuild:
+    purpose: Rebuild exhibits from frozen summaries.
+    fit: false
+    download: false
+  calibration:
+    purpose: Recalculate priors and weight diagnostics using pinned DPprior.
+    fit: false
+    download: false
+  public-data:
+    purpose: Prepare separately obtained public application data.
+    fit: false
+    download: explicit-only
+  refit:
+    purpose: Run an explicitly selected synthetic or public-data model job.
+    fit: explicit-execute-only
+    default_jobs: 1
+    full_production_grid_default: false
+  book:
+    purpose: Render the static replication guide; never execute analysis chunks.
+    fit: false
+    execute_eval: false
+seed_policy: scientific run manifests preserve source seeds; no automatic random reseeding

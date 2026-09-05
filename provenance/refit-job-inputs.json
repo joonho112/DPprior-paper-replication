@@ -1,0 +1,45 @@
+{
+  "sources": [
+    {
+      "source": "config/generated/simulation_v2_production/production_chains_v2.csv",
+      "sha256": "9565dee8419a120a0a594bff37e8bcd8d0fc19416323333d575abca343e66d19"
+    },
+    {
+      "source": "config/generated/simulation_v2_production/production_retry_chains_v2.csv",
+      "sha256": "dfe589c4c528c8ae8a33feb0bab708b1b7416a32ae8c983a817fd8432878adb7"
+    },
+    {
+      "source": "config/generated/simulation_v2_extension/production_chains_v2.csv",
+      "sha256": "178b0574b5b69cf9abc4e408b28341e96a37eddca352eed6353c38ab05acc7b8"
+    },
+    {
+      "source": "config/generated/simulation_v2_extension/production_retry_chains_v2.csv",
+      "sha256": "1ea45bc16f23f4a6ef366b051e3a3b1075229146a12726961a5a8f2da1874ac0"
+    },
+    {
+      "source": "config/psychometric_v3/jobs_manifest.csv",
+      "sha256": "ea5dfacc5b5fd93ab347b3988229f76df4817311994b073e7906e483b9d9ec39"
+    },
+    {
+      "source": "config/psychometric_v3/jobs_manifest_retry.csv",
+      "sha256": "ea6ee07ebe96a557568576531a3f981b5b31cf4c6fcdda1d8b1b4e372c2c23ec"
+    },
+    {
+      "source": "config/psychometric_v3/jobs_manifest_retry2.csv",
+      "sha256": "68b01af01ba9105bb6c46f051fec202de8b986ee39e3e9d9e77bb5c508244452"
+    }
+  ],
+  "exports": [
+    {
+      "path": "data-frozen/simulation/chain_seeds.csv",
+      "rows": 64400,
+      "sha256": "7cff00c6a919888b45ca150eb5c9dfe4f9988cb6ee4599e4840e4e5ebb21f763"
+    },
+    {
+      "path": "data-frozen/rasch/chain_jobs.csv",
+      "rows": 84,
+      "sha256": "87b0bdf62e623e79f088cecdb8c4de92659a40c2009c11021dd97619d84164dc"
+    }
+  ],
+  "seed_policy": "Original manifest-assigned seeds retained including collision resolution; single-job driver does not reseed"
+}

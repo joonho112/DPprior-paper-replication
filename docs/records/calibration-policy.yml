@@ -1,0 +1,94 @@
+schema_version: prior-calibration-policy/1
+policy_id: jebs-r1-v2-prior-policy-2026-08-23
+
+package:
+  name: DPprior
+  minimum_version: 2.0.0
+
+quadrature:
+  M_fit: 160
+  M_verify: 320
+  # Distribution summaries use a higher order because full marginal-K PMFs
+  # are a stricter numerical contract than the calibration objective itself.
+  M_summary: 160
+  M_summary_verify: 320
+
+dual:
+  metric: wsb_tail
+  threshold: 0.5
+  trigger_above: 0.40
+  soft_target: 0.25
+  hard_bound: 0.25
+  # Fixed before posterior simulation. Fine resolution is concentrated where
+  # the high-risk-band exit normally occurs; lambda=0.7 has no privileged role.
+  lambda_grid:
+    - 0.01
+    - 0.02
+    - 0.03
+    - 0.04
+    - 0.05
+    - 0.06
+    - 0.07
+    - 0.08
+    - 0.09
+    - 0.10
+    - 0.11
+    - 0.12
+    - 0.13
+    - 0.14
+    - 0.15
+    - 0.16
+    - 0.17
+    - 0.18
+    - 0.19
+    - 0.20
+    - 0.25
+    - 0.30
+    - 0.40
+    - 0.50
+    - 0.60
+    - 0.70
+    - 0.80
+    - 0.90
+    - 1.00
+  selection_rule:
+    name: largest_verified_lambda_exiting_high_risk_band_v1
+    description: >-
+      If the verified K-only prior has P(W_SB > 0.5) above 0.40, choose the
+      largest fixed-grid lambda whose verified fixed-scale soft fit has
+      P(W_SB > 0.5) at most 0.40. Among grid points that exit the predeclared
+      high-risk band, this places the greatest objective weight on K-target
+      fidelity. If no eligible point
+      exists, reject the soft calibration without fallback.
+    tie_break: largest_lambda
+    probability_tolerance: 1.0e-10
+
+boundaries:
+  gamma_cv_point_mass_threshold: 0.01
+  reject_soft_classes:
+    - solver_parameter_boundary
+    - scientific_point_mass_limit
+    - unclassified_boundary
+  allow_hard_sensitivity_classes:
+    - interior
+    - hard_active_constraint
+    - hard_active_constraint_point_mass_limit
+
+verification:
+  require_status:
+    - converged
+    - boundary
+  require_usable: true
+  require_verified: true
+  require_finite_parameters: true
+  reject_approximation: true
+  tail_absolute_tolerance: 1.0e-8
+  ssi_root_tolerance: 1.0e-10
+
+ssi:
+  target_1:
+    threshold: 0.5
+    probability: 0.25
+  target_2:
+    threshold: 0.9
+    probability: 0.05

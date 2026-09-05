@@ -1,0 +1,35 @@
+path,profile,purpose,mode,status,writes,downloads,mcmc
+00_setup.R,core;rebuild;calibration;public-data;refit;book,Check versions and pinned package function definitions; no analysis,check-only,tested-macOS,none,none,none
+common/install_dependencies.R,all R profiles,Restore pinned source dependencies into project library,plan-only unless --execute,plan-only-tested; calibration-restore-tested-macOS,.library/,explicit --execute only,none
+calibration/01_count_calibration.R,calibration,count_calibration,explicit recalculation,tested-macOS,data-derived/calibration;outputs/calibration,none,none
+calibration/02_weight_diagnostics.R,calibration,weight_diagnostics,explicit recalculation,tested-macOS,data-derived/calibration;outputs/calibration,none,none
+calibration/03_dual_anchor.R,calibration,dual_anchor,explicit recalculation,tested-macOS,data-derived/calibration;outputs/calibration,none,none
+calibration/04_hard_and_failures.R,calibration,hard_and_failures,explicit recalculation,tested-macOS,data-derived/calibration;outputs/calibration,none,none
+verification/check_calibration.R,calibration,Printed and independent numerical calibration checks,check-only,tested-macOS,outputs/verification,none,none
+simulation/01_reaggregate.R,rebuild,reaggregate,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+simulation/02_primary_and_paired.R,rebuild,primary_and_paired,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+simulation/03_misspecification.R,rebuild,misspecification,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+simulation/04_design_size.R,rebuild,design_size,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+simulation/05_unequal_weights.R,rebuild,unequal_weights,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+simulation/06_fixed_lambda.R,rebuild,fixed_lambda,explicit reaggregation,tested-macOS,data-derived/simulation;outputs,none,none
+verification/check_simulation.R,rebuild,Compare selected numerical frames to frozen original references,check-only,tested-macOS,outputs/verification,none,none
+applications/01_prepare_public_data.R,public-data,prepare_public_data,explicit source preparation,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+applications/02_first_stage.R,public-data,first_stage,explicit source preparation,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+applications/03_summaries.R,rebuild,summaries,explicit summary rebuilding,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+applications/04_sensitivity.R,rebuild,sensitivity,explicit summary rebuilding,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+applications/05_prepare_ocrs.R,public-data,prepare_ocrs,explicit source preparation,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+applications/06_supplemental.R,rebuild,supplemental,explicit summary rebuilding,tested-macOS,data-derived/applications;outputs,none; OCRS explicit local public file,none
+verification/check_applications.R,rebuild,check_applications,check-only,tested-macOS,outputs/verification,none,none
+verification/check_application_inputs.R,public-data,check_application_inputs,check-only,tested-macOS,outputs/verification,none,none
+rasch/01_wle.R,core,wle,explicit aggregate calculation,tested-macOS,data-derived/rasch;outputs,none,none
+rasch/02_posterior_summaries.R,core,posterior_summaries,explicit aggregate calculation,tested-macOS,data-derived/rasch;outputs,none,none
+rasch/03_density.R,core,density,explicit aggregate calculation,tested-macOS,data-derived/rasch;outputs,none,none
+verification/check_rasch.R,core,Aggregate facts and newly generated calculation receipt checks,check-only,tested-macOS,outputs/rasch,none,none
+calibration/05_confidence_levels.R,calibration,Recompute four exact J=100 confidence calibrations,explicit recalculation,tested-macOS,data-derived/calibration,none,none
+refit/simulation/run_one_fit.R,refit,One synthetic four-chain fit,dry run; --execute required,bounded-smoke-tested,outputs/refit,none,four chains only when explicit
+refit/applications/run_one_fit.R,refit,One selected public application fit,dry run; --execute required,OCRS bounded-smoke-tested,outputs/refit,none,four chains only when explicit
+refit/rasch/run_one_chain.R,refit,One declared Rasch chain,dry run; --execute required,bounded-smoke-tested,outputs/refit,none,one chain only when explicit
+refit/rasch/combine_and_check.R,refit,Combine four explicitly indexed same-attempt chains,dry run; --execute required,dry-run-and-component-tested,outputs/refit,none,no new fitting; conditional DP measure draws
+exhibits/00_build_all.R,rebuild,Reaggregate and render current 41 artifacts plus 68 key numbers,explicit rebuild,cold-start-tested-macOS,data-derived;outputs,none,none
+exhibits/05_key_numbers.R,rebuild,Calculate selected key-number ledger,explicit rebuild,tested-macOS,outputs/key_numbers.csv,none,none
+verify_reproduction.R,rebuild,Independent quick-path checks,read inputs; write receipts,cold-start-tested-macOS,outputs/verification,none,none

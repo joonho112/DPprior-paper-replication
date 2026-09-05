@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: _book
+  post-render:
+    - python3 finalize_site.py
+  render:
+    - "*.qmd"
+  resources:
+    - artifacts/**
+    - code/**
+    - records/**
+book:
+  title: "Dirichlet Process Prior Elicitation"
+  subtitle: "Replication guide"
+  author: "JoonHo Lee (jlee296@ua.edu)"
+  chapters:
+    - index.qmd
+    - 01-start.qmd
+    - 02-data-and-scope.qmd
+    - 03-prior-elicitation.qmd
+    - 04-simulation.qmd
+    - 05-applications.qmd
+    - 06-rasch-wle.qmd
+    - 07-verification-refit.qmd
+    - 08-artifact-index.qmd
+  search: true
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    number-sections: false
+    smooth-scroll: true
+    lang: en
+bibliography: references.bib
+execute:
+  eval: false
+  echo: true

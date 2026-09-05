@@ -1,0 +1,30 @@
+[
+  {
+    "source": "data/applications_v2/star_multilevel.csv",
+    "source_sha256": "1eee5740d5c2bbeb0ff54de7422d8000f46781828be2d5d4ebd5debb7d52ce4c",
+    "export": "data-frozen/applications/star_multilevel.csv",
+    "export_sha256": "1eee5740d5c2bbeb0ff54de7422d8000f46781828be2d5d4ebd5debb7d52ce4c",
+    "unit": "school"
+  },
+  {
+    "source": "data/applications_v2/star_hc3.csv",
+    "source_sha256": "fbb2718747af420fb50d69d8d731df9c7adb7dd6e18f2fb209c64cbf16b2d8ab",
+    "export": "data-frozen/applications/star_hc3.csv",
+    "export_sha256": "fbb2718747af420fb50d69d8d731df9c7adb7dd6e18f2fb209c64cbf16b2d8ab",
+    "unit": "school"
+  },
+  {
+    "source": "data/applications_v2/bangert_drowns_primary.csv",
+    "source_sha256": "5a9aee7dd63ab95ee48f8e7c241caf747f456a6bf587bd052ae2b9d9761d3c56",
+    "export": "data-frozen/applications/bangert_drowns_primary.csv",
+    "export_sha256": "5a9aee7dd63ab95ee48f8e7c241caf747f456a6bf587bd052ae2b9d9761d3c56",
+    "unit": "published study"
+  },
+  {
+    "source": "data/applications_v2/ocrs_descriptive_primary.csv",
+    "source_sha256": "d93988072c72f6f2b425ae735a6e99f29134dd949274e28bf01e427798cf948e",
+    "export": "data-frozen/applications/ocrs_descriptive_primary.csv",
+    "export_sha256": "d93988072c72f6f2b425ae735a6e99f29134dd949274e28bf01e427798cf948e",
+    "unit": "school"
+  }
+]

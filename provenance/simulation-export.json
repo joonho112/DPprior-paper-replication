@@ -1,0 +1,110 @@
+{
+  "sources": [
+    {
+      "source": "Original simulation analysis: production fits",
+      "sha256": "88a9cc78f717ac20a676059fb15219d406d0f20b17ebe905becd382eef635a8f",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original analysis: integrated fit census",
+      "sha256": "3b1361b0da082412801164f5161195b221540a2f109851cce63f84e231e99125",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original simulation analysis: verified fit metrics",
+      "sha256": "1c7dc9fc4e8644687a98eaad0f4326eb56e99e3c680d64cbde151e3dbc106be1",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original simulation analysis: cell metric summary",
+      "sha256": "aabf888b47602a41419f33fa7bc2d16ed5e071d01727c590d8b4abc8f4024055",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original simulation analysis: production fits",
+      "sha256": "1465abd602b98a0183562cc304a0e1d307b5f698274a05fcf87f9b4e95bcd6fa",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original analysis: integrated fit census",
+      "sha256": "89c46ae90c44e2dee513c964b85d1e1347fe9f5647172239aaf7c47849162101",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original analysis: verified fit metrics",
+      "sha256": "9045e5bdbe03ea6acc13d8982dc2cef16c9870440753d1c3101e9ee0d9d8c7c8",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original analysis: cell metric summary",
+      "sha256": "210f88c336952bd29ca1fc4ed7f2062eb927645959f83b3fd94f6ccfbb3c905a",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original analysis: prior calibration manifest",
+      "sha256": "812d6c72663bb84c67eecd94d3237ea11f710c3d96901228957790e5543722f0",
+      "previous_registry_match": true
+    },
+    {
+      "source": "Original simulation analysis: table simulation cell summary union",
+      "sha256": "4607033411b295fcfe07a8d24162c66beb2c449acf2bfff6a8610830c9c8a108",
+      "previous_registry_match": false
+    },
+    {
+      "source": "Original simulation analysis: table grand mean paired contrasts",
+      "sha256": "c43dd131b193ce69a24114b4ba8dbf34665f98b1df73caaee3d639c81761f0af",
+      "previous_registry_match": false
+    },
+    {
+      "source": "Original simulation analysis: synthesis",
+      "sha256": "9ae71b4ad9551134fc9ef3f49e4d0d49204153b04d74387d1177a82899372766",
+      "port": "constants and numerical/aggregation/selection functions only; scientific bodies unchanged"
+    }
+  ],
+  "exports": [
+    {
+      "path": "data-frozen/simulation/fit_metrics.csv",
+      "rows": 57151,
+      "columns": 16,
+      "sha256": "70dd6b00335856d6454d3c714dd070d18dda4573dfbe39688878f8742cc8fafb"
+    },
+    {
+      "path": "data-frozen/simulation/fit_status.csv",
+      "rows": 64400,
+      "columns": 20,
+      "sha256": "0b994541f26323837d4835ecd6004799bab1afc9f58c182ad2187ad4c407eb38"
+    },
+    {
+      "path": "data-frozen/simulation/design.csv",
+      "rows": 322,
+      "columns": 26,
+      "sha256": "c21f440e99ccc83ba2fca3b6f0053b73eb841033ccaf07d22186aa33ed0ed899"
+    },
+    {
+      "path": "data-frozen/simulation/cell_denominators.csv",
+      "rows": 322,
+      "columns": 8,
+      "sha256": "d256ef201b20bac0f14f0b8118e98986d013483aeaac7d57189988510e2bd9b3"
+    },
+    {
+      "path": "data-frozen/simulation/calibration.csv",
+      "rows": 50,
+      "columns": 19,
+      "sha256": "c2ad077225a745601e6f61477734a021e8eb275a088a4b77037ca1a30d475f60"
+    },
+    {
+      "path": "verification/expected/simulation_cell_summary.csv",
+      "rows": 322,
+      "columns": 63,
+      "sha256": "1bb7848a1dc27357dbddaef23e0b2ea8f2f1e934c94f732e52f4f40731301ff5"
+    },
+    {
+      "path": "verification/expected/simulation_paired_contrasts.csv",
+      "rows": 1080,
+      "columns": 26,
+      "sha256": "a4c86cc1e53a9225b176c0a4fa67c880564eec3eff8b42be1cf58286681abccf"
+    }
+  ],
+  "privacy": "synthetic data only; dropped host/path and raw-payload fields; retained synthetic data hashes for pairing",
+  "mcmc_rerun": false
+}

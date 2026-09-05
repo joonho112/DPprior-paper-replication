@@ -1,0 +1,42 @@
+# Getting started
+
+We used R 4.6.0 for the numerical calculations and Quarto 1.9.37 for this guide. Dependencies are grouped by task: `rebuild` for tables and figures, `calibration` for prior elicitation, `public-data` for data preparation, and `refit` for model fitting.
+
+## Install the required packages
+
+Open a terminal in the replication directory and check the packages needed to rebuild the results:
+
+~~~bash
+Rscript 00_setup.R --profile rebuild
+~~~
+
+The command reports missing packages and version differences. To see the installation plan, run:
+
+~~~bash
+Rscript common/install_dependencies.R --profile rebuild
+~~~
+
+Add `--execute` to install the specified versions into `.library/`. Some packages require a compiler and system libraries. The [software record](records/software-lock.csv) gives the package versions and the DPprior and DPMirt commits used in the analysis. Installation stops if a specified source is unavailable.
+
+## Rebuild and check the results
+
+~~~bash
+Rscript exhibits/00_build_all.R
+Rscript verify_reproduction.R
+~~~
+
+The first command recalculates the summaries and produces 41 tables and figures. Intermediate results are written to `data-derived/` and completed outputs to `outputs/`. Tables are supplied as CSV, HTML and LaTeX; figures as CSV, PDF and PNG. The CSV files retain the unrounded values.
+
+The second command compares the calculations with independently stored results, including 68 selected numbers. It also checks the inputs and records the source of each output. The [verification chapter](07-verification-refit.qmd) explains these comparisons and the small rounding difference in Table 2.
+
+Scripts locate the replication directory from their own paths. Thus, they can also be called from another working directory; enclose paths containing spaces in quotation marks. The supplied inputs in `data-frozen/` are checked against recorded hashes. Use a separate copy of the package when changing these inputs for another analysis.
+
+## Read the guide locally
+
+~~~bash
+quarto render docs
+~~~
+
+Open `docs/_book/index.html`. The guide uses the examples included in `docs/artifacts/`, so it can be rendered before running the R calculations. The [index](08-artifact-index.qmd) provides links to the corresponding scripts and data.
+
+The calculations and guide have been checked on macOS arm64. Linux workflows are included, but a Linux run has not yet been recorded.

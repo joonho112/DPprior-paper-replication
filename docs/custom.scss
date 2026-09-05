@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+$primary: #235d72;
+$body-color: #273543;
+$font-size-base: 1.05rem;
+$line-height-base: 1.65;
+/*-- scss:rules --*/
+#quarto-content { max-width: 1600px; margin: auto; }
+.quarto-title-block .subtitle { color: #617182; }
+.sidebar-title { font-weight: 650; line-height: 1.25; }
+pre.sourceCode { border-left: 3px solid #6f9bad; border-radius: 3px; }
+table { font-size: .91rem; }
+th, td { padding: .65rem .7rem !important; vertical-align: top; }
+.figure-caption { line-height: 1.45; color: #52616e; }
+.callout { margin: 1.4rem 0; }
+@media (max-width: 760px) { main { padding: 0 .4rem; } table { display: block; overflow-x: auto; } }

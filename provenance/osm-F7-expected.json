@@ -1,0 +1,7 @@
+{
+  "source": "Supplementary Table F.7; original printed rows",
+  "source_sha256": "28615c8bd39a07aeeafe4c8a6619f0b47eb0feb40bf1d27b6dfb477c223e59dc",
+  "rows": 36,
+  "expected_path": "verification/expected/osm_F7_printed.csv",
+  "expected_sha256": "95b096ea9ba7444bf15ca4ed41579b5c97cb14041bf8fd7f5d1c571ad47fa2c9"
+}

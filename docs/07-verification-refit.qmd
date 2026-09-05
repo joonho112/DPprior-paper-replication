@@ -1,0 +1,63 @@
+# Verification and refitting
+
+We first check that the supplied inputs reproduce the numerical summaries. Refitting addresses a further question: whether the models can be estimated again from synthetic or separately obtained source data. The commands below separate these tasks so that a table can be checked without running a long posterior simulation.
+
+## Verify the reconstructed results
+
+~~~bash
+Rscript verify_reproduction.R
+~~~
+
+The checker compares the simulation and application calculations with independently stored results in `verification/expected/`. It also checks the WLE equation, extreme scores and reliability, and compares 68 selected numbers. Recorded hashes identify the inputs used for each table and figure. The [reproduction map](records/reproduction-map.csv) describes which results are recalculated and which use stored posterior summaries.
+
+There is one rounding difference in Table 2. For VIF=1.25, the tail probability calculated from unrounded parameters is .144969 and rounds to .14, whereas the printed reference gives .15. The rebuilt table uses .14. The [numerical note](records/manuscript-discrepancies.csv) records both values.
+
+## Fit one simulation or application model
+
+Check the `refit` dependencies before running a model. The following commands display the settings for one simulation fit, then run a short example:
+
+~~~bash
+Rscript refit/simulation/run_one_fit.R
+Rscript refit/simulation/run_one_fit.R --profile smoke --execute
+~~~
+
+The default is a Vague-prior fit with $J=25$. Use `--fit-key` from the fit-status manifest to select another model. The `smoke` profile uses 200 iterations with 100 discarded as warmup to check that the code runs. The `production` profile uses the original longer schedules and the four assigned chain seeds for each attempt.
+
+After preparing the OCRS data, an application fit can be run with:
+
+~~~bash
+Rscript refit/applications/run_one_fit.R --arm ocrs --role Vague
+Rscript refit/applications/run_one_fit.R --arm ocrs --role Vague --profile smoke --execute
+~~~
+
+This driver also supports STAR and the writing-to-learn data. It checks the prepared inputs and reads the prior and base-measure settings from the execution manifest. Use `--fit-key` to select a particular primary or sensitivity fit.
+
+## Fit the Rasch model
+
+The [Rasch runner](code/refit/rasch/run_one_chain.R) fits one chain using a local copy of the IRW data. For example:
+
+~~~bash
+Rscript refit/rasch/run_one_chain.R --input /path/to/gcbs_brotherton_2013_vcl.rds --arm main --role vague --attempt 1 --chain 1 --profile smoke --execute
+~~~
+
+Run the four specified chains for the same arm, role, attempt and profile. Then create a CSV with columns `chain` and `run_directory`, pointing to their completed results under `outputs/refit/rasch/`. Combine them with:
+
+~~~bash
+Rscript refit/rasch/combine_and_check.R --arm main --role vague --attempt 1 --profile smoke --index /path/to/four-chains.csv --input /path/to/gcbs_brotherton_2013_vcl.rds --execute
+~~~
+
+The [combiner](code/refit/rasch/combine_and_check.R) checks the chain identities, seeds, schedules and result hashes before pooling the draws. All chains must belong to the same attempt. Population-density calculations then use the combined draws.
+
+## Recorded fitting checks
+
+We checked data generation at 29 distinct settings, ran short four-chain simulation and OCRS fits, and ran one short Rasch chain followed by its conditional-density calculation. Eight additional checks exercised chain identity and reuse of completed results.
+
+| Short fitting run | Elapsed time on macOS arm64 |
+|---|---|
+| Simulation, four chains | 26.4 seconds |
+| OCRS, four chains | 17.7 seconds |
+| Rasch, one chain | 62.4 seconds |
+
+These times include model construction and compilation but exclude installation. Full production fitting takes longer and requires convergence assessment. The four-chain Rasch combination has been checked with component tests and a dry run; the full production fits have not been repeated for this package. The [fitting record](records/refit-smoke.md) and [status table](records/refit-status.csv) give the details.
+
+Each run is identified by its settings, input data, seeds, code and software hashes. `--resume --execute` reuses a completed result with the same identity after checking its hash. It does not resume an interrupted chain. Incomplete outputs are retained, and long jobs can be submitted individually to a computing system. Person-level latent draws produced by refitting remain in the local output directory and are excluded from the public package.

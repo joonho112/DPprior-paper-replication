@@ -1,0 +1,50 @@
+{
+  "schema": "public-validation-summary/1",
+  "as_of": "2026-09-05",
+  "quick_verification": {
+    "schema": "quick-verification/1",
+    "passed": true,
+    "checks": [
+      "check_simulation.R",
+      "check_applications.R",
+      "check_rasch.R",
+      "check_exhibits.R"
+    ],
+    "expected_manifest_sha256": "c98aeae08820512b3de2f145e17fb2cb4d5e4628c73f2003b305454d998dd757",
+    "production_refit_performed": false,
+    "known_manuscript_discrepancies": "provenance/manuscript-discrepancies.csv"
+  },
+  "numerical_comparisons": {
+    "simulation_columns": 255,
+    "application_columns": 290,
+    "tables_and_figures": 41,
+    "selected_numbers": 68,
+    "rasch": "WLE, score contrasts, population density and count distribution"
+  },
+  "isolated_execution": {
+    "passed": true,
+    "runtime_cache_packages": 26,
+    "personal_profiles_disabled": true,
+    "original_home_and_network_denied": true,
+    "source_install_tested": false,
+    "platform": "macOS arm64",
+    "command": "sh verification/cold_start.sh --execute"
+  },
+  "negative_controls": {
+    "cases": 11,
+    "passed": true,
+    "command": "python3 verification/negative_controls.py"
+  },
+  "guide": {
+    "chapters": 9,
+    "source_matched_assets": 197,
+    "command": "python3 verification/check_book.py"
+  },
+  "scope_notes": [
+    "Full production posterior fits have not been repeated for this package.",
+    "Linux execution and Pages deployment have not been recorded.",
+    "The Table 2 rounding difference is documented in provenance/manuscript-discrepancies.csv.",
+    "The four-chain Rasch combination has component and dry-run checks."
+  ],
+  "verification_outputs": "Run the verification commands to write detailed results under outputs/verification/."
+}

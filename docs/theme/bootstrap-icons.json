@@ -1,0 +1,32 @@
+{
+  "source": "Bootstrap Icons 1.13.1, distributed with Quarto 1.9.37",
+  "upstream_license": "https://github.com/twbs/icons/blob/v1.13.1/LICENSE",
+  "scope": "22 icons used by the guide; original glyph outlines, bounds and metrics retained. Unused glyphs and optional font-build description removed.",
+  "subset_prepared_by": "JoonHo Lee (jlee296@ua.edu)",
+  "tool": "fontTools 4.64.0",
+  "sha256": "01872d537619f196be90e81e60395454f0c79a178bcfbe9819cfafa99c7f1ce9",
+  "icons": {
+    "arrow-left-short": "f12c",
+    "arrow-right-short": "f135",
+    "body-text": "f683",
+    "box-arrow-up-right": "f1c5",
+    "caret-down-fill": "f229",
+    "check2": "f272",
+    "chevron-down": "f282",
+    "chevron-right": "f285",
+    "clipboard": "f290",
+    "cone-striped": "f2d2",
+    "exclamation-circle": "f333",
+    "exclamation-triangle": "f33b",
+    "info-circle": "f431",
+    "journal-code": "f43f",
+    "layout-text-sidebar-reverse": "f461",
+    "lightbulb": "f46b",
+    "menu-button-wide": "f489",
+    "search": "f52a",
+    "sort-down": "f575",
+    "sort-up": "f57b",
+    "toggle-off": "f5d5",
+    "toggle-on": "f5d6"
+  }
+}

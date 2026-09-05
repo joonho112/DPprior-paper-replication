@@ -1,0 +1,26 @@
+% Requires booktabs and longtable. Numeric source is the adjacent CSV.
+\begin{longtable}{lllllll}
+\toprule
+prior & K\_true & I\_target & J=25 & J=50 & J=100 & J=200 \\
+\midrule\endhead
+Vague & 5 & 0.2 & 0.789 (200) & 0.796 (200) & 0.797 (200) & 0.802 (200) \\ \addlinespace[3pt]
+Vague & 5 & 0.8 & 0.866 (200) & 0.865 (200) & 0.866 (183) & 0.765 (60) \\ \addlinespace[3pt]
+Vague & 10 & 0.2 & 0.789 (200) & 0.796 (200) & 0.796 (200) & 0.798 (200) \\ \addlinespace[3pt]
+Vague & 10 & 0.8 & 0.864 (200) & 0.869 (200) & 0.864 (181) & 0.831 (78) \\ \addlinespace[3pt]
+DORO-Unif & 5 & 0.2 & 0.652 (200) & 0.646 (200) & 0.638 (200) & 0.641 (200) \\ \addlinespace[3pt]
+DORO-Unif & 5 & 0.8 & 0.769 (200) & 0.752 (200) & 0.739 (184) & 0.641 (67) \\ \addlinespace[3pt]
+DORO-Unif & 10 & 0.2 & 0.739 (200) & 0.667 (200) & 0.633 (200) & 0.617 (199) \\ \addlinespace[3pt]
+DORO-Unif & 10 & 0.8 & 0.833 (200) & 0.776 (199) & 0.732 (181) & 0.660 (57) \\ \addlinespace[3pt]
+TSMM & 5 & 0.2 & 0.741 (200) & 0.718 (200) & 0.709 (200) & 0.708 (200) \\ \addlinespace[3pt]
+TSMM & 5 & 0.8 & 0.833 (200) & 0.810 (199) & 0.795 (186) & 0.685 (66) \\ \addlinespace[3pt]
+TSMM & 10 & 0.2 & 0.617 (200) & 0.459 (200) & 0.391 (200) & 0.363 (196) \\ \addlinespace[3pt]
+TSMM & 10 & 0.8 & 0.745 (200) & 0.598 (198) & 0.495 (183) & 0.418 (58) \\ \addlinespace[3pt]
+Dual-Anchor & 5 & 0.2 & 0.716 (200) & 0.583 (200) & 0.434 (200) & 0.271 (199) \\ \addlinespace[3pt]
+Dual-Anchor & 5 & 0.8 & 0.815 (200) & 0.704 (200) & 0.546 (183) & 0.228 (93) \\ \addlinespace[3pt]
+Dual-Anchor & 10 & 0.2 & 0.617 (200) & 0.461 (200) & 0.390 (200) & 0.362 (196) \\ \addlinespace[3pt]
+Dual-Anchor & 10 & 0.8 & 0.745 (200) & 0.597 (198) & 0.498 (182) & 0.396 (53) \\ \addlinespace[3pt]
+SSI-Weight & 5 & 0.2 & 0.514 (200) & 0.517 (200) & 0.511 (200) & 0.503 (191) \\ \addlinespace[3pt]
+SSI-Weight & 5 & 0.8 & 0.660 (200) & 0.648 (199) & 0.627 (173) & 0.442 (30) \\ \addlinespace[3pt]
+SSI-Weight & 10 & 0.2 & 0.518 (200) & 0.519 (200) & 0.509 (200) & 0.500 (196) \\ \addlinespace[3pt]
+SSI-Weight & 10 & 0.8 & 0.657 (200) & 0.654 (200) & 0.621 (178) & 0.554 (45) \\ \addlinespace[3pt]
+\bottomrule\end{longtable}

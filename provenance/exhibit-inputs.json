@@ -1,0 +1,61 @@
+{
+  "schema": "public-exhibit-inputs/1",
+  "exports": [
+    {
+      "path": "data-frozen/calibration/defaults_by_J.csv",
+      "sha256": "a092950ce80fed0d05a2439bd76316ae29c590b03531fccbe3fb5a9c0d06e7f2",
+      "source": "Original Rasch analysis: defaults by J",
+      "source_basis": "original analysis export",
+      "source_sha256": "a092950ce80fed0d05a2439bd76316ae29c590b03531fccbe3fb5a9c0d06e7f2",
+      "rows": 66
+    },
+    {
+      "path": "data-frozen/calibration/unintended_prior.csv",
+      "sha256": "655f40c853e3b6fb68c5c59dbb0813a5af48c1fec81c9739ecc58cb5c7c8cadf",
+      "source": "Original analysis: unintended prior",
+      "source_basis": "original analysis export",
+      "source_sha256": "655f40c853e3b6fb68c5c59dbb0813a5af48c1fec81c9739ecc58cb5c7c8cadf",
+      "rows": 550
+    },
+    {
+      "path": "data-frozen/calibration/confidence_levels.csv",
+      "sha256": "7054dde8511ebfd6a0f0ca2f9ed0a8d0d50f9b2f1534223603d04fdcab738c1e",
+      "source": "data-derived/calibration/confidence_levels.csv",
+      "source_basis": "public recalculation during replication construction",
+      "source_sha256": "7054dde8511ebfd6a0f0ca2f9ed0a8d0d50f9b2f1534223603d04fdcab738c1e",
+      "rows": 5
+    },
+    {
+      "path": "data-frozen/calibration/count_calibration.csv",
+      "sha256": "9485eefec17b6b44bd490e35c91a1ed026163a6f73ef39b0086a54a4efa59e81",
+      "source": "data-derived/calibration/count_calibration.csv",
+      "source_basis": "public recalculation during replication construction",
+      "source_sha256": "9485eefec17b6b44bd490e35c91a1ed026163a6f73ef39b0086a54a4efa59e81",
+      "rows": 2
+    },
+    {
+      "path": "data-frozen/calibration/dual_anchor_grid.csv",
+      "sha256": "0e0c793000f11d7ef024649b1cda350b3a54fb8f372388cd64e4534339364ba7",
+      "source": "data-derived/calibration/dual_anchor_grid.csv",
+      "source_basis": "public recalculation during replication construction",
+      "source_sha256": "0e0c793000f11d7ef024649b1cda350b3a54fb8f372388cd64e4534339364ba7",
+      "rows": 29
+    },
+    {
+      "path": "data-frozen/calibration/hard_sensitivity.csv",
+      "sha256": "bb0c70daa907750defa63ff17d5a3a08fbcbd56d4f7074ac85ed2d4d73b8ae65",
+      "source": "data-derived/calibration/hard_sensitivity.csv",
+      "source_basis": "public recalculation during replication construction",
+      "source_sha256": "bb0c70daa907750defa63ff17d5a3a08fbcbd56d4f7074ac85ed2d4d73b8ae65",
+      "rows": 1
+    },
+    {
+      "path": "data-frozen/calibration/simulation_J100.csv",
+      "sha256": "4990ad3dfc6693e775dd439b74c8a037a887aec1f9755db24838c823476a62be",
+      "source": "Original analysis: prior calibration manifest",
+      "source_basis": "original calibration registry; eligible simulation J=100 rows only",
+      "source_sha256": "812d6c72663bb84c67eecd94d3237ea11f710c3d96901228957790e5543722f0",
+      "rows": 59
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+package,version,profiles,source,repository,commit,license,required
+DPprior,2.0.0,calibration;refit,GitHub,https://github.com/joonho112/DPprior,16919d3a36f97cad1d257c3610d9e022ecf0f0ab,MIT + file LICENSE,True
+DPMirt,0.2.0,refit,GitHub,https://github.com/joonho112/DPMirt,acde59367a4992b9642fd18beb7b706a735ff216,MIT + file LICENSE,True
+nimble,1.4.2,refit,CRAN,https://cran.r-project.org,,BSD_3_clause + file LICENSE | GPL (>= 2),True
+posterior,1.7.0,refit,CRAN,https://cran.r-project.org,,BSD_3_clause + file LICENSE,True
+digest,0.6.39,rebuild;calibration;public-data;refit,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+jsonlite,2.0.0,rebuild;calibration;public-data;refit,CRAN,https://cran.r-project.org,,MIT + file LICENSE,True
+ggplot2,4.0.3,rebuild,CRAN,https://cran.r-project.org,,MIT + file LICENSE,True
+patchwork,1.3.2,rebuild,CRAN,https://cran.r-project.org,,MIT + file LICENSE,True
+ragg,1.5.2,rebuild,CRAN,https://cran.r-project.org,,MIT + file LICENSE,True
+yaml,2.3.12,rebuild;calibration;refit,CRAN,https://cran.r-project.org,,BSD_3_clause + file LICENSE,True
+lme4,2.0-1,public-data;refit,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+metafor,5.0-1,public-data;refit,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+sandwich,3.1-1,public-data;refit,CRAN,https://cran.r-project.org,,GPL-2 | GPL-3,True
+mlmRev,1.0-9,public-data,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+metadat,1.6-0,public-data,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+coda,0.19-4.1,refit,CRAN,https://cran.r-project.org,,GPL (>= 2),True
+Matrix,1.7-5,public-data;refit,CRAN,https://cran.r-project.org,,GPL (>= 2) | file LICENCE,True
+statmod,1.5.2,public-data;refit,CRAN,https://cran.r-project.org,,GPL-2 | GPL-3,True

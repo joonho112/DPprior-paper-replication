@@ -1,0 +1,4 @@
+prior,a,b,mean_K,variance_K,size_biased_tail
+TSMM,1.4082,1.077,5,10,0.497
+Dual-Anchor,2.3158,1.4204,5.884,9.738,0.398
+Dual-Anchor (hard),5.2745,2.3059,7.488,9.051,0.25

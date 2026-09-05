@@ -1,0 +1,7 @@
+"step","label"
+1,"Define the J units"
+2,"State count judgments"
+3,"Convert to count moments"
+4,"Calibrate the Gamma prior"
+5,"Check size-biased majority probability"
+6,"Retain TSMM or select Dual-Anchor"

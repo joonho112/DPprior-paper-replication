@@ -1,0 +1,31 @@
+# Data and scope
+
+The package contains the summaries needed to reconstruct the reported comparisons. To repeat data preparation or fit a model, obtain the relevant source separately. The [access instructions](records/DATA_ACCESS.md) and [data-source record](records/data-rights.csv) give the locations and terms of use.
+
+| Analysis | Included in the package | Source for data preparation or fitting |
+|---|---|---|
+| Simulation | Fit metrics, diagnostic status, designs and seeds | Synthetic data from the R model code |
+| Project STAR | School effects, model summaries and location profiles | `mlmRev::star`, version 1.0-9 |
+| Writing-to-learn | Study effects and model summaries | `metadat::dat.bangertdrowns2004`, version 1.6-0 |
+| Online Credit Recovery Study | Effects for 24 schools and model summaries | AIR/ICPSR public-use impact file, project 202181 V1 |
+| Vocabulary checklist | Score frequencies, item estimates and model summaries | IRW table `gcbs_brotherton_2013_vcl` |
+
+## Stored analysis summaries
+
+We refer to the inputs in `data-frozen/` as frozen because the rebuilding scripts leave them unchanged. For the simulation, these files contain metrics from the individual retained fits, which we aggregate again. For the applications, they contain posterior summaries from the original fits.
+
+Some results require joint posterior information. In particular, location-profile intervals and population-density bands cannot be recovered from marginal intervals alone. We therefore supply these results as model-level summaries. The prior examples recalculate the concentration hyperpriors, and the WLE script independently solves the scoring equation using fixed item estimates. The [reproduction map](records/reproduction-map.csv) identifies the inputs and calculation for each result.
+
+## Online Credit Recovery Study
+
+The American Institutes for Research released the public-use data through [ICPSR project 202181, V1](https://www.openicpsr.org/openicpsr/project/202181/version/V1/view) on June 28, 2024. Download `OCRS_publicuse_impactanalysisdata.csv` and its documentation from the deposit. The [AIR project page](https://www.air.org/project/assessing-efficacy-online-credit-recovery-student-learning-and-high-school-graduation) describes the study.
+
+The preparation script reads a local copy of the impact file, checks its fingerprint and required fields, and calculates the school contrasts. The other files in the deposit are not needed for this analysis. We include the resulting school summaries; student records and AIR documentation remain with the source deposit.
+
+## Vocabulary checklist
+
+The Item Response Warehouse (IRW) table contains responses to the vocabulary checklist in the Open-Source Psychometrics Project's October 2016 GCBS survey. The year 2013 in the table name refers to the publication of the accompanying scale. The [original survey index](https://openpsychometrics.org/_rawdata/) lists 2,495 responses. The table is available through [IRW](https://itemresponsewarehouse.org/metadata.html), where an account may be required.
+
+IRW records public access and CC BY 4.0 for its derived material; the original-license field is missing. We retain this attribution and supply score, item and model summaries without respondent records. The data loader checks the sampling order and item order when preparing a separately obtained source.
+
+The code license covers the replication scripts. Source data retain their own terms, as described in [LICENSE-SCOPE.md](records/LICENSE-SCOPE.md).

@@ -1,0 +1,11 @@
+schema: comparison-rules/1
+frozen_inputs: exact SHA-256, schema and identity before calculation
+simulation_frames: key-aligned original publication exports; numeric tolerance 1e-10
+application_frames: key-aligned original publication exports; numeric tolerance 1e-10
+rasch_wle: original fixed-item expected results; absolute tolerance 1e-8
+rasch_score_contrasts: score/role identity and original contrasts; absolute tolerance 1e-8
+key_numbers: printed precision; exact integer counts; no rounded intermediate parameters
+figures: contracted numerical frame, geometry and font checks; no pixel-identity claim
+refits: original seeds/settings plus scientific gates; smoke never certifies convergence
+known_discrepancy: main Table 2 VIF 1.25 near-universal tail .15 versus exact .144969; values retained in the numerical comparison note
+expected_inputs_are_read_only: true

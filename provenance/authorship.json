@@ -1,0 +1,11 @@
+{
+  "schema": "project-authorship/1",
+  "authors": [
+    {
+      "name": "JoonHo Lee",
+      "email": "jlee296@ua.edu",
+      "github": "joonho112"
+    }
+  ],
+  "scope": "Original replication scripts, documentation and author-created outputs; third-party source attributions and licenses are retained."
+}

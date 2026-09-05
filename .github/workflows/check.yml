@@ -1,0 +1,39 @@
+name: Public replication checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      numerical:
+        description: Also install pinned R dependencies and rebuild numeric outputs
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  static-book:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b
+        with:
+          version: '1.9.37'
+      - name: Install PDF inspection utility
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: quarto render docs
+      - run: python3 verification/check_book.py
+      - run: python3 verification/disclosure_scan.py docs/_book --site-only
+  numerical:
+    if: github.event_name == 'workflow_dispatch' && inputs.numerical
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: r-lib/actions/setup-r@465b7d8e732ca3921382b1674c59bada9cbf3399
+        with:
+          r-version: '4.6.0'
+      - name: Install graphics build dependencies
+        run: sudo apt-get update && sudo apt-get install -y libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libpng-dev libtiff-dev libjpeg-dev poppler-utils
+      - run: Rscript common/install_dependencies.R --profile rebuild --execute
+      - run: Rscript 00_setup.R --profile rebuild
+      - run: Rscript exhibits/00_build_all.R
+      - run: Rscript verify_reproduction.R

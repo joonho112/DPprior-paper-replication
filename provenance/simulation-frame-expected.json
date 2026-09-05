@@ -1,0 +1,30 @@
+[
+  {
+    "name": "misspecification_balanced",
+    "source": "Original simulation analysis: figure misspecification balanced data union",
+    "source_sha256": "a8a30b36a0f03d8ec013db30e124019676d10c83f10c3613853b9b6dd50cebaa",
+    "expected": "verification/expected/simulation_misspecification_balanced.csv",
+    "generated": "data-derived/simulation/misspecification_balanced.csv"
+  },
+  {
+    "name": "design_size_balanced",
+    "source": "Original simulation analysis: figure design size balanced data union",
+    "source_sha256": "db7ab2ec0b3cafd08b8890023eab321921399b92567f2456ba3e38e8f4f56751",
+    "expected": "verification/expected/simulation_design_size_balanced.csv",
+    "generated": "data-derived/simulation/design_size_balanced.csv"
+  },
+  {
+    "name": "unequal_weights",
+    "source": "Original simulation analysis: figure dominant location data union",
+    "source_sha256": "6e1cf8255317041aecaf627f097aa3b2f82b88d1a9936f1d0b2f08e97c389014",
+    "expected": "verification/expected/simulation_unequal_weights.csv",
+    "generated": "data-derived/simulation/unequal_weights.csv"
+  },
+  {
+    "name": "fixed_lambda",
+    "source": "Original simulation analysis: table lambda sensitivity union",
+    "source_sha256": "7a0c0cd0281ce176c86534ff991e9250cb27c3224d76f709e41587c528369743",
+    "expected": "verification/expected/simulation_fixed_lambda.csv",
+    "generated": "data-derived/simulation/fixed_lambda.csv"
+  }
+]

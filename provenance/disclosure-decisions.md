@@ -1,0 +1,13 @@
+# Disclosure decisions
+
+Author: JoonHo Lee (jlee296@ua.edu)
+
+1. **Rasch persons:** do not export `person_eap_irt.csv` or anonymous replacements. The raw score is sufficient for person scoring under the fitted Rasch model. A person EAP can reveal the raw score even after an ID is removed. Fourteen score groups with their frequencies and posterior summaries suffice for the reported score-weighted RMSD and conditional WLE calculations. No join key to the original respondents is needed.
+2. **Rasch item and fit summaries:** export only approved numeric item columns, model role, item order, parameter convention, draw count, and source hash. Drop `source_fit_path`, person-of-maximum columns, cloud metadata, and private launch records. Model-density grids average fitted population densities; they are not empirical distributions of individual EAPs.
+3. **STAR and meta-analysis:** use the original public package acquisition path for refitting. Frozen results use fit/model aggregates and printed category profiles. Public profile levels must match the paper's categories, not school identities.
+4. **OCRS:** treat the official AIR/ICPSR release as public-use data. Reproduce the three-field complete-case school inputs and export the necessary analytical school/model summaries. Obtain the original impact CSV separately; do not duplicate student-level files or copyrighted documentation. Keep the descriptive analysis distinct from the original blocked ITT analysis. Record fresh input calculation, frozen posterior rebuilding, and actual optional refitting separately.
+5. **Evidence records:** public provenance contains relative artifact names, scientific settings, and file hashes. Original internal receipts, absolute paths, accounts, storage bucket identifiers, SSH settings, email/reviewer material, and working logs are excluded.
+6. **Publication documents:** do not copy manuscript PDFs, source templates, OCR references, response letters, or title pages into this package. The future guide can cite an authorized public manuscript URL. The title page itself remains unchanged until the release links are ready.
+7. **Archives and rendered pages:** a clean source tree is not enough. Check staged/tracked files, the actual release archive, and rendered Book HTML, search indexes, code downloads, and image/PDF metadata. Reject files outside the explicit ledger. No nested archive is allowed without an explicit entry and recursive inspection.
+
+These decisions define which derived files can be prepared. Each implementation track must still review its actual fields and data units before marking an export releasable.

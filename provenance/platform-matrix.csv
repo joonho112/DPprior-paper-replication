@@ -1,0 +1,7 @@
+platform,scope,status,evidence
+macOS arm64 R 4.6.0,quick numerical rebuild and Quarto Book,tested-local,provenance/validation-summary.json
+macOS arm64 R 4.6.0,bounded model smokes,tested-local,provenance/refit-status.csv
+macOS arm64 R 4.6.0,public-only isolated cold start,passed-original-home-and-network-denied,provenance/validation-summary.json; 26-package dependency cache; not a fresh install
+Linux ubuntu-24.04,static Book and optional numerical CI,not-run,.github/workflows/check.yml
+GitHub Pages,manual static-only deployment,not-deployed,.github/workflows/pages.yml
+Windows,all execution paths,not-tested,no supported-platform claim

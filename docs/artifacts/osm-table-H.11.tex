@@ -1,0 +1,16 @@
+% Requires booktabs and longtable. Numeric source is the adjacent CSV.
+\begin{longtable}{lllllll}
+\toprule
+arm & label & attempt & rhat\_max\_gated & ess\_bulk\_min\_gated & ess\_tail\_min\_gated & gate\_pass \\
+\midrule\endhead
+main & Vague & 3 & 1.00335 & 795.7774 & 759.0180 & TRUE \\ \addlinespace[3pt]
+main & Literature default & 3 & 1.00354 & 828.5210 & 817.7223 & TRUE \\ \addlinespace[3pt]
+main & TSMM & 2 & 1.00421 & 459.7726 & 473.4135 & TRUE \\ \addlinespace[3pt]
+main & Dual-Anchor & 3 & 1.00237 & 1038.6626 & 1252.3074 & TRUE \\ \addlinespace[3pt]
+main & Dual-Anchor (hard) & 3 & 1.00299 & 1057.1702 & 1460.4457 & TRUE \\ \addlinespace[3pt]
+sens & Sens. Vague & 1 & 1.04775 & 134.8650 & 109.8325 & FALSE \\ \addlinespace[3pt]
+sens & Sens. Literature default & 1 & 1.05506 & 72.0370 & 97.8136 & FALSE \\ \addlinespace[3pt]
+sens & Sens. TSMM & 3 & 1.00288 & 974.6443 & 1486.7226 & TRUE \\ \addlinespace[3pt]
+sens & Sens. Dual-Anchor & 1 & 1.06743 & 46.0465 & 67.9726 & FALSE \\ \addlinespace[3pt]
+sens & Sens. Dual-Anchor (hard) & 1 & 1.02230 & 123.2738 & 110.4037 & FALSE \\ \addlinespace[3pt]
+\bottomrule\end{longtable}

@@ -1,4 +1,34 @@
-.Rproj.user
+# Private execution history and local environments
+/log/
+/.library/
+/.private/
+/.staging/
+/.cache/
+/dev/
+/tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
 .Rhistory
 .RData
 .Ruserdata
+.Renviron
+.Rprofile
+.DS_Store
+**/.DS_Store
+# Rebuilt results and fetched data are never staged implicitly
+/data-derived/
+/outputs/
+/refit/runs/
+/docs/_book/
+/docs/.quarto/
+/docs/.jupyter_cache/
+*.o
+*.so
+*.dll
+*.dylib
+# Release archives are produced outside the tracked tree
+*.zip
+*.tar.gz
+*.tgz

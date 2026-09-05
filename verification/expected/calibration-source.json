@@ -1,0 +1,13 @@
+{
+  "source": "Supplementary material, calibration example",
+  "sha256": "933779b69a86379f3b1dd0a33ff31b9cc63550c3ebf26428dfe92d2c0ef74186",
+  "location": "Table G.1; values transcribed independently of the rebuilding scripts",
+  "tolerances": {
+    "a": 5e-05,
+    "b": 5e-05,
+    "mean_K": 0.0005,
+    "variance_K": 0.0005,
+    "size_biased_tail": 0.0005
+  },
+  "independent_of_new_build": true
+}

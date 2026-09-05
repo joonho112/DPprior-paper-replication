@@ -1,0 +1,64 @@
+source_label,old_number,old_page,current_number,status,public_scope,note
+tab:A1-complexity,A.1,11,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:B-scaling,B.1,14,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:B-vif,B.2,18,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:B-errors,B.3,19,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:C1-correction,C.1,26,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:C2-iterations,C.2,26,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:D1-guidelines,D.1,35,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:pareto-frontier,E.1,45,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:E2-defaults,E.1,47,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:E1-risk,E.2,48,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:F1-design,F.1,51,F.1,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F2-fixed,F.2,52,F.2,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F3-informativeness,F.3,53,F.3,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F4-params,F.4,55,F.4,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F6-population,F.5,57,F.5,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F-main-full,F.6,58,F.6,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+fig:F-grandmean,F.1,59,F.1,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F11-A,F.7,61,F.7,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F11-B,F.8,62,F.8,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F11-C,F.9,63,F.9,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F11-D,F.10,64,F.10,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:F11-E,F.11,64,F.11,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:G1-mapping,G.1,67,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:G2-exact,G.2,68,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:G3-weight,G.3,68,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:G4-vif,G.4,68,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:G1-dashboard,G.1,74,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:G2-dual,G.2,76,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:G3-sensitivity,G.3,78,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:G7-sensitivity,G.5,79,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:G4-tradeoff,G.4,79,G.1,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:G5-checklist,G.6,80,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:G6-repo,G.7,81,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H1-data,H.1,83,H.1,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H2-priors,H.2,85,H.2,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H3-conv,H.3,86,H.3,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+fig:H1-applications,H.1,87,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H4-sens,H.4,88,H.4,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H5-location,H.5,89,H.6,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H6-moderator,H.6,89,H.7,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-items,H.7,91,H.8,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-rawscore,H.8,91,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-wle,H.9,94,H.9,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-benchmark,H.10,96,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-priors,H.11,98,H.10,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-grid,H.12,99,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-achieved,H.13,100,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-diagnostics,H.14,102,H.11,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-recorded,H.15,102,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-posterior,H.16,103,H.12,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-weights,H.17,104,H.13,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-scoregroups,H.18,105,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-mcse,H.19,105,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-sufficiency,H.20,106,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-mc,H.21,107,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-widthmass,H.22,107,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-modes,H.23,108,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:H-irt-density,H.2,109,H.1,retained-or-condensed,current-contract,Compare current rows and caption; historical label retention does not imply identical content.
+tab:H-irt-replication,H.24,110,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+fig:H-irt-sens,H.3,111,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-scoregroups-sens,H.25,112,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-mcse-sens,H.26,112,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
+tab:H-irt-hashes,H.27,116,,historical-only,not-required-current-exhibit,Do not restore removed exhibit merely because an old builder exists.
