@@ -16,7 +16,7 @@ We refer to the inputs in `data-frozen/` as frozen because the rebuilding script
 
 Some results require joint posterior information. In particular, location-profile intervals and population-density bands cannot be recovered from marginal intervals alone. We therefore supply these results as model-level summaries. The prior examples recalculate the concentration hyperpriors, and the WLE script independently solves the scoring equation using fixed item estimates. The [reproduction map](records/reproduction-map.csv) identifies the inputs and calculation for each result.
 
-The version-104 input records identify the additional public application tables by column, row count, compound key and SHA-256. The exact distances between distributions use sums of squared differences across empirical percentile ranks. Each Rasch block retains 14 score-group means and their frequencies. Personal responses, allocations and person-level posterior draws stay with the local data holder. [Application input contract](records/application-inputs.csv)
+The input records identify the additional public application tables by column, row count, compound key and SHA-256. The exact distances between distributions use sums of squared differences across empirical percentile ranks. Each Rasch block retains 14 score-group means and their frequencies. Personal responses, allocations and person-level posterior draws stay with the local data holder. [Application input contract](records/application-inputs.csv)
 
 ## Online Credit Recovery Study
 

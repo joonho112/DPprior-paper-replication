@@ -8,4 +8,4 @@ Each track adds a codebook with: exact filename; observation unit and keys; colu
 
 Synthetic fit metrics retain condition, replication, seed and diagnostic status so failed or unattempted fits remain in denominators. Rasch rows are fit/item/score groups, not persons. OCRS uses public-use data: necessary school/model derivatives can be exported, and the source-to-input calculation is checked separately from frozen posterior rebuilding and optional refitting.
 
-The November additions and their units are described in the [input guide](../provenance/104-inputs.md). The file-by-file inventory is [frozen-inputs.csv](../provenance/frozen-inputs.csv).
+The November additions and their units are described in the [input guide](../provenance/analysis-inputs.md). The file-by-file inventory is [frozen-inputs.csv](../provenance/frozen-inputs.csv).

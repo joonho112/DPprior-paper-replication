@@ -11,7 +11,7 @@ project:
     - records/**
 book:
   title: "Dirichlet Process Prior Elicitation"
-  subtitle: "Replication guide · manuscript version 104"
+  subtitle: "Replication guide"
   author: "JoonHo Lee (jlee296@ua.edu)"
   chapters:
     - index.qmd

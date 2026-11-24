@@ -1,4 +1,4 @@
-# Version 104 replication guide
+# Replication guide
 
 Author: JoonHo Lee (jlee296@ua.edu)
 

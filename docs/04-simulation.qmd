@@ -10,7 +10,7 @@ The full design contains 322 conditions and 64,400 planned fits. Calibration exc
 
 Panels A and B match synthetic datasets for which all five priors converged. Each design contributes 124–200 such datasets. At $I=0.2$, the between-prior ranges of the integrated squared error for the site posterior means are 2.30%, 4.31% and 6.88% for generating counts of 5, 10 and 30. The corresponding ranges of site-level RMSE are 0.56%, 0.71% and 1.15%. The tables retain both posterior-mean (PM) and constrained Bayes (CB) distribution errors. [Table F.12](artifacts/osm-table-F.12.html)
 
-Panel C uses the 1,681 datasets in which both Gamma(1,1) and Dual-Anchor converged, with 165–200 per design. Effects are matched by percentile within the same synthetic dataset. At $I=0.2$, the mean absolute movement at the 99th percentile is about 0.025–0.037. The signed change is Dual-Anchor minus Gamma. Bias, MAE and RMSE instead compare each estimate with the true percentile. The reproducing code joins by fit key, design, replication and synthetic-data fingerprint. [Figure 4 renderer](code/simulation/v104/figure4.R) · [Simulation calculation](code/simulation/v104/build.R) · [Percentile calculation](code/simulation/v104/percentiles.R) · [Table F.16](artifacts/osm-table-F.16.html)
+Panel C uses the 1,681 datasets in which both Gamma(1,1) and Dual-Anchor converged, with 165–200 per design. Effects are matched by percentile within the same synthetic dataset. At $I=0.2$, the mean absolute movement at the 99th percentile is about 0.025–0.037. The signed change is Dual-Anchor minus Gamma. Bias, MAE and RMSE instead compare each estimate with the true percentile. The reproducing code joins by fit key, design, replication and synthetic-data fingerprint. [Figure 4 renderer](code/simulation/exhibits/figure4.R) · [Simulation calculation](code/simulation/exhibits/build.R) · [Percentile calculation](code/simulation/exhibits/percentiles.R) · [Table F.16](artifacts/osm-table-F.16.html)
 
 ## Inspect a replayed posterior CDF
 
@@ -23,5 +23,5 @@ The three grand-mean variance settings, .01, 1 and 100, reuse the same synthetic
 The top-level build runs the simulation calculations. To repeat only the newer distribution and percentile calculations once the initial summaries exist, run the following command.
 
 ~~~sh
-Rscript simulation/v104/build.R
+Rscript simulation/exhibits/build.R
 ~~~

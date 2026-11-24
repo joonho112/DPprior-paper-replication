@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Author: JoonHo Lee (jlee296@ua.edu)
-"""Resolve the tested rendering dependencies for the 104 figures."""
+"""Resolve the tested rendering dependencies for the figures."""
 import argparse
 import hashlib
 import json

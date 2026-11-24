@@ -2,7 +2,7 @@
 
 JoonHo Lee (jlee296@ua.edu) · The University of Alabama
 
-The replication index follows manuscript revision 104, including its online supplement. It covers 43 tables and 19 figures. The local build generates each exhibit from its documented numerical or schematic source. [Preprint](https://arxiv.org/abs/2602.06301v3) · [Reproduction map](provenance/reproduction-map.csv)
+The index covers the 43 tables and 19 figures in the paper and its online supplement. The local build generates each exhibit from its documented numerical or schematic source. [Preprint](https://arxiv.org/abs/2602.06301v3) · [Reproduction map](provenance/reproduction-map.csv)
 
 ## Computation and interpretation
 

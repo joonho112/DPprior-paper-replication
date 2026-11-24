@@ -26,11 +26,11 @@ output_files <- function(id, kind) {
 }
 artifact_files <- unlist(Map(output_files, contract$artifact_id, contract$kind), use.names = FALSE)
 frame_files <- paste0(contract$artifact_id, '.csv')
-out <- rp_path('outputs', 'v104', must_exist = TRUE)
+out <- rp_path('outputs', 'exhibits', must_exist = TRUE)
 receipts <- rp_path('outputs', 'exhibit-receipts', must_exist = TRUE)
 files <- function(path) list.files(path, all.files = TRUE, no.. = TRUE)
-same_names(files(out), c(artifact_files, frame_files, 'G2-example.json'), '104 output inventory')
-same_names(files(receipts), paste0(contract$artifact_id, '.json'), '104 receipt inventory')
+same_names(files(out), c(artifact_files, frame_files, 'G2-example.json'), 'exhibit output inventory')
+same_names(files(receipts), paste0(contract$artifact_id, '.json'), 'exhibit receipt inventory')
 
 check_hash <- function(relative, sha, id) {
   parts <- strsplit(relative, '/', fixed = TRUE)[[1]]
@@ -46,11 +46,11 @@ records <- lapply(seq_len(nrow(contract)), function(i) {
     stop(id, ': receipt ID or reproduction tier differs from the exhibit contract.', call. = FALSE)
   sources <- strsplit(row$direct_inputs, ';', fixed = TRUE)[[1]]
   same_names(receipt$inputs$path, sources, paste(id, 'direct inputs'))
-  same_names(receipt$outputs$path, file.path('outputs', 'v104', output_files(id, row$kind)),
+  same_names(receipt$outputs$path, file.path('outputs', 'exhibits', output_files(id, row$kind)),
              paste(id, 'rendered outputs'))
   for (group in list(receipt$inputs, receipt$outputs))
     for (j in seq_len(nrow(group))) check_hash(group$path[j], group$sha256[j], id)
-  numeric_path <- file.path('outputs', 'v104', paste0(id, '.csv'))
+  numeric_path <- file.path('outputs', 'exhibits', paste0(id, '.csv'))
   check_hash(numeric_path, receipt$numeric_sha256, id)
   frame <- rp_read_csv(file.path(out, paste0(id, '.csv')))
   if (!length(receipt$rows) || nrow(frame) == 0L || nrow(frame) != receipt$rows ||

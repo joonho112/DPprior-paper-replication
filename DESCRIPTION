@@ -14,5 +14,5 @@ Suggests: DPprior, DPMirt, nimble, posterior, digest, jsonlite, ggplot2,
     coda, Matrix, statmod
 Config/replication/software-lock: provenance/software-lock.csv
 Config/replication/default-profile: core
-Config/replication/manuscript: arXiv:2602.06301v3 (revision 104)
+Config/replication/manuscript: arXiv:2602.06301v3
 SystemRequirements: Python, ReportLab, Lato, Fontconfig, Poppler, pdfLaTeX and Quarto

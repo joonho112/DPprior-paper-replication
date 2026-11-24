@@ -62,7 +62,7 @@ cat(
 # Its independent oracle is parsed from the locked TeX rows, not this builder.
 
 # Check the original OSM F.7 row identities and displayed precision
-f7 <- rp_read_csv(rp_path('outputs', 'v104', 'osm-table-F.7.csv'))
+f7 <- rp_read_csv(rp_path('outputs', 'exhibits', 'osm-table-F.7.csv'))
 e7 <- rp_read_csv(rp_path('verification', 'expected', 'osm_F7_printed.csv'))
 keys <- c('prior', 'K_true', 'I_target', 'VIF', 'r')
 key <- function(x) do.call(paste, c(x[keys], sep = '|'))

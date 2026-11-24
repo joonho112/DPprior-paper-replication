@@ -1,6 +1,6 @@
 # Getting started
 
-The package rebuilds the 43 tables and 19 figures in manuscript version 104. Open the [artifact index](08-artifact-index.qmd) to find an exhibit by its printed number or download its unrounded values. The build runs from synthetic simulation data, model summaries, and the recorded calibration policy.
+The package rebuilds the 43 tables and 19 figures in the paper and its online supplement. Open the [artifact index](08-artifact-index.qmd) to find an exhibit by its printed number or download its unrounded values. The build runs from synthetic simulation data, model summaries, and the recorded calibration policy.
 
 ## Install the rebuild tools
 
@@ -22,7 +22,7 @@ Rscript exhibits/00_build_all.R
 Rscript verify_reproduction.R
 ~~~
 
-The numerical frames and formatted displays appear in `outputs/v104/`. Tables have CSV, HTML and LaTeX versions. Figures have CSV, PNG and vector PDF versions. Additional numerical frames for multi-panel figures appear in `data-derived/v104/`. Each exhibit has a receipt linking the files used to generate it. The verification record is `outputs/verification/reproduction.json`. [Reproduction map](records/reproduction-map.csv)
+The numerical frames and formatted displays appear in `outputs/exhibits/`. Tables have CSV, HTML and LaTeX versions. Figures have CSV, PNG and vector PDF versions. Additional numerical frames for multi-panel figures appear in `data-derived/exhibits/`. Each exhibit has a receipt linking the files used to generate it. The verification record is `outputs/verification/reproduction.json`. [Reproduction map](records/reproduction-map.csv)
 
 ## Read the guide offline
 

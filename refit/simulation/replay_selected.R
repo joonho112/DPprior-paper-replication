@@ -9,7 +9,7 @@ source(rp_path('simulation', 'inputs.R'))
 args <- rf_args(c('fit-key', 'profile'))
 rf_check_job_inputs()
 
-audit <- rp_read_csv(rp_path('data-frozen', 'simulation104', 'selected-replay-audit.csv'))
+audit <- rp_read_csv(rp_path('data-frozen', 'site-effects', 'selected-replay-audit.csv'))
 key <- args[['fit-key']]
 if (is.null(key)) key <- audit$fit_key[1L]
 record <- audit[audit$fit_key == key, ]
@@ -53,7 +53,7 @@ rf_execute(job, args, function() {
   constrained_rank <- engine$sorted_cdf_distance(gr, truth)
   metrics <- c(posterior_CDF_ISEL = unname(direct[1]), posterior_CDF_KS = unname(direct[2]),
                GR_ISEL = unname(constrained_rank[1]), GR_KS = unname(constrained_rank[2]))
-  old <- rp_read_csv(rp_path('data-frozen', 'simulation104', 'selected-truth-distances.csv'))
+  old <- rp_read_csv(rp_path('data-frozen', 'site-effects', 'selected-truth-distances.csv'))
   old <- old[old$prior == record$prior & old$K_true == row$K_true & old$replicate == row$replicate, ]
   stopifnot(nrow(old) == 1L)
   difference <- metrics - as.numeric(old[1, names(metrics)])

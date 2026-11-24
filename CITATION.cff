@@ -8,7 +8,7 @@ authors:
     given-names: JoonHo
     email: jlee296@ua.edu
 repository-code: "https://github.com/joonho112/DPprior-paper-replication"
-abstract: "Code and a replication guide for prior elicitation in Dirichlet process mixtures. Rebuilds the 43 tables and 19 figures in manuscript revision 104, including finite-site simulation recovery, application percentiles and pooling, weighted-likelihood scoring, and optional single-model refits."
+abstract: "Code and a replication guide for prior elicitation in Dirichlet process mixtures. Rebuilds the 43 tables and 19 figures in the paper and supplement, including finite-site simulation recovery, application percentiles and pooling, weighted-likelihood scoring, and optional single-model refits."
 license: MIT
 preferred-citation:
   type: article

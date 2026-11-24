@@ -199,8 +199,8 @@ def main():
     base_tmp = Path(tempfile.gettempdir())
     if any(ch.isspace() for ch in str(base_tmp)):
         base_tmp = Path("/tmp")
-    temp = Path(tempfile.mkdtemp(prefix="dpprior-104-cold-", dir=base_tmp)).resolve()
-    project = temp / "DPprior 104 public copy"
+    temp = Path(tempfile.mkdtemp(prefix="dpprior-cold-", dir=base_tmp)).resolve()
+    project = temp / "DPprior public copy"
     project.mkdir()
     print("Working directory:", temp, flush=True)
     home = temp / "isolated-home"
@@ -209,7 +209,7 @@ def main():
     file_manifest = temp / "reviewed-files.json"
     file_manifest.write_text(json.dumps(reviewed, sort_keys=True, indent=2) + "\n")
     mode = "fresh" if args.fresh_install else "cached"
-    result = dict(schema="public-cold-start/104", mode=mode, passed=False, workspace=str(temp),
+    result = dict(schema="public-cold-start/2", mode=mode, passed=False, workspace=str(temp),
                   reviewed_files=len(reviewed), ledger_sha256=reviewed[str(LEDGER)], input_snapshot_sha256=digest(file_manifest),
                   installation_steps=[], execution_steps=[], platform=platform.platform(), personal_profiles_disabled=True)
     destination = ROOT / "outputs/verification" / ("cold_start_" + mode + ".json")

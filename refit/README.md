@@ -54,7 +54,7 @@ See [refit-status.csv](../provenance/refit-status.csv) and [the smoke record](..
 
 ### Selected posterior-CDF replay
 
-Figure F.5 and Table F.15 use two generated datasets and four recorded terminal fits. To rerun a single fit, use the key in `data-frozen/simulation104/selected-replay-audit.csv`. The command below describes the first selected fit and its actual terminal schedule.
+Figure F.5 and Table F.15 use two generated datasets and four recorded terminal fits. To rerun a single fit, use the key in `data-frozen/site-effects/selected-replay-audit.csv`. The command below describes the first selected fit and its actual terminal schedule.
 
 ```sh
 Rscript refit/simulation/replay_selected.R

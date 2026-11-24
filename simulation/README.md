@@ -28,4 +28,4 @@ Run these from the repository root. Outputs are written under `data-derived/simu
 
 ## Revised distribution summaries
 
-After the six aggregation steps, run `Rscript simulation/v104/build.R` for Table 3, Figure 4 and their distribution-recovery supplements. The [simulation recovery guide](v104/README.md) defines eligible datasets, loss calculations and the four selected CDF replays.
+After the six aggregation steps, run `Rscript simulation/exhibits/build.R` for Table 3, Figure 4 and their distribution-recovery supplements. The [simulation recovery guide](exhibits/README.md) defines eligible datasets, loss calculations and the four selected CDF replays.

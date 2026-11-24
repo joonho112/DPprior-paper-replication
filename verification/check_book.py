@@ -64,7 +64,7 @@ def check(root=ROOT, current=False):
             dst=(page.parent/unquote(u.path)).resolve()
             if not dst.is_relative_to(book.resolve()) or not dst.exists():errors.append(f"Broken record link {page.name}: {target}")
             record_links+=1
-    result=dict(schema="v104-guide-check/1",artifact_count=len(contract),asset_copies=len(records),chapter_pages=len(pages),
+    result=dict(schema="guide-check/1",artifact_count=len(contract),asset_copies=len(records),chapter_pages=len(pages),
                 local_links_checked=links,local_fragments_checked=fragments,record_links_checked=record_links,current_build_required=current,source_snapshot_rendered_byte_parity=(not errors if current else None),failures=errors,passed=not errors)
     out=root/"outputs/verification/book_check.json";out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(result,indent=2)+"\n")

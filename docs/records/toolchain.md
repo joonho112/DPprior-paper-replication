@@ -1,4 +1,4 @@
-# Runtime for the 104 edition
+# Runtime for rebuilding the tables and figures
 
 The full rebuild uses R 4.6.0, a project R library, Python, pdfLaTeX and Poppler. Install the command-line programs before running setup. The tested macOS installation used TeX Live 2025, Poppler 26.10.0, Fontconfig 2.18.3 and Quarto 1.9.37. TeX Live needs the standalone, graphics, pgf, amsmath, amsfonts, psnfss and lato packages. Make sure `pdflatex`, `kpsewhich`, `fc-match`, `pdftocairo` and `pdftoppm` are on PATH. The guide also needs `quarto`.
 

@@ -40,4 +40,4 @@ All generated tables go to `data-derived/applications/`; verification receipts g
 
 ## Revised cross-application comparisons
 
-The [application exhibit runner](v104/README.md) uses the reviewed cross-application inputs for Table 4, Figures 5 and 6, and OSM H.2–H.5 figures and H.3–H.4/H.16–H.19 tables. `Rscript applications/v104/build.R` runs after the normal-normal and Rasch summary steps. The complete exhibit runner dispatches these dependencies in order.
+The [application exhibit runner](exhibits/README.md) uses the reviewed cross-application inputs for Table 4, Figures 5 and 6, and OSM H.2–H.5 figures and H.3–H.4/H.16–H.19 tables. `Rscript applications/exhibits/build.R` runs after the normal-normal and Rasch summary steps. The complete exhibit runner dispatches these dependencies in order.

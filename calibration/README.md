@@ -30,4 +30,4 @@ The count and weight examples take seconds; the full 29-point grid can take minu
 
 The verifier checks the three priors against rounded values transcribed from the locked OSM source, using half a unit in the last printed decimal as tolerance. It also integrates conditional count moments against the Gamma density using base R adaptive integration, independently of DPprior's quadrature. It checks loss normalization, all 29 grid rows, the largest eligible lambda, weight bounds, and rejection outcomes. This validates the worked example and acceptance paths; it does not establish performance for every possible elicitation target.
 
-The November methods runner, `Rscript calibration/v104/build.R`, also executes the published OSM G.2 code and reconstructs Tables 1–2, E.1 and G.1 and Figures 1–3 and G.1. 
+The November methods runner, `Rscript calibration/exhibits/build.R`, also executes the published OSM G.2 code and reconstructs Tables 1–2, E.1 and G.1 and Figures 1–3 and G.1. 

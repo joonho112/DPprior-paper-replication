@@ -1,18 +1,17 @@
 schema_version: 2
-manuscript_revision: 104
 paper_url: https://arxiv.org/abs/2602.06301v3
 root_marker: .replication-root
 frozen_dir: data-frozen
 derived_dir: data-derived
 output_dir: outputs
-exhibit_dir: outputs/v104
+exhibit_dir: outputs/exhibits
 profiles:
   core:
     purpose: Check paths and perform base-R calculations; no downloads or fitting.
     fit: false
     download: false
   rebuild:
-    purpose: Rebuild manuscript revision 104 exhibits from synthetic-site vectors, calibration inputs and application summaries.
+    purpose: Rebuild the tables and figures from synthetic-site vectors, calibration inputs and application summaries.
     fit: false
     download: false
   calibration:

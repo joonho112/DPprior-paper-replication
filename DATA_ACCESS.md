@@ -52,4 +52,4 @@ These are source-specific records checked for this package, not a blanket licens
 
 ## Inputs added for the November preprint
 
-See the [input inventory and units of analysis](provenance/104-inputs.md) for the synthetic site vectors, school and study summaries, finite CDFs and fitted density grids used in the revised exhibits. The default calculation starts with these reviewed inputs.
+See the [input inventory and units of analysis](provenance/analysis-inputs.md) for the synthetic site vectors, school and study summaries, finite CDFs and fitted density grids used in the revised exhibits. The default calculation starts with these reviewed inputs.

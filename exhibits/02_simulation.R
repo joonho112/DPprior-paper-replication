@@ -281,7 +281,7 @@ ex_table('osm-table-F.4',
     'data-frozen/simulation/fit_status.csv',
     'data-frozen/simulation/design.csv'
   ),
-  note = 'DORO-Unif is an external reference. At K*=30 the original projection shape rounds to 0.943 in the manuscript, and the independently optimized shape actually used by the fits rounds to 0.942. The accompanying CSV reports the fitting parameters. See simulation/v104/doro-projection-reference.csv for both projections.'
+  note = 'DORO-Unif is an external reference. At K*=30 the original projection shape rounds to 0.943 in the manuscript, and the independently optimized shape actually used by the fits rounds to 0.942. The accompanying CSV reports the fitting parameters. See simulation/exhibits/doro-projection-reference.csv for both projections.'
 )
 
 # OSM F.5: account for all planned fits and main-cell denominators

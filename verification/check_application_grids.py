@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SIZES = {"star": 79, "bd": 48, "rasch": 500}
 
 def verify(root=ROOT):
-    source = root / "data-frozen/applications104"
+    source = root / "data-frozen/application-summaries"
 
     def read(name):
         with (source / (name + ".csv")).open() as stream:

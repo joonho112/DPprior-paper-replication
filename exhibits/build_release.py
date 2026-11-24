@@ -78,7 +78,7 @@ def register(new):
     registry = []
     for row in contract:
         aid = row["artifact_id"]
-        folder = new / "outputs/v104"
+        folder = new / "outputs/exhibits"
         frame = folder / (aid + ".csv")
         receipt = new / "outputs/exhibit-receipts" / (aid + ".json")
         record = json.loads(receipt.read_text())
@@ -102,7 +102,7 @@ def register(new):
 def install(new):
     # These two directories represent a single manuscript edition. Other numerical
     # directories may also contain user-run comparisons, so update their generated files individually.
-    groups = ["outputs/v104", "outputs/exhibit-receipts"]
+    groups = ["outputs/exhibits", "outputs/exhibit-receipts"]
     extras = []
     for area in ("data-derived", "outputs"):
         for path in (new / area).rglob("*"):

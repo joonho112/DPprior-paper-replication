@@ -1,7 +1,7 @@
 {
   "schema": "november-validation/1",
   "as_of": "2026-11-24",
-  "edition": "arXiv v3, manuscript revision 104",
+  "edition": "arXiv v3",
   "scope": "Local reproducibility from reviewed frozen inputs",
   "numerical_comparisons": {
     "tables": 43,

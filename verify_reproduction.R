@@ -15,14 +15,14 @@ for (i in seq_len(nrow(expected))) {
 checks <- c('verification/check_inputs.py', 'verification/check_simulation.R',
             'verification/check_applications.R', 'verification/check_rasch.R',
             'verification/check_retained.R', 'verification/check_application_grids.py',
-            'verification/v104/methods.py', 'verification/v104/simulation.py',
-            'verification/v104/applications.py', 'verification/check_exhibits.R')
+            'verification/exhibits/methods.py', 'verification/exhibits/simulation.py',
+            'verification/exhibits/applications.py', 'verification/check_exhibits.R')
 for (path in checks) {
   executable <- if (endsWith(path, '.R')) file.path(R.home('bin'), 'Rscript') else Sys.which('python3')
   if (system2(executable, shQuote(file.path(.replication_root, path))) != 0L)
     stop('Verification failed at ', path, call. = FALSE)
 }
-rp_write_json(list(schema='v104-verification/1', passed=TRUE, artifacts=62L, checks=checks,
+rp_write_json(list(schema='exhibit-verification/1', passed=TRUE, artifacts=62L, checks=checks,
                    expected_manifest_sha256=rp_sha256(rp_path('provenance', 'expected-hashes.csv')),
                    registry_sha256=rp_sha256(rp_path('outputs', 'exhibit-registry.csv')),
                    calculation_scope='Reconstruction from the frozen inputs; refitting is a separate path.',

@@ -6,7 +6,7 @@
 # displayed table or figure to the summaries used to build it.
 #
 # Sourced by the exhibit modules after common bootstrap.
-# Writes: outputs/v104/ and outputs/exhibit-receipts/.
+# Writes: outputs/exhibits/ and outputs/exhibit-receipts/.
 # LaTeX tables are portable longtable fragments, not standalone documents.
 
 source(rp_path('exhibits', 'style.R', must_exist = TRUE))
@@ -33,7 +33,7 @@ ex_meta <- function(id, files, frame, sources, tier, note = '') {
     frame,
     rp_output_path(
       'outputs',
-      'v104',
+      'exhibits',
       paste0(id, '.csv')
     )
   )
@@ -65,7 +65,7 @@ ex_figure <- function(
     id,
     width_in = width,
     height_in = height,
-    dir = rp_path('outputs', 'v104')
+    dir = rp_path('outputs', 'exhibits')
   )
   ex_meta(id, unname(out), frame, sources, tier, note)
 }
@@ -105,7 +105,7 @@ ex_table <- function(
     x[is.na(x) | x == 'NA'] <- '--'
     x
   })
-  area <- 'v104'
+  area <- 'exhibits'
   html <- rp_output_path('outputs', area, paste0(id, '.html'))
   tex <- rp_output_path('outputs', area, paste0(id, '.tex'))
   dir.create(dirname(html), recursive = TRUE, showWarnings = FALSE)

@@ -1,7 +1,7 @@
 # Author: JoonHo Lee (jlee296@ua.edu)
 # Build the school-study application exhibits
 #
-# Rebuild the inherited 104 OSM application Tables H.1, H.2 and H.5–9.
+# Rebuild the OSM application Tables H.1, H.2 and H.5–9.
 # Source this module after the derived school/study runners and shared bootstrap.
 source(rp_path('exhibits', 'helpers.R'))
 a <- ex_read('applications', 'primary.csv')

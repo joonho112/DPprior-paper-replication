@@ -1,5 +1,5 @@
 {
-  "schema": "reviewed-csv-schema/104",
+  "schema": "reviewed-csv-schema/2",
   "files": {
     "data-frozen/applications/attempts.csv": {
       "columns": [
@@ -354,7 +354,7 @@
       "rows": 1905,
       "reviewed_unit": "school/study, fit, diagnostic or group-level profile; no pupil records"
     },
-    "data-frozen/applications104/chain-mean-by-unit-or-score.csv": {
+    "data-frozen/application-summaries/chain-mean-by-unit-or-score.csv": {
       "columns": [
         "app",
         "prior",
@@ -364,9 +364,9 @@
         "mean"
       ],
       "rows": 846,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/density-runs.csv": {
+    "data-frozen/application-summaries/density-runs.csv": {
       "columns": [
         "app",
         "prior_label",
@@ -389,9 +389,9 @@
         "max_q975_MCSE"
       ],
       "rows": 6,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/finite-cdf.csv": {
+    "data-frozen/application-summaries/finite-cdf.csv": {
       "columns": [
         "app",
         "n",
@@ -407,9 +407,9 @@
         "ess_tail"
       ],
       "rows": 4215,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/input-contract.csv": {
+    "data-frozen/application-summaries/input-contract.csv": {
       "columns": [
         "file",
         "rows",
@@ -419,9 +419,9 @@
         "sha256"
       ],
       "rows": 14,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/interval-endpoint-mcse.csv": {
+    "data-frozen/application-summaries/interval-endpoint-mcse.csv": {
       "columns": [
         "app",
         "unit",
@@ -429,9 +429,9 @@
         "mcse_q025_tsmm"
       ],
       "rows": 3,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/percentile-values.csv": {
+    "data-frozen/application-summaries/percentile-values.csv": {
       "columns": [
         "app",
         "prior",
@@ -440,9 +440,9 @@
         "quantile"
       ],
       "rows": 3582,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/pooling-chain-halves.csv": {
+    "data-frozen/application-summaries/pooling-chain-halves.csv": {
       "columns": [
         "app",
         "prior",
@@ -452,9 +452,9 @@
         "displacement"
       ],
       "rows": 16,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/pooling-contrast-mcse.csv": {
+    "data-frozen/application-summaries/pooling-contrast-mcse.csv": {
       "columns": [
         "app",
         "prior",
@@ -462,9 +462,9 @@
         "distance"
       ],
       "rows": 4,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/pooling-cutoffs.csv": {
+    "data-frozen/application-summaries/pooling-cutoffs.csv": {
       "columns": [
         "app",
         "prior",
@@ -477,9 +477,9 @@
         "central_gap"
       ],
       "rows": 16,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/pooling-fixed-count.csv": {
+    "data-frozen/application-summaries/pooling-fixed-count.csv": {
       "columns": [
         "app",
         "prior",
@@ -490,9 +490,9 @@
         "central_to_other_central"
       ],
       "rows": 16,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/pooling-unit.csv": {
+    "data-frozen/application-summaries/pooling-unit.csv": {
       "columns": [
         "app",
         "prior",
@@ -501,9 +501,9 @@
         "mcse_mean"
       ],
       "rows": 254,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/population-density-normal.csv": {
+    "data-frozen/application-summaries/population-density-normal.csv": {
       "columns": [
         "app",
         "prior",
@@ -514,9 +514,9 @@
         "status"
       ],
       "rows": 1926,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/rank-bin-sums.csv": {
+    "data-frozen/application-summaries/rank-bin-sums.csv": {
       "columns": [
         "app",
         "prior_a",
@@ -528,9 +528,9 @@
         "sum_sq"
       ],
       "rows": 3600,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/spread-by-count.csv": {
+    "data-frozen/application-summaries/spread-by-count.csv": {
       "columns": [
         "app",
         "prior_label",
@@ -542,9 +542,9 @@
         "sd_mean_two_or_more"
       ],
       "rows": 10,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
-    "data-frozen/applications104/spread-functionals.csv": {
+    "data-frozen/application-summaries/spread-functionals.csv": {
       "columns": [
         "app",
         "prior",
@@ -561,7 +561,7 @@
         "mcse_upper"
       ],
       "rows": 30,
-      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see applications104/input-contract.csv"
+      "reviewed_unit": "Approved school/study level, score/fit group, rank bin or grid summary; see application-summaries/input-contract.csv"
     },
     "data-frozen/calibration/confidence_levels.csv": {
       "columns": [
@@ -743,7 +743,7 @@
       "rows": 550,
       "reviewed_unit": "metadata or original expected aggregate"
     },
-    "data-frozen/methods104/application-priors.csv": {
+    "data-frozen/calibration-examples/application-priors.csv": {
       "columns": [
         "application",
         "prior_role",
@@ -1375,7 +1375,7 @@
       "rows": 64400,
       "reviewed_unit": "synthetic fit, design or prior; no human observations"
     },
-    "data-frozen/simulation104/posterior-spread.csv": {
+    "data-frozen/site-effects/posterior-spread.csv": {
       "columns": [
         "fit_key",
         "posterior_mean_sd"
@@ -1383,7 +1383,7 @@
       "rows": 8607,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/selected-curves.csv": {
+    "data-frozen/site-effects/selected-curves.csv": {
       "columns": [
         "prior",
         "K_true",
@@ -1399,7 +1399,7 @@
       "rows": 4804,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/selected-finite-site-supports.csv": {
+    "data-frozen/site-effects/selected-finite-site-supports.csv": {
       "columns": [
         "prior",
         "K_true",
@@ -1414,7 +1414,7 @@
       "rows": 400,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/selected-replay-audit.csv": {
+    "data-frozen/site-effects/selected-replay-audit.csv": {
       "columns": [
         "prior",
         "fit_key",
@@ -1446,7 +1446,7 @@
       "rows": 4,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/selected-truth-distances.csv": {
+    "data-frozen/site-effects/selected-truth-distances.csv": {
       "columns": [
         "prior",
         "K_true",
@@ -1464,7 +1464,7 @@
       "rows": 4,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/sites-cb.csv": {
+    "data-frozen/site-effects/sites-cb.csv": {
       "columns": [
         "fit_key",
         "site_001",
@@ -1571,7 +1571,7 @@
       "rows": 8607,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/sites-pm.csv": {
+    "data-frozen/site-effects/sites-pm.csv": {
       "columns": [
         "fit_key",
         "site_001",
@@ -1678,7 +1678,7 @@
       "rows": 8607,
       "reviewed_unit": "Generated site/dataset, fit or selected synthetic replay"
     },
-    "data-frozen/simulation104/sites-truth.csv": {
+    "data-frozen/site-effects/sites-truth.csv": {
       "columns": [
         "dgp_sha256",
         "site_001",
@@ -4322,7 +4322,7 @@
       "rows": 5,
       "reviewed_unit": "metadata or original expected aggregate"
     },
-    "simulation/v104/doro-projection-reference.csv": {
+    "simulation/exhibits/doro-projection-reference.csv": {
       "columns": [
         "source_spec_id",
         "J",
@@ -5138,7 +5138,7 @@
       "rows": 32,
       "reviewed_unit": "metadata or original expected aggregate"
     },
-    "verification/expected/v104/applications/all-posteriors.csv": {
+    "verification/expected/exhibits/applications/all-posteriors.csv": {
       "columns": [
         "app",
         "prior",
@@ -5153,7 +5153,7 @@
       "rows": 15,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/all-priors.csv": {
+    "verification/expected/exhibits/applications/all-priors.csv": {
       "columns": [
         "app",
         "prior",
@@ -5168,7 +5168,7 @@
       "rows": 15,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/cdf-maxima.csv": {
+    "verification/expected/exhibits/applications/cdf-maxima.csv": {
       "columns": [
         "app",
         "set",
@@ -5179,7 +5179,7 @@
       "rows": 6,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/cdf-ranges.csv": {
+    "verification/expected/exhibits/applications/cdf-ranges.csv": {
       "columns": [
         "app",
         "set",
@@ -5189,7 +5189,7 @@
       "rows": 1686,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/cdf.csv": {
+    "verification/expected/exhibits/applications/cdf.csv": {
       "columns": [
         "app",
         "prior",
@@ -5201,7 +5201,7 @@
       "rows": 4215,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/chain-checks.csv": {
+    "verification/expected/exhibits/applications/chain-checks.csv": {
       "columns": [
         "app",
         "metric",
@@ -5214,7 +5214,7 @@
       "rows": 9,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/changes.csv": {
+    "verification/expected/exhibits/applications/changes.csv": {
       "columns": [
         "app",
         "prior_a",
@@ -5226,7 +5226,7 @@
       "rows": 9,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/cutoffs.csv": {
+    "verification/expected/exhibits/applications/cutoffs.csv": {
       "columns": [
         "app",
         "upper_fraction",
@@ -5242,7 +5242,7 @@
       "rows": 8,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/density-distances.csv": {
+    "verification/expected/exhibits/applications/density-distances.csv": {
       "columns": [
         "app",
         "prior",
@@ -5254,7 +5254,7 @@
       "rows": 12,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/density.csv": {
+    "verification/expected/exhibits/applications/density.csv": {
       "columns": [
         "app",
         "prior",
@@ -5266,7 +5266,7 @@
       "rows": 7692,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/figure5-a.csv": {
+    "verification/expected/exhibits/applications/figure5-a.csv": {
       "columns": [
         "application",
         "rms_change_same_unit",
@@ -5275,7 +5275,7 @@
       "rows": 3,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/figure5-b.csv": {
+    "verification/expected/exhibits/applications/figure5-b.csv": {
       "columns": [
         "app",
         "p",
@@ -5286,7 +5286,7 @@
       "rows": 21,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/fixed-count.csv": {
+    "verification/expected/exhibits/applications/fixed-count.csv": {
       "columns": [
         "app",
         "prior",
@@ -5300,7 +5300,7 @@
       "rows": 16,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/interval-exceptions.csv": {
+    "verification/expected/exhibits/applications/interval-exceptions.csv": {
       "columns": [
         "app",
         "unit",
@@ -5313,7 +5313,7 @@
       "rows": 6,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/main-table.csv": {
+    "verification/expected/exhibits/applications/main-table.csv": {
       "columns": [
         "app",
         "prior",
@@ -5328,7 +5328,7 @@
       "rows": 9,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/pooling-groups.csv": {
+    "verification/expected/exhibits/applications/pooling-groups.csv": {
       "columns": [
         "app",
         "group",
@@ -5342,7 +5342,7 @@
       "rows": 12,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/pooling-halves.csv": {
+    "verification/expected/exhibits/applications/pooling-halves.csv": {
       "columns": [
         "app",
         "prior",
@@ -5354,7 +5354,7 @@
       "rows": 24,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/pooling-points.csv": {
+    "verification/expected/exhibits/applications/pooling-points.csv": {
       "columns": [
         "app",
         "unit",
@@ -5370,7 +5370,7 @@
       "rows": 77,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/printed.csv": {
+    "verification/expected/exhibits/applications/printed.csv": {
       "columns": [
         "artifact",
         "key",
@@ -5381,7 +5381,7 @@
       "rows": 458,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/profiles.csv": {
+    "verification/expected/exhibits/applications/profiles.csv": {
       "columns": [
         "app",
         "block",
@@ -5393,7 +5393,7 @@
       "rows": 1791,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/score-changes.csv": {
+    "verification/expected/exhibits/applications/score-changes.csv": {
       "columns": [
         "prior",
         "score",
@@ -5405,7 +5405,7 @@
       "rows": 70,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/applications/spread.csv": {
+    "verification/expected/exhibits/applications/spread.csv": {
       "columns": [
         "app",
         "prior",
@@ -5420,7 +5420,7 @@
       "rows": 15,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/methods-printed.csv": {
+    "verification/expected/exhibits/methods-printed.csv": {
       "columns": [
         "exhibit",
         "row_key",
@@ -5430,7 +5430,7 @@
       "rows": 76,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/all-five.csv": {
+    "verification/expected/exhibits/simulation/all-five.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5443,7 +5443,7 @@
       "rows": 45,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/cells.csv": {
+    "verification/expected/exhibits/simulation/cells.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5474,7 +5474,7 @@
       "rows": 45,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/curves.csv": {
+    "verification/expected/exhibits/simulation/curves.csv": {
       "columns": [
         "prior",
         "K_true",
@@ -5490,7 +5490,7 @@
       "rows": 4804,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/low-count.csv": {
+    "verification/expected/exhibits/simulation/low-count.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5508,7 +5508,7 @@
       "rows": 15,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/paired-membership.csv": {
+    "verification/expected/exhibits/simulation/paired-membership.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5519,7 +5519,7 @@
       "rows": 18,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/percentiles.csv": {
+    "verification/expected/exhibits/simulation/percentiles.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5547,7 +5547,7 @@
       "rows": 63,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/printed-cells.csv": {
+    "verification/expected/exhibits/simulation/printed-cells.csv": {
       "columns": [
         "exhibit",
         "K_true",
@@ -5560,7 +5560,7 @@
       "rows": 1291,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/ranges.csv": {
+    "verification/expected/exhibits/simulation/ranges.csv": {
       "columns": [
         "K_true",
         "I_target",
@@ -5571,7 +5571,7 @@
       "rows": 9,
       "reviewed_unit": "Independent published result or diagnostic, numeric/aggregate reference"
     },
-    "verification/expected/v104/simulation/replay.csv": {
+    "verification/expected/exhibits/simulation/replay.csv": {
       "columns": [
         "K_true",
         "I",

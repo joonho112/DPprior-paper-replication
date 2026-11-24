@@ -1,7 +1,7 @@
 # Author: JoonHo Lee (jlee296@ua.edu)
 # Build the Rasch count and precision exhibits
 #
-# Rebuild the inherited 104 OSM Rasch count Figure H.1 and Tables H.10–15.
+# Rebuild the OSM Rasch count Figure H.1 and Tables H.10–15.
 # The original model-role codes in the frozen summaries identify the fits.
 source(rp_path('exhibits', 'helpers.R'))
 

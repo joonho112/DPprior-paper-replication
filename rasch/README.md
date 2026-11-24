@@ -28,4 +28,4 @@ The public-source order matters: sort the 2,495 source IDs as character values, 
 
 ## Vocabulary changes in the November manuscript
 
-The three-application results use fourteen score groups for the 500 respondents and four-chain or split-chain summaries of the finite distribution. Tables H.3–H.4 and H.16–H.18 and Figures 5 and H.2–H.4 use these aggregate inputs. See the [application exhibit guide](../applications/v104/README.md).
+The three-application results use fourteen score groups for the 500 respondents and four-chain or split-chain summaries of the finite distribution. Tables H.3–H.4 and H.16–H.18 and Figures 5 and H.2–H.4 use these aggregate inputs. See the [application exhibit guide](../applications/exhibits/README.md).

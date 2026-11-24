@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Author: JoonHo Lee (jlee296@ua.edu)
-"""Synchronize the reader's guide to the verified 104 artifact registry."""
+"""Synchronize the reader's guide to the exhibit registry."""
 import argparse
 import csv
 import hashlib
@@ -20,7 +20,7 @@ RECORDS = {
     "data-rights.csv": "provenance/data-rights.csv",
     "provenance/refit-status.csv": "provenance/refit-status.csv",
     "provenance/selected-replay-verification.csv": "provenance/selected-replay-verification.csv",
-    "provenance/104-inputs.md": "provenance/104-inputs.md",
+    "provenance/analysis-inputs.md": "provenance/analysis-inputs.md",
     "refit/README.md": "refit/README.md",
     "rasch-fit-registry.csv": "data-frozen/rasch/prior_and_fit_registry.csv",
     "calibration-policy.yml": "calibration/policy.yml",
@@ -28,9 +28,9 @@ RECORDS = {
     "LICENSE-SCOPE.md": "LICENSE-SCOPE.md",
     "verification/refit-smoke.md": "verification/refit-smoke.md",
     "toolchain.md": "common/TOOLCHAIN.md",
-    "G2-example.R": "data-frozen/methods104/G2-example.R",
-    "workflow.tex": "data-frozen/methods104/workflow.tex",
-    "application-inputs.csv": "data-frozen/applications104/input-contract.csv",
+    "G2-example.R": "data-frozen/calibration-examples/G2-example.R",
+    "workflow.tex": "data-frozen/calibration-examples/workflow.tex",
+    "application-inputs.csv": "data-frozen/application-summaries/input-contract.csv",
 }
 CODE_DIRS = {"applications", "calibration", "common", "exhibits", "rasch", "refit", "simulation", "verification"}
 def digest(path):
@@ -49,7 +49,7 @@ def source_path(name):
 def current_artifacts():
     registry = ROOT / "outputs/exhibit-registry.csv"
     proof = json.loads((ROOT / "outputs/verification/reproduction.json").read_text())
-    if proof.get("schema") != "v104-verification/1" or not proof.get("passed") or proof.get("registry_sha256") != digest(registry):
+    if proof.get("schema") != "exhibit-verification/1" or not proof.get("passed") or proof.get("registry_sha256") != digest(registry):
         raise ValueError("Verify the current build with Rscript verify_reproduction.R before synchronizing the guide.")
     contract = csv_rows(ROOT / "provenance/artifact-contract.csv")
     mapping = {r["artifact_id"]:r for r in csv_rows(ROOT / "provenance/reproduction-map.csv")}
@@ -58,7 +58,7 @@ def current_artifacts():
         raise ValueError("Current contract, reproduction map and exhibit registry must agree on all 62 artifacts.")
     copies = {}
     lines = ["# Tables and figures","",
-       "The index covers the 43 tables and 19 figures in manuscript version 104. Download a table as HTML or LaTeX, a figure as PNG or PDF, and the unrounded data as CSV. The calculation column distinguishes source specifications and computations from supplied data. The reproduction map records additional input files for figures with multiple panels. [Reproduction map](records/reproduction-map.csv)","",
+       "The index lists the 43 tables and 19 figures in the paper and its online supplement. Download a table as HTML or LaTeX, a figure as PNG or PDF, and the unrounded data as CSV. The calculation column distinguishes source specifications and computations from supplied data. The reproduction map records additional input files for figures with multiple panels. [Reproduction map](records/reproduction-map.csv)","",
        "| Manuscript result | Preview | Print format | Data | Builder | Calculation |",
        "|---|---|---|---|---|---|"]
     for r in contract:
@@ -69,12 +69,12 @@ def current_artifacts():
             if digest(source_path(item["path"])) != item["sha256"]:
                 raise ValueError(f"Receipt mismatch for {id}: {item['path']}")
         preview, vector = ("png","pdf") if r["kind"] == "figure" else ("html","tex")
-        rendered = {"outputs/v104/"+id+"."+suffix for suffix in (preview,vector)}
+        rendered = {"outputs/exhibits/"+id+"."+suffix for suffix in (preview,vector)}
         if rendered != {p["path"] for p in receipt["outputs"]}:
             raise ValueError(f"Unexpected display files for {id}")
         for suffix in (preview,vector,"csv"):
             name = f"{id}.{suffix}"
-            copies["artifacts/"+name] = "outputs/v104/"+name
+            copies["artifacts/"+name] = "outputs/exhibits/"+name
         builder = mapping_row["builder"]
         document = "Main" if r["document"] == "main" else "OSM"
         label = f"{document} {r['kind'].title()} {r['printed_number']}"
