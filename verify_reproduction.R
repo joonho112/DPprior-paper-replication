@@ -1,51 +1,30 @@
 #!/usr/bin/env Rscript
 # Author: JoonHo Lee (jlee296@ua.edu)
-# Check the rebuilt manuscript results
-#
-# Verify the independent expected-file hashes before running the simulation,
-# application, Rasch and exhibit comparisons. This entrypoint checks an
-# existing build; it does not generate replacement expected values.
-#
-# Run after exhibits/00_build_all.R: Rscript verify_reproduction.R
-# Writes: outputs/verification/reproduction.json.
-# The known Table 2 rounding difference remains a separate author-review item.
-
-# Project setup -------------------------------------------------------------
-
-.file_arg <- grep('^--file=', commandArgs(FALSE), value = TRUE)
-.script_dir <- dirname(normalizePath(gsub('~+~', ' ', sub('^--file=', '', .file_arg[1]), fixed = TRUE),
-  winslash = '/',
-  mustWork = TRUE
-))
+# Compare the existing November build with independent references and its receipts.
+script <- sub('^--file=', '', grep('^--file=', commandArgs(FALSE), value = TRUE)[1])
+.script_dir <- dirname(normalizePath(gsub('~+~', ' ', script, fixed = TRUE)))
 source(file.path(.script_dir, 'common', 'R', 'bootstrap.R'))
-
-# Require unchanged independent expected files
+setwd(.replication_root)
+proof <- rp_output_path('outputs', 'verification', 'reproduction.json')
+if (file.exists(proof)) unlink(proof)
 expected <- rp_read_csv(rp_path('provenance', 'expected-hashes.csv'), key = 'path')
-for (i in seq_len(nrow(expected))) stopifnot(rp_sha256(file.path(.replication_root, expected$path[i])) == expected$sha256[i])
-
-# Run the simulation, application, Rasch and exhibit checks
-checks <- c(
-  'check_simulation.R',
-  'check_applications.R',
-  'check_rasch.R',
-  'check_exhibits.R'
-)
-for (script in checks) {
-  result <- system2(
-    file.path(R.home('bin'), 'Rscript'),
-    shQuote(rp_path('verification', script, must_exist = TRUE))
-  )
-  if (result != 0L) stop('Independent check failed: ', script, call. = FALSE)
+for (i in seq_len(nrow(expected))) {
+  if (!identical(rp_sha256(file.path(.replication_root, expected$path[i])), expected$sha256[i]))
+    stop('Independent reference changed: ', expected$path[i], call. = FALSE)
 }
-
-# Record verification scope and the remaining manuscript discrepancy
-rp_write_json(
-  list(
-    schema = 'quick-verification/1', passed = TRUE, checks = checks,
-    expected_manifest_sha256 = rp_sha256(rp_path('provenance', 'expected-hashes.csv')),
-    production_refit_performed = FALSE,
-    known_manuscript_discrepancies = 'provenance/manuscript-discrepancies.csv'
-  ),
-  rp_output_path('outputs', 'verification', 'reproduction.json')
-)
-cat('Independent quick-path checks passed. Known manuscript discrepancies and untested production refits remain separate.\n')
+checks <- c('verification/check_inputs.py', 'verification/check_simulation.R',
+            'verification/check_applications.R', 'verification/check_rasch.R',
+            'verification/check_retained.R', 'verification/check_application_grids.py',
+            'verification/v104/methods.py', 'verification/v104/simulation.py',
+            'verification/v104/applications.py', 'verification/check_exhibits.R')
+for (path in checks) {
+  executable <- if (endsWith(path, '.R')) file.path(R.home('bin'), 'Rscript') else Sys.which('python3')
+  if (system2(executable, shQuote(file.path(.replication_root, path))) != 0L)
+    stop('Verification failed at ', path, call. = FALSE)
+}
+rp_write_json(list(schema='v104-verification/1', passed=TRUE, artifacts=62L, checks=checks,
+                   expected_manifest_sha256=rp_sha256(rp_path('provenance', 'expected-hashes.csv')),
+                   registry_sha256=rp_sha256(rp_path('outputs', 'exhibit-registry.csv')),
+                   calculation_scope='Reconstruction from the frozen inputs; refitting is a separate path.',
+                   comparison_notes='provenance/manuscript-discrepancies.csv'), proof)
+cat('Verified 62 November exhibits. See outputs/verification/reproduction.json.\n')

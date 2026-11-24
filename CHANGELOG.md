@@ -1,15 +1,13 @@
 # Changelog
 
-Author: JoonHo Lee (jlee296@ua.edu)
+## Local candidate for manuscript revision 104 · November 2026
 
-## Unreleased
+- Updated the index and output names to the 43 tables and 19 figures of arXiv v3. Added the corrected workflow and executable G.2 example using DPprior 2.0.0.
+- Rebuilt Table 3, Figure 4 and the simulation supplement from matched synthetic fit records and finite-site vectors, with separate prior-specific and jointly converged denominators.
+- Added the application distribution, percentile, pooling and chain-split comparisons for Table 4, Figures 5–6 and Appendix H.
+- Added full-precision and printed-value checks, editable sources for the 104 graphics, and guide assembly from the new outputs.
+- Updated the R, Python, font and rendering requirements. [Toolchain](common/TOOLCHAIN.md)
 
-- Organized the analyses into calibration, simulation, application and Rasch modules, with a table and figure index.
-- Added count and weight calibration examples, conditional WLE scoring and independent numerical comparisons.
-- Added preparation code for the OCRS public-use data and school-level summaries.
-- Added scripts for fitting individual simulation and application models, using the original seeds and sampling schedules.
-- Added a Quarto replication guide with annotated code and static examples.
-- Added package-version records, input checks and manually triggered verification and Pages workflows.
-- Cited the arXiv preprint and documented the Table 2 rounding difference.
+## September 2026 public edition
 
-The original public code remains in the repository history. This changelog describes the expanded analysis package.
+The September package rebuilt 41 exhibits and checked 68 selected numbers. It provided calibration and Rasch scoring examples, public-data preparation and selected single-model fitting scripts, and a Quarto guide. Its Table 2 rounding note referred to the manuscript then available. [September source snapshot](https://github.com/joonho112/DPprior-paper-replication/tree/827cf435addbd23aef656c4378f44ae67cc1e8df)

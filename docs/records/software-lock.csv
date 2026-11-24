@@ -1,5 +1,5 @@
 package,version,profiles,source,repository,commit,license,required
-DPprior,2.0.0,calibration;refit,GitHub,https://github.com/joonho112/DPprior,16919d3a36f97cad1d257c3610d9e022ecf0f0ab,MIT + file LICENSE,True
+DPprior,2.0.0,calibration;rebuild;refit,GitHub,https://github.com/joonho112/DPprior,16919d3a36f97cad1d257c3610d9e022ecf0f0ab,MIT + file LICENSE,True
 DPMirt,0.2.0,refit,GitHub,https://github.com/joonho112/DPMirt,acde59367a4992b9642fd18beb7b706a735ff216,MIT + file LICENSE,True
 nimble,1.4.2,refit,CRAN,https://cran.r-project.org,,BSD_3_clause + file LICENSE | GPL (>= 2),True
 posterior,1.7.0,refit,CRAN,https://cran.r-project.org,,BSD_3_clause + file LICENSE,True

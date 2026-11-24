@@ -1,14 +1,27 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
 % Requires booktabs and longtable. Numeric source is the adjacent CSV.
 \begin{longtable}{lllllll}
 \toprule
-level & unit\_count & observed\_effect\_mean & display\_label & posterior\_profile\_mean & posterior\_profile\_q025 & posterior\_profile\_q975 \\
+Comparison & Application & Hyperprior & Change in mean count & Change in one-cluster probability & Unit-mean RMSD & Changed intervals / J \\
 \midrule\endhead
-inner & 16 & 0.229870 & Vague & 0.206386 & 0.0776113 & 0.336247 \\ \addlinespace[3pt]
-rural & 38 & 0.188341 & Vague & 0.188094 & 0.0820882 & 0.292489 \\ \addlinespace[3pt]
-suburb & 18 & 0.150915 & Vague & 0.186217 & 0.0617883 & 0.311521 \\ \addlinespace[3pt]
-urban & 7 & 0.218072 & Vague & 0.196680 & 0.0302762 & 0.366816 \\ \addlinespace[3pt]
-inner & 16 & 0.229870 & Dual-Anchor & 0.208215 & 0.0810289 & 0.340590 \\ \addlinespace[3pt]
-rural & 38 & 0.188341 & Dual-Anchor & 0.187949 & 0.0842474 & 0.292688 \\ \addlinespace[3pt]
-suburb & 18 & 0.150915 & Dual-Anchor & 0.184309 & 0.0570649 & 0.309339 \\ \addlinespace[3pt]
-urban & 7 & 0.218072 & Dual-Anchor & 0.195815 & 0.0250043 & 0.368200 \\ \addlinespace[3pt]
+Wide scale & STAR & Vague & -0.744 & +0.282 & 0.0043 & 2/79 \\ \addlinespace[3pt]
+Wide scale & STAR & DORO-Unif & -1.067 & +0.351 & 0.0036 & 0/79 \\ \addlinespace[3pt]
+Wide scale & STAR & TSMM & -1.449 & +0.395 & 0.0069 & 1/79 \\ \addlinespace[3pt]
+Wide scale & STAR & Dual-Anchor & -1.616 & +0.255 & 0.0044 & 1/79 \\ \addlinespace[3pt]
+Wide scale & STAR & Dual-Anchor (hard) & -1.030 & +0.064 & 0.0029 & 0/79 \\ \addlinespace[3pt]
+Wide scale & Bangert--Drowns & Vague & -0.667 & +0.291 & 0.0076 & 1/48 \\ \addlinespace[3pt]
+Wide scale & Bangert--Drowns & DORO-Unif & -0.905 & +0.341 & 0.0052 & 0/48 \\ \addlinespace[3pt]
+Wide scale & Bangert--Drowns & TSMM & -0.695 & +0.289 & 0.0053 & 1/48 \\ \addlinespace[3pt]
+Wide scale & Bangert--Drowns & Dual-Anchor & -1.420 & +0.363 & 0.0065 & 0/48 \\ \addlinespace[3pt]
+Wide scale & Bangert--Drowns & Dual-Anchor (hard) & -1.834 & +0.209 & 0.0032 & 0/48 \\ \addlinespace[3pt]
+Wide scale & OCRS & Vague & -0.345 & +0.181 & 0.0021 & 0/24 \\ \addlinespace[3pt]
+Wide scale & OCRS & DORO-Unif & -0.700 & +0.314 & 0.0054 & 0/24 \\ \addlinespace[3pt]
+Wide scale & OCRS & TSMM & -0.378 & +0.194 & 0.0041 & 0/24 \\ \addlinespace[3pt]
+Wide scale & OCRS & Dual-Anchor & -0.771 & +0.304 & 0.0079 & 0/24 \\ \addlinespace[3pt]
+Wide scale & OCRS & Dual-Anchor (hard) & -1.569 & +0.408 & 0.0060 & 0/24 \\ \addlinespace[3pt]
+STAR HC3 & STAR & Vague & +0.239 & -0.053 & 0.1744 & 19/79 \\ \addlinespace[3pt]
+STAR HC3 & STAR & DORO-Unif & +0.560 & -0.099 & 0.1738 & 19/79 \\ \addlinespace[3pt]
+STAR HC3 & STAR & TSMM & +0.314 & -0.035 & 0.1712 & 20/79 \\ \addlinespace[3pt]
+STAR HC3 & STAR & Dual-Anchor & +0.455 & -0.023 & 0.1709 & 19/79 \\ \addlinespace[3pt]
+STAR HC3 & STAR & Dual-Anchor (hard) & +0.309 & -0.003 & 0.1692 & 19/79 \\ \addlinespace[3pt]
 \bottomrule\end{longtable}

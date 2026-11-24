@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       numerical:
-        description: Also install pinned R dependencies and rebuild numeric outputs
+        description: Install pinned dependencies and run the full numerical rebuild
         type: boolean
         default: false
 permissions:
@@ -18,8 +18,7 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b
         with:
           version: '1.9.37'
-      - name: Install PDF inspection utility
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - run: quarto render docs
       - run: python3 verification/check_book.py
       - run: python3 verification/disclosure_scan.py docs/_book --site-only
@@ -31,9 +30,18 @@ jobs:
       - uses: r-lib/actions/setup-r@465b7d8e732ca3921382b1674c59bada9cbf3399
         with:
           r-version: '4.6.0'
-      - name: Install graphics build dependencies
-        run: sudo apt-get update && sudo apt-get install -y libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libpng-dev libtiff-dev libjpeg-dev poppler-utils
+      - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b
+        with:
+          version: '1.9.37'
+      - name: Install rendering and compilation prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-venv fontconfig fonts-lato poppler-utils texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-pictures libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libpng-dev libtiff-dev libjpeg-dev libwebp-dev
+      - run: python3 -m venv .venv && .venv/bin/python3 -m pip install -r common/figure-requirements.txt
       - run: Rscript common/install_dependencies.R --profile rebuild --execute
       - run: Rscript 00_setup.R --profile rebuild
       - run: Rscript exhibits/00_build_all.R
       - run: Rscript verify_reproduction.R
+      - run: python3 docs/sync_assets.py --execute
+      - run: quarto render docs
+      - run: python3 verification/check_book.py --current

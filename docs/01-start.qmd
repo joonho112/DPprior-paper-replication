@@ -1,42 +1,44 @@
 # Getting started
 
-We used R 4.6.0 for the numerical calculations and Quarto 1.9.37 for this guide. Dependencies are grouped by task: `rebuild` for tables and figures, `calibration` for prior elicitation, `public-data` for data preparation, and `refit` for model fitting.
+The package rebuilds the 43 tables and 19 figures in manuscript version 104. Open the [artifact index](08-artifact-index.qmd) to find an exhibit by its printed number or download its unrounded values. The build runs from synthetic simulation data, model summaries, and the recorded calibration policy.
 
-## Install the required packages
+## Install the rebuild tools
 
-Open a terminal in the replication directory and check the packages needed to rebuild the results:
+Use R 4.6.0 and a Python version from 3.9 through 3.13 with the pinned Pillow wheel. The following example uses Python 3.13. Install pdfLaTeX, Lato, Fontconfig and Poppler as described in the [runtime requirements](records/toolchain.md). Quarto is needed to render this guide.
 
-~~~bash
+~~~sh
+python3.13 -m venv .venv
+.venv/bin/python3 -m pip install -r common/figure-requirements.txt
+Rscript common/install_dependencies.R --profile rebuild --execute
 Rscript 00_setup.R --profile rebuild
 ~~~
 
-The command reports missing packages and version differences. To see the installation plan, run:
+Run these commands in the repository root. The R installer restores the recorded dependency closure under `.library/`. Setup checks DPprior 2.0.0 and its production function definitions. Figure 4 uses R, pdfLaTeX and Poppler. Figure 5 uses Python, ReportLab, the verified Lato font files and Poppler. A separately installed Python environment can be selected with `DPP_PYTHON`. [Software versions](records/software-lock.csv)
 
-~~~bash
-Rscript common/install_dependencies.R --profile rebuild
-~~~
+## Rebuild and verify
 
-Add `--execute` to install the specified versions into `.library/`. Some packages require a compiler and system libraries. The [software record](records/software-lock.csv) gives the package versions and the DPprior and DPMirt commits used in the analysis. Installation stops if a specified source is unavailable.
-
-## Rebuild and check the results
-
-~~~bash
+~~~sh
 Rscript exhibits/00_build_all.R
 Rscript verify_reproduction.R
 ~~~
 
-The first command recalculates the summaries and produces 41 tables and figures. Intermediate results are written to `data-derived/` and completed outputs to `outputs/`. Tables are supplied as CSV, HTML and LaTeX; figures as CSV, PDF and PNG. The CSV files retain the unrounded values.
+The numerical frames and formatted displays appear in `outputs/v104/`. Tables have CSV, HTML and LaTeX versions. Figures have CSV, PNG and vector PDF versions. Additional numerical frames for multi-panel figures appear in `data-derived/v104/`. Each exhibit has a receipt linking the files used to generate it. The verification record is `outputs/verification/reproduction.json`. [Reproduction map](records/reproduction-map.csv)
 
-The second command compares the calculations with independently stored results, including 68 selected numbers. It also checks the inputs and records the source of each output. The [verification chapter](07-verification-refit.qmd) explains these comparisons and the small rounding difference in Table 2.
+## Read the guide offline
 
-Scripts locate the replication directory from their own paths. Thus, they can also be called from another working directory; enclose paths containing spaces in quotation marks. The supplied inputs in `data-frozen/` are checked against recorded hashes. Use a separate copy of the package when changing these inputs for another analysis.
+The distributed guide includes its figure, table and code snapshots. Render it directly from the checkout and open `docs/_book/index.html`.
 
-## Read the guide locally
-
-~~~bash
+~~~sh
 quarto render docs
+python3 verification/check_book.py
 ~~~
 
-Open `docs/_book/index.html`. The guide uses the examples included in `docs/artifacts/`, so it can be rendered before running the R calculations. The [index](08-artifact-index.qmd) provides links to the corresponding scripts and data.
+To update the snapshots from a newly verified build, run the following from the repository root. The final check compares the current output, the guide snapshot and the rendered copy byte for byte.
 
-The calculations and guide have been checked on macOS arm64. Linux workflows are included, but a Linux run has not yet been recorded.
+~~~sh
+python3 docs/sync_assets.py --execute
+quarto render docs
+python3 verification/check_book.py --current
+~~~
+
+The `calibration`, `public-data`, `refit` and `book` setup profiles check the requirements for their respective tasks. The [refitting chapter](07-verification-refit.qmd) gives commands for running one model.

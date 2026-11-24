@@ -1,0 +1,13 @@
+app,prior,n_grid,xmin,xmax,L1
+star,"Gamma(1,1)",321,-4,4,0
+star,TSMM,321,-4,4,0.0269484040141139
+star,Dual-Anchor,321,-4,4,0.0290654089812384
+bd,"Gamma(1,1)",321,-4,4,0
+bd,TSMM,321,-4,4,0.00393951696558519
+bd,Dual-Anchor,321,-4,4,0.0247709758969704
+rasch,"Gamma(1,1)",961,-10,14,0
+rasch,"Gamma(1,3) reference",961,-10,14,0.00433284159752857
+rasch,TSMM,961,-10,14,0.0058427012161401
+rasch,Dual-Anchor,961,-10,14,0.0061232049437804
+rasch,Dual-Anchor (hard),961,-10,14,0.00774840872473679
+rasch,Gaussian benchmark,961,-10,14,0.152732913909693

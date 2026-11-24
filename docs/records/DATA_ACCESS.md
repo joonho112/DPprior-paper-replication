@@ -49,3 +49,7 @@ It writes a 24-school aggregate and a source/preparation receipt. Rebuilding the
 ## Scope of the license record
 
 These are source-specific records checked for this package, not a blanket license for all source materials. `provenance/data-rights.csv` records the evidence and public unit; `provenance/withholding.csv` records exclusions. `LICENSE-SCOPE.md` separates code, original documentation, synthetic outputs, and material carrying upstream terms.
+
+## Inputs added for the November preprint
+
+See the [input inventory and units of analysis](provenance/104-inputs.md) for the synthetic site vectors, school and study summaries, finite CDFs and fitted density grids used in the revised exhibits. The default calculation starts with these reviewed inputs.

@@ -1,40 +1,27 @@
 # Simulation study
 
-We investigate how prior choice affects cluster recovery as the true cluster count, data informativeness and elicited count judgment vary. Each cell has 200 planned replications. The [data generator](code/refit/simulation/dgp.R) fixes the number of units in each component, centers the site effects and rescales their sample standard deviation to .25. Sampling variance is 4 divided by site size.
+Each design varies the generating number of clusters, the informativeness of the site effects and the concentration prior. The simulation draws effects for a fixed sample of sites. The data generator centers the true effects and rescales their sample SD to 0.25 using denominator $J-1$. Summaries of spread across the observed sites use denominator $J$. [Data generator](code/refit/simulation/dgp.R)
 
-## Reconstruct the main comparisons
+## Reconstruct Table 3 and Figure 4
 
-~~~bash
-Rscript simulation/01_reaggregate.R
-Rscript simulation/02_primary_and_paired.R
-Rscript verification/check_simulation.R
+The full design contains 322 conditions and 64,400 planned fits. Calibration excluded 2,800 before sampling. Final convergence checks excluded another 4,449. The main $N(0,1)$ comparison retains 8,607 of 9,000 fits across 45 conditions. Each design has 200 attempted replications under each prior. Table 3 and Tables F.12–F.14 use the converged fits for each prior separately. At $K^*=5$ and $I=0.2$, Gamma(1,1) gives mean cluster count 1.50, one-cluster probability 0.725 and mean count-interval width 3.60 over 200 fits. [Table 3](artifacts/main-table-3.html) · [Denominators](artifacts/osm-table-F.5.html)
+
+![Cluster counts, distribution recovery and percentile movement under changes of prior.](artifacts/main-figure-4.png)
+
+Panels A and B match synthetic datasets for which all five priors converged. Each design contributes 124–200 such datasets. At $I=0.2$, the between-prior ranges of the integrated squared error for the site posterior means are 2.30%, 4.31% and 6.88% for generating counts of 5, 10 and 30. The corresponding ranges of site-level RMSE are 0.56%, 0.71% and 1.15%. The tables retain both posterior-mean (PM) and constrained Bayes (CB) distribution errors. [Table F.12](artifacts/osm-table-F.12.html)
+
+Panel C uses the 1,681 datasets in which both Gamma(1,1) and Dual-Anchor converged, with 165–200 per design. Effects are matched by percentile within the same synthetic dataset. At $I=0.2$, the mean absolute movement at the 99th percentile is about 0.025–0.037. The signed change is Dual-Anchor minus Gamma. Bias, MAE and RMSE instead compare each estimate with the true percentile. The reproducing code joins by fit key, design, replication and synthetic-data fingerprint. [Figure 4 renderer](code/simulation/v104/figure4.R) · [Simulation calculation](code/simulation/v104/build.R) · [Percentile calculation](code/simulation/v104/percentiles.R) · [Table F.16](artifacts/osm-table-F.16.html)
+
+## Inspect a replayed posterior CDF
+
+For two low-information datasets, the archived replay records support the posterior mean finite-site CDF and the GR empirical CDF. The four selected fits are TSMM and Dual-Anchor for $K^*=5$, and Gamma(1,1) and TSMM for $K^*=30$, each at replication 1. The supplied coordinates and distance summaries rebuild the two examples. Other designs have synthetic site vectors, posterior site means and CB estimates. [Figure F.5](artifacts/osm-figure-F.5.png) · [Table F.15](artifacts/osm-table-F.15.html)
+
+## Inspect the design extensions
+
+The three grand-mean variance settings, .01, 1 and 100, reuse the same synthetic datasets. Figure F.1 shows paired changes and the 2.5th–97.5th percentile range of these changes. Figure F.2 and Table F.7 use complete trajectories for elicited-mean misspecification. Figure F.3 and Tables F.8–F.9 give design-size comparisons, including the smaller admitted counts at $J=200$. Table F.10 compares the location of a 60% component. Table F.11 compares the selected $\lambda=.16$ with fixed values .50 and .90. [Figure F.1](artifacts/osm-figure-F.1.png) · [Table F.7](artifacts/osm-table-F.7.html) · [Table F.11](artifacts/osm-table-F.11.html)
+
+The top-level build runs the simulation calculations. To repeat only the newer distribution and percentile calculations once the initial summaries exist, run the following command.
+
+~~~sh
+Rscript simulation/v104/build.R
 ~~~
-
-The full design contains 322 cells and 64,400 planned fits. Prior calibration excludes 2,800 fits before sampling. A further 4,449 of the 61,600 attempted fits fail the final diagnostic rule, leaving 57,151 for analysis. These exclusions determine the denominators used when aggregating results.
-
-The main comparison uses the 45 cells with an $N(0,1)$ prior on the grand mean. It retains 8,607 of 9,000 planned fits, with 155–200 in each cell. [OSM Table F.5](artifacts/osm-table-F.5.html) gives the cell-specific denominators. The [aggregation functions](code/simulation/aggregation.R) calculate the summaries from fit-level metrics after the [input checks](code/simulation/inputs.R).
-
-![Posterior mean cluster counts across simulation replications.](artifacts/main-figure-4.png)
-
-Each box shows variation in the posterior mean count across replications. For low informativeness and five generating clusters, the mean posterior single-cluster probability is .616 under TSMM and .315 under Dual-Anchor. The corresponding mean counts are 1.75 and 3.00. DORO-Unif provides an external comparison.
-
-## Compare grand-mean priors
-
-The $N(0,.01)$, $N(0,1)$ and $N(0,100)$ analyses use the same simulated data. We calculate paired differences using replications that pass the diagnostic rule under both priors. Contrasts are reported as right minus left in [OSM Figure F.1](artifacts/osm-figure-F.1.png). Its percentile ranges describe the distribution of paired differences across replications.
-
-Relative to grand-mean variance .01, variances 1 and 100 reduce the posterior mean count by about 1.61 and 2.08, respectively, averaged over the 45 cells. The seed manifest preserves the assignments used to match the simulated data across these comparisons.
-
-## Examine the extensions
-
-~~~bash
-Rscript simulation/03_misspecification.R
-Rscript simulation/04_design_size.R
-Rscript simulation/05_unequal_weights.R
-Rscript simulation/06_fixed_lambda.R
-~~~
-
-The medium-confidence misspecification design has results for 56 of 60 cells. To compare the same settings along each curve, Figure 5 includes only complete three-point trajectories. The omitted cells remain in the diagnostic CSV. [OSM Table F.7](artifacts/osm-table-F.7.html) contains 36 rows from the completed trajectories, including six with VIF=5.
-
-The design-size comparison also uses complete trajectories and removes duplicate external-reference variants. Some high-informativeness cells at $J=200$ retain substantially fewer fits; their denominators are given in OSM Tables F.8–F.9.
-
-The unequal-weight experiment places 60% of units in one component and varies its location. OSM Table F.10 shows both location schemes. Table F.11 compares the selected $\lambda=.16$ with fixed values .50 and .90. These scripts use the stored fit metrics. The [refitting chapter](07-verification-refit.qmd) gives the commands for generating new data and fitting a selected model.

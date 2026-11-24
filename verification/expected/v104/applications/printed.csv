@@ -1,0 +1,459 @@
+artifact,key,field,printed,scale
+main-table-4,"star|Gamma(1,1)",prior_mean_count,4.61,1
+main-table-4,"star|Gamma(1,1)",prior_majority,59.1,100
+main-table-4,"star|Gamma(1,1)",posterior_mean_count,1.96,1
+main-table-4,"star|Gamma(1,1)",posterior_one,56.0,100
+main-table-4,"star|Gamma(1,1)",largest_population_weight,91.7,100
+main-table-4,"star|Gamma(1,1)",finite_sd,0.226,1
+main-table-4,star|TSMM,prior_mean_count,5.00,1
+main-table-4,star|TSMM,prior_majority,51.0,100
+main-table-4,star|TSMM,posterior_mean_count,3.12,1
+main-table-4,star|TSMM,posterior_one,20.0,100
+main-table-4,star|TSMM,largest_population_weight,81.8,100
+main-table-4,star|TSMM,finite_sd,0.234,1
+main-table-4,star|Dual-Anchor,prior_mean_count,6.24,1
+main-table-4,star|Dual-Anchor,prior_majority,38.5,100
+main-table-4,star|Dual-Anchor,posterior_mean_count,4.47,1
+main-table-4,star|Dual-Anchor,posterior_one,6.4,100
+main-table-4,star|Dual-Anchor,largest_population_weight,71.5,100
+main-table-4,star|Dual-Anchor,finite_sd,0.236,1
+main-table-4,"bd|Gamma(1,1)",prior_mean_count,4.12,1
+main-table-4,"bd|Gamma(1,1)",prior_majority,59.1,100
+main-table-4,"bd|Gamma(1,1)",posterior_mean_count,1.89,1
+main-table-4,"bd|Gamma(1,1)",posterior_one,54.8,100
+main-table-4,"bd|Gamma(1,1)",largest_population_weight,90.4,100
+main-table-4,"bd|Gamma(1,1)",finite_sd,0.252,1
+main-table-4,bd|TSMM,prior_mean_count,4.00,1
+main-table-4,bd|TSMM,prior_majority,59.7,100
+main-table-4,bd|TSMM,posterior_mean_count,1.96,1
+main-table-4,bd|TSMM,posterior_one,52.5,100
+main-table-4,bd|TSMM,largest_population_weight,90.1,100
+main-table-4,bd|TSMM,finite_sd,0.250,1
+main-table-4,bd|Dual-Anchor,prior_mean_count,5.66,1
+main-table-4,bd|Dual-Anchor,prior_majority,39.5,100
+main-table-4,bd|Dual-Anchor,posterior_mean_count,3.31,1
+main-table-4,bd|Dual-Anchor,posterior_one,19.0,100
+main-table-4,bd|Dual-Anchor,largest_population_weight,77.3,100
+main-table-4,bd|Dual-Anchor,finite_sd,0.256,1
+main-table-4,"rasch|Gamma(1,1)",prior_mean_count,6.44,1
+main-table-4,"rasch|Gamma(1,1)",prior_majority,59.1,100
+main-table-4,"rasch|Gamma(1,1)",posterior_mean_count,4.43,1
+main-table-4,"rasch|Gamma(1,1)",posterior_one,0.6,100
+main-table-4,"rasch|Gamma(1,1)",largest_population_weight,85.9,100
+main-table-4,"rasch|Gamma(1,1)",finite_sd,2.03,1
+main-table-4,rasch|TSMM,prior_mean_count,5.00,1
+main-table-4,rasch|TSMM,prior_majority,65.2,100
+main-table-4,rasch|TSMM,posterior_mean_count,4.30,1
+main-table-4,rasch|TSMM,posterior_one,0.3,100
+main-table-4,rasch|TSMM,largest_population_weight,86.6,100
+main-table-4,rasch|TSMM,finite_sd,2.02,1
+main-table-4,rasch|Dual-Anchor,prior_mean_count,8.75,1
+main-table-4,rasch|Dual-Anchor,prior_majority,38.8,100
+main-table-4,rasch|Dual-Anchor,posterior_mean_count,6.73,1
+main-table-4,rasch|Dual-Anchor,posterior_one,0.0,100
+main-table-4,rasch|Dual-Anchor,largest_population_weight,79.6,100
+main-table-4,rasch|Dual-Anchor,finite_sd,2.02,1
+osm-table-H.3,"star|Gamma(1,1)",prior_mean_count,4.61,1
+osm-table-H.3,"star|Gamma(1,1)",q05,1,1
+osm-table-H.3,"star|Gamma(1,1)",q95,11,1
+osm-table-H.3,"star|Gamma(1,1)",prior_majority,0.591,1
+osm-table-H.3,"star|Gamma(1,1)",prior_tail_09,0.303,1
+osm-table-H.3,"star|Gamma(1,1)",a,1.00,1
+osm-table-H.3,"star|Gamma(1,1)",b,1.00,1
+osm-table-H.3,star|TSMM,prior_mean_count,5.00,1
+osm-table-H.3,star|TSMM,q05,2,1
+osm-table-H.3,star|TSMM,q95,9,1
+osm-table-H.3,star|TSMM,prior_majority,0.510,1
+osm-table-H.3,star|TSMM,prior_tail_09,0.140,1
+osm-table-H.3,star|TSMM,a,5.13,1
+osm-table-H.3,star|TSMM,b,4.94,1
+osm-table-H.3,star|Dual-Anchor,prior_mean_count,6.24,1
+osm-table-H.3,star|Dual-Anchor,q05,3,1
+osm-table-H.3,star|Dual-Anchor,q95,10,1
+osm-table-H.3,star|Dual-Anchor,prior_majority,0.385,1
+osm-table-H.3,star|Dual-Anchor,prior_tail_09,0.051,1
+osm-table-H.3,star|Dual-Anchor,a,15.77,1
+osm-table-H.3,star|Dual-Anchor,b,11.11,1
+osm-table-H.3,star|DORO-Unif,prior_mean_count,4.99,1
+osm-table-H.3,star|DORO-Unif,q05,1,1
+osm-table-H.3,star|DORO-Unif,q95,10,1
+osm-table-H.3,star|DORO-Unif,prior_majority,0.527,1
+osm-table-H.3,star|DORO-Unif,prior_tail_09,0.187,1
+osm-table-H.3,star|DORO-Unif,a,2.33,1
+osm-table-H.3,star|DORO-Unif,b,2.18,1
+osm-table-H.3,star|Dual-Anchor (hard),prior_mean_count,7.93,1
+osm-table-H.3,star|Dual-Anchor (hard),q05,4,1
+osm-table-H.3,star|Dual-Anchor (hard),q95,12,1
+osm-table-H.3,star|Dual-Anchor (hard),prior_majority,0.250,1
+osm-table-H.3,star|Dual-Anchor (hard),prior_tail_09,0.010,1
+osm-table-H.3,"bd|Gamma(1,1)",prior_mean_count,4.12,1
+osm-table-H.3,"bd|Gamma(1,1)",q05,1,1
+osm-table-H.3,"bd|Gamma(1,1)",q95,10,1
+osm-table-H.3,"bd|Gamma(1,1)",prior_majority,0.591,1
+osm-table-H.3,"bd|Gamma(1,1)",prior_tail_09,0.303,1
+osm-table-H.3,"bd|Gamma(1,1)",a,1.00,1
+osm-table-H.3,"bd|Gamma(1,1)",b,1.00,1
+osm-table-H.3,bd|TSMM,prior_mean_count,4.00,1
+osm-table-H.3,bd|TSMM,q05,1,1
+osm-table-H.3,bd|TSMM,q95,9,1
+osm-table-H.3,bd|TSMM,prior_majority,0.597,1
+osm-table-H.3,bd|TSMM,prior_tail_09,0.297,1
+osm-table-H.3,bd|TSMM,a,1.15,1
+osm-table-H.3,bd|TSMM,b,1.22,1
+osm-table-H.3,bd|Dual-Anchor,prior_mean_count,5.66,1
+osm-table-H.3,bd|Dual-Anchor,q05,2,1
+osm-table-H.3,bd|Dual-Anchor,q95,10,1
+osm-table-H.3,bd|Dual-Anchor,prior_majority,0.395,1
+osm-table-H.3,bd|Dual-Anchor,prior_tail_09,0.084,1
+osm-table-H.3,bd|Dual-Anchor,a,3.78,1
+osm-table-H.3,bd|Dual-Anchor,b,2.50,1
+osm-table-H.3,bd|DORO-Unif,prior_mean_count,3.99,1
+osm-table-H.3,bd|DORO-Unif,q05,1,1
+osm-table-H.3,bd|DORO-Unif,q95,8,1
+osm-table-H.3,bd|DORO-Unif,prior_majority,0.576,1
+osm-table-H.3,bd|DORO-Unif,prior_tail_09,0.217,1
+osm-table-H.3,bd|DORO-Unif,a,2.81,1
+osm-table-H.3,bd|DORO-Unif,b,3.19,1
+osm-table-H.3,bd|Dual-Anchor (hard),prior_mean_count,7.15,1
+osm-table-H.3,bd|Dual-Anchor (hard),q05,3,1
+osm-table-H.3,bd|Dual-Anchor (hard),q95,12,1
+osm-table-H.3,bd|Dual-Anchor (hard),prior_majority,0.250,1
+osm-table-H.3,bd|Dual-Anchor (hard),prior_tail_09,0.017,1
+osm-table-H.3,bd|Dual-Anchor (hard),a,11.56,1
+osm-table-H.3,bd|Dual-Anchor (hard),b,5.44,1
+osm-table-H.3,"rasch|Gamma(1,1)",prior_mean_count,6.44,1
+osm-table-H.3,"rasch|Gamma(1,1)",q05,1,1
+osm-table-H.3,"rasch|Gamma(1,1)",q95,17,1
+osm-table-H.3,"rasch|Gamma(1,1)",prior_majority,0.591,1
+osm-table-H.3,"rasch|Gamma(1,1)",prior_tail_09,0.303,1
+osm-table-H.3,"rasch|Gamma(1,1)",a,1.00,1
+osm-table-H.3,"rasch|Gamma(1,1)",b,1.00,1
+osm-table-H.3,rasch|TSMM,prior_mean_count,5.00,1
+osm-table-H.3,rasch|TSMM,q05,1,1
+osm-table-H.3,rasch|TSMM,q95,11,1
+osm-table-H.3,rasch|TSMM,prior_majority,0.652,1
+osm-table-H.3,rasch|TSMM,prior_tail_09,0.308,1
+osm-table-H.3,rasch|TSMM,a,2.11,1
+osm-table-H.3,rasch|TSMM,b,3.08,1
+osm-table-H.3,rasch|Dual-Anchor,prior_mean_count,8.75,1
+osm-table-H.3,rasch|Dual-Anchor,q05,4,1
+osm-table-H.3,rasch|Dual-Anchor,q95,14,1
+osm-table-H.3,rasch|Dual-Anchor,prior_majority,0.388,1
+osm-table-H.3,rasch|Dual-Anchor,prior_tail_09,0.050,1
+osm-table-H.3,rasch|Dual-Anchor,a,20.30,1
+osm-table-H.3,rasch|Dual-Anchor,b,14.51,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",prior_mean_count,3.03,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",q05,1,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",q95,8,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",prior_majority,0.812,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",prior_tail_09,0.566,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",a,1.00,1
+osm-table-H.3,"rasch|Gamma(1,3) reference",b,3.00,1
+osm-table-H.3,rasch|Dual-Anchor (hard),prior_mean_count,11.59,1
+osm-table-H.3,rasch|Dual-Anchor (hard),q05,7,1
+osm-table-H.3,rasch|Dual-Anchor (hard),q95,17,1
+osm-table-H.3,rasch|Dual-Anchor (hard),prior_majority,0.250,1
+osm-table-H.3,rasch|Dual-Anchor (hard),prior_tail_09,0.010,1
+osm-table-H.4,"star|Gamma(1,1)",posterior_mean_count,1.96,1
+osm-table-H.4,"star|Gamma(1,1)",q025,1,1
+osm-table-H.4,"star|Gamma(1,1)",q975,7,1
+osm-table-H.4,"star|Gamma(1,1)",posterior_one,0.560,1
+osm-table-H.4,"star|Gamma(1,1)",largest_observed_share,0.920,1
+osm-table-H.4,"star|Gamma(1,1)",largest_population_weight,0.917,1
+osm-table-H.4,"star|Gamma(1,1)",unit_rms,0.0000,1
+osm-table-H.4,star|TSMM,posterior_mean_count,3.12,1
+osm-table-H.4,star|TSMM,q025,1,1
+osm-table-H.4,star|TSMM,q975,8,1
+osm-table-H.4,star|TSMM,posterior_one,0.200,1
+osm-table-H.4,star|TSMM,largest_observed_share,0.825,1
+osm-table-H.4,star|TSMM,largest_population_weight,0.818,1
+osm-table-H.4,star|TSMM,unit_rms,0.0071,1
+osm-table-H.4,star|Dual-Anchor,posterior_mean_count,4.47,1
+osm-table-H.4,star|Dual-Anchor,q025,1,1
+osm-table-H.4,star|Dual-Anchor,q975,9,1
+osm-table-H.4,star|Dual-Anchor,posterior_one,0.064,1
+osm-table-H.4,star|Dual-Anchor,largest_observed_share,0.724,1
+osm-table-H.4,star|Dual-Anchor,largest_population_weight,0.715,1
+osm-table-H.4,star|Dual-Anchor,unit_rms,0.0088,1
+osm-table-H.4,star|DORO-Unif,posterior_mean_count,2.57,1
+osm-table-H.4,star|DORO-Unif,q025,1,1
+osm-table-H.4,star|DORO-Unif,q975,8,1
+osm-table-H.4,star|DORO-Unif,posterior_one,0.354,1
+osm-table-H.4,star|DORO-Unif,largest_observed_share,0.868,1
+osm-table-H.4,star|DORO-Unif,largest_population_weight,0.863,1
+osm-table-H.4,star|DORO-Unif,unit_rms,0.0032,1
+osm-table-H.4,star|Dual-Anchor (hard),posterior_mean_count,6.57,1
+osm-table-H.4,star|Dual-Anchor (hard),q025,2,1
+osm-table-H.4,star|Dual-Anchor (hard),q975,12,1
+osm-table-H.4,star|Dual-Anchor (hard),posterior_one,0.006,1
+osm-table-H.4,star|Dual-Anchor (hard),largest_observed_share,0.590,1
+osm-table-H.4,star|Dual-Anchor (hard),largest_population_weight,0.579,1
+osm-table-H.4,star|Dual-Anchor (hard),unit_rms,0.0114,1
+osm-table-H.4,"bd|Gamma(1,1)",posterior_mean_count,1.89,1
+osm-table-H.4,"bd|Gamma(1,1)",q025,1,1
+osm-table-H.4,"bd|Gamma(1,1)",q975,6,1
+osm-table-H.4,"bd|Gamma(1,1)",posterior_one,0.548,1
+osm-table-H.4,"bd|Gamma(1,1)",largest_observed_share,0.910,1
+osm-table-H.4,"bd|Gamma(1,1)",largest_population_weight,0.904,1
+osm-table-H.4,"bd|Gamma(1,1)",unit_rms,0.0000,1
+osm-table-H.4,bd|TSMM,posterior_mean_count,1.96,1
+osm-table-H.4,bd|TSMM,q025,1,1
+osm-table-H.4,bd|TSMM,q975,6,1
+osm-table-H.4,bd|TSMM,posterior_one,0.525,1
+osm-table-H.4,bd|TSMM,largest_observed_share,0.907,1
+osm-table-H.4,bd|TSMM,largest_population_weight,0.901,1
+osm-table-H.4,bd|TSMM,unit_rms,0.0025,1
+osm-table-H.4,bd|Dual-Anchor,posterior_mean_count,3.31,1
+osm-table-H.4,bd|Dual-Anchor,q025,1,1
+osm-table-H.4,bd|Dual-Anchor,q975,8,1
+osm-table-H.4,bd|Dual-Anchor,posterior_one,0.190,1
+osm-table-H.4,bd|Dual-Anchor,largest_observed_share,0.785,1
+osm-table-H.4,bd|Dual-Anchor,largest_population_weight,0.773,1
+osm-table-H.4,bd|Dual-Anchor,unit_rms,0.0071,1
+osm-table-H.4,bd|DORO-Unif,posterior_mean_count,2.33,1
+osm-table-H.4,bd|DORO-Unif,q025,1,1
+osm-table-H.4,bd|DORO-Unif,q975,6,1
+osm-table-H.4,bd|DORO-Unif,posterior_one,0.361,1
+osm-table-H.4,bd|DORO-Unif,largest_observed_share,0.868,1
+osm-table-H.4,bd|DORO-Unif,largest_population_weight,0.859,1
+osm-table-H.4,bd|DORO-Unif,unit_rms,0.0030,1
+osm-table-H.4,bd|Dual-Anchor (hard),posterior_mean_count,5.29,1
+osm-table-H.4,bd|Dual-Anchor (hard),q025,1,1
+osm-table-H.4,bd|Dual-Anchor (hard),q975,11,1
+osm-table-H.4,bd|Dual-Anchor (hard),posterior_one,0.034,1
+osm-table-H.4,bd|Dual-Anchor (hard),largest_observed_share,0.632,1
+osm-table-H.4,bd|Dual-Anchor (hard),largest_population_weight,0.615,1
+osm-table-H.4,bd|Dual-Anchor (hard),unit_rms,0.0103,1
+osm-table-H.4,"rasch|Gamma(1,1)",posterior_mean_count,4.43,1
+osm-table-H.4,"rasch|Gamma(1,1)",q025,2,1
+osm-table-H.4,"rasch|Gamma(1,1)",q975,10,1
+osm-table-H.4,"rasch|Gamma(1,1)",posterior_one,0.006,1
+osm-table-H.4,"rasch|Gamma(1,1)",largest_observed_share,0.860,1
+osm-table-H.4,"rasch|Gamma(1,1)",largest_population_weight,0.859,1
+osm-table-H.4,"rasch|Gamma(1,1)",unit_rms,0.0000,1
+osm-table-H.4,rasch|TSMM,posterior_mean_count,4.30,1
+osm-table-H.4,rasch|TSMM,q025,2,1
+osm-table-H.4,rasch|TSMM,q975,9,1
+osm-table-H.4,rasch|TSMM,posterior_one,0.003,1
+osm-table-H.4,rasch|TSMM,largest_observed_share,0.867,1
+osm-table-H.4,rasch|TSMM,largest_population_weight,0.866,1
+osm-table-H.4,rasch|TSMM,unit_rms,0.0132,1
+osm-table-H.4,rasch|Dual-Anchor,posterior_mean_count,6.73,1
+osm-table-H.4,rasch|Dual-Anchor,q025,3,1
+osm-table-H.4,rasch|Dual-Anchor,q975,12,1
+osm-table-H.4,rasch|Dual-Anchor,posterior_one,0.000,1
+osm-table-H.4,rasch|Dual-Anchor,largest_observed_share,0.797,1
+osm-table-H.4,rasch|Dual-Anchor,largest_population_weight,0.796,1
+osm-table-H.4,rasch|Dual-Anchor,unit_rms,0.0123,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",posterior_mean_count,3.51,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",q025,2,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",q975,8,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",posterior_one,0.010,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",largest_observed_share,0.886,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",largest_population_weight,0.885,1
+osm-table-H.4,"rasch|Gamma(1,3) reference",unit_rms,0.0067,1
+osm-table-H.4,rasch|Dual-Anchor (hard),posterior_mean_count,8.99,1
+osm-table-H.4,rasch|Dual-Anchor (hard),q025,5,1
+osm-table-H.4,rasch|Dual-Anchor (hard),q975,14,1
+osm-table-H.4,rasch|Dual-Anchor (hard),posterior_one,0.000,1
+osm-table-H.4,rasch|Dual-Anchor (hard),largest_observed_share,0.748,1
+osm-table-H.4,rasch|Dual-Anchor (hard),largest_population_weight,0.745,1
+osm-table-H.4,rasch|Dual-Anchor (hard),unit_rms,0.0142,1
+osm-table-H.16,"star|Gamma(1,1)",sd_mean,0.226,1
+osm-table-H.16,"star|Gamma(1,1)",sd_lower,0.11,1
+osm-table-H.16,"star|Gamma(1,1)",sd_upper,0.34,1
+osm-table-H.16,"star|Gamma(1,1)",iqr_mean,0.301,1
+osm-table-H.16,"star|Gamma(1,1)",iqr_lower,0.14,1
+osm-table-H.16,"star|Gamma(1,1)",iqr_upper,0.47,1
+osm-table-H.16,star|TSMM,sd_mean,0.234,1
+osm-table-H.16,star|TSMM,sd_lower,0.13,1
+osm-table-H.16,star|TSMM,sd_upper,0.35,1
+osm-table-H.16,star|TSMM,iqr_mean,0.305,1
+osm-table-H.16,star|TSMM,iqr_lower,0.15,1
+osm-table-H.16,star|TSMM,iqr_upper,0.48,1
+osm-table-H.16,star|Dual-Anchor,sd_mean,0.236,1
+osm-table-H.16,star|Dual-Anchor,sd_lower,0.12,1
+osm-table-H.16,star|Dual-Anchor,sd_upper,0.35,1
+osm-table-H.16,star|Dual-Anchor,iqr_mean,0.305,1
+osm-table-H.16,star|Dual-Anchor,iqr_lower,0.15,1
+osm-table-H.16,star|Dual-Anchor,iqr_upper,0.48,1
+osm-table-H.16,star|DORO-Unif,sd_mean,0.228,1
+osm-table-H.16,star|DORO-Unif,sd_lower,0.12,1
+osm-table-H.16,star|DORO-Unif,sd_upper,0.34,1
+osm-table-H.16,star|DORO-Unif,iqr_mean,0.301,1
+osm-table-H.16,star|DORO-Unif,iqr_lower,0.15,1
+osm-table-H.16,star|DORO-Unif,iqr_upper,0.47,1
+osm-table-H.16,star|Dual-Anchor (hard),sd_mean,0.240,1
+osm-table-H.16,star|Dual-Anchor (hard),sd_lower,0.13,1
+osm-table-H.16,star|Dual-Anchor (hard),sd_upper,0.35,1
+osm-table-H.16,star|Dual-Anchor (hard),iqr_mean,0.311,1
+osm-table-H.16,star|Dual-Anchor (hard),iqr_lower,0.16,1
+osm-table-H.16,star|Dual-Anchor (hard),iqr_upper,0.48,1
+osm-table-H.16,"bd|Gamma(1,1)",sd_mean,0.252,1
+osm-table-H.16,"bd|Gamma(1,1)",sd_lower,0.17,1
+osm-table-H.16,"bd|Gamma(1,1)",sd_upper,0.34,1
+osm-table-H.16,"bd|Gamma(1,1)",iqr_mean,0.334,1
+osm-table-H.16,"bd|Gamma(1,1)",iqr_lower,0.21,1
+osm-table-H.16,"bd|Gamma(1,1)",iqr_upper,0.48,1
+osm-table-H.16,bd|TSMM,sd_mean,0.250,1
+osm-table-H.16,bd|TSMM,sd_lower,0.17,1
+osm-table-H.16,bd|TSMM,sd_upper,0.34,1
+osm-table-H.16,bd|TSMM,iqr_mean,0.334,1
+osm-table-H.16,bd|TSMM,iqr_lower,0.20,1
+osm-table-H.16,bd|TSMM,iqr_upper,0.48,1
+osm-table-H.16,bd|Dual-Anchor,sd_mean,0.256,1
+osm-table-H.16,bd|Dual-Anchor,sd_lower,0.17,1
+osm-table-H.16,bd|Dual-Anchor,sd_upper,0.35,1
+osm-table-H.16,bd|Dual-Anchor,iqr_mean,0.332,1
+osm-table-H.16,bd|Dual-Anchor,iqr_lower,0.20,1
+osm-table-H.16,bd|Dual-Anchor,iqr_upper,0.48,1
+osm-table-H.16,bd|DORO-Unif,sd_mean,0.253,1
+osm-table-H.16,bd|DORO-Unif,sd_lower,0.17,1
+osm-table-H.16,bd|DORO-Unif,sd_upper,0.34,1
+osm-table-H.16,bd|DORO-Unif,iqr_mean,0.334,1
+osm-table-H.16,bd|DORO-Unif,iqr_lower,0.20,1
+osm-table-H.16,bd|DORO-Unif,iqr_upper,0.48,1
+osm-table-H.16,bd|Dual-Anchor (hard),sd_mean,0.259,1
+osm-table-H.16,bd|Dual-Anchor (hard),sd_lower,0.17,1
+osm-table-H.16,bd|Dual-Anchor (hard),sd_upper,0.35,1
+osm-table-H.16,bd|Dual-Anchor (hard),iqr_mean,0.334,1
+osm-table-H.16,bd|Dual-Anchor (hard),iqr_lower,0.20,1
+osm-table-H.16,bd|Dual-Anchor (hard),iqr_upper,0.48,1
+osm-table-H.16,"rasch|Gamma(1,1)",sd_mean,2.03,1
+osm-table-H.16,"rasch|Gamma(1,1)",sd_lower,1.84,1
+osm-table-H.16,"rasch|Gamma(1,1)",sd_upper,2.31,1
+osm-table-H.16,"rasch|Gamma(1,1)",iqr_mean,2.42,1
+osm-table-H.16,"rasch|Gamma(1,1)",iqr_lower,2.01,1
+osm-table-H.16,"rasch|Gamma(1,1)",iqr_upper,2.77,1
+osm-table-H.16,rasch|TSMM,sd_mean,2.02,1
+osm-table-H.16,rasch|TSMM,sd_lower,1.83,1
+osm-table-H.16,rasch|TSMM,sd_upper,2.28,1
+osm-table-H.16,rasch|TSMM,iqr_mean,2.42,1
+osm-table-H.16,rasch|TSMM,iqr_lower,2.04,1
+osm-table-H.16,rasch|TSMM,iqr_upper,2.77,1
+osm-table-H.16,rasch|Dual-Anchor,sd_mean,2.02,1
+osm-table-H.16,rasch|Dual-Anchor,sd_lower,1.84,1
+osm-table-H.16,rasch|Dual-Anchor,sd_upper,2.29,1
+osm-table-H.16,rasch|Dual-Anchor,iqr_mean,2.41,1
+osm-table-H.16,rasch|Dual-Anchor,iqr_lower,2.00,1
+osm-table-H.16,rasch|Dual-Anchor,iqr_upper,2.78,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",sd_mean,2.03,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",sd_lower,1.84,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",sd_upper,2.28,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",iqr_mean,2.43,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",iqr_lower,2.05,1
+osm-table-H.16,"rasch|Gamma(1,3) reference",iqr_upper,2.76,1
+osm-table-H.16,rasch|Dual-Anchor (hard),sd_mean,2.03,1
+osm-table-H.16,rasch|Dual-Anchor (hard),sd_lower,1.84,1
+osm-table-H.16,rasch|Dual-Anchor (hard),sd_upper,2.30,1
+osm-table-H.16,rasch|Dual-Anchor (hard),iqr_mean,2.41,1
+osm-table-H.16,rasch|Dual-Anchor (hard),iqr_lower,1.99,1
+osm-table-H.16,rasch|Dual-Anchor (hard),iqr_upper,2.78,1
+osm-table-H.17,"star|Gamma(1,1)|TSMM",w2,0.00891,1
+osm-table-H.17,"star|Gamma(1,1)|TSMM",w2_central_90,0.00430,1
+osm-table-H.17,"star|Gamma(1,1)|TSMM",unit_rms,0.00714,1
+osm-table-H.17,"star|Gamma(1,1)|Dual-Anchor",w2,0.01167,1
+osm-table-H.17,"star|Gamma(1,1)|Dual-Anchor",w2_central_90,0.00448,1
+osm-table-H.17,"star|Gamma(1,1)|Dual-Anchor",unit_rms,0.00879,1
+osm-table-H.17,star|TSMM|Dual-Anchor,w2,0.00309,1
+osm-table-H.17,star|TSMM|Dual-Anchor,w2_central_90,0.00068,1
+osm-table-H.17,star|TSMM|Dual-Anchor,unit_rms,0.00307,1
+osm-table-H.17,"bd|Gamma(1,1)|TSMM",w2,0.00192,1
+osm-table-H.17,"bd|Gamma(1,1)|TSMM",w2_central_90,0.00075,1
+osm-table-H.17,"bd|Gamma(1,1)|TSMM",unit_rms,0.00255,1
+osm-table-H.17,"bd|Gamma(1,1)|Dual-Anchor",w2,0.00833,1
+osm-table-H.17,"bd|Gamma(1,1)|Dual-Anchor",w2_central_90,0.00243,1
+osm-table-H.17,"bd|Gamma(1,1)|Dual-Anchor",unit_rms,0.00707,1
+osm-table-H.17,bd|TSMM|Dual-Anchor,w2,0.00910,1
+osm-table-H.17,bd|TSMM|Dual-Anchor,w2_central_90,0.00264,1
+osm-table-H.17,bd|TSMM|Dual-Anchor,unit_rms,0.00826,1
+osm-table-H.17,"rasch|Gamma(1,1)|TSMM",w2,0.02209,1
+osm-table-H.17,"rasch|Gamma(1,1)|TSMM",w2_central_90,0.00729,1
+osm-table-H.17,"rasch|Gamma(1,1)|TSMM",unit_rms,0.01323,1
+osm-table-H.17,"rasch|Gamma(1,1)|Dual-Anchor",w2,0.01811,1
+osm-table-H.17,"rasch|Gamma(1,1)|Dual-Anchor",w2_central_90,0.00728,1
+osm-table-H.17,"rasch|Gamma(1,1)|Dual-Anchor",unit_rms,0.01227,1
+osm-table-H.17,rasch|TSMM|Dual-Anchor,w2,0.01847,1
+osm-table-H.17,rasch|TSMM|Dual-Anchor,w2_central_90,0.00471,1
+osm-table-H.17,rasch|TSMM|Dual-Anchor,unit_rms,0.00441,1
+osm-table-H.18,star|w2,full,0.01167,1
+osm-table-H.18,star|w2,chains_12,0.01109,1
+osm-table-H.18,star|w2,chains_34,0.01234,1
+osm-table-H.18,star|w2,within_gamma,0.00311,1
+osm-table-H.18,star|w2,within_dual,0.00185,1
+osm-table-H.18,star|w2_central_90,full,0.00448,1
+osm-table-H.18,star|w2_central_90,chains_12,0.00395,1
+osm-table-H.18,star|w2_central_90,chains_34,0.00503,1
+osm-table-H.18,star|w2_central_90,within_gamma,0.00193,1
+osm-table-H.18,star|w2_central_90,within_dual,0.00080,1
+osm-table-H.18,star|unit_rms,full,0.00879,1
+osm-table-H.18,star|unit_rms,chains_12,0.00835,1
+osm-table-H.18,star|unit_rms,chains_34,0.00986,1
+osm-table-H.18,star|unit_rms,within_gamma,0.00423,1
+osm-table-H.18,star|unit_rms,within_dual,0.00364,1
+osm-table-H.18,bd|w2,full,0.00833,1
+osm-table-H.18,bd|w2,chains_12,0.00732,1
+osm-table-H.18,bd|w2,chains_34,0.00947,1
+osm-table-H.18,bd|w2,within_gamma,0.00157,1
+osm-table-H.18,bd|w2,within_dual,0.00267,1
+osm-table-H.18,bd|w2_central_90,full,0.00243,1
+osm-table-H.18,bd|w2_central_90,chains_12,0.00262,1
+osm-table-H.18,bd|w2_central_90,chains_34,0.00228,1
+osm-table-H.18,bd|w2_central_90,within_gamma,0.00082,1
+osm-table-H.18,bd|w2_central_90,within_dual,0.00059,1
+osm-table-H.18,bd|unit_rms,full,0.00707,1
+osm-table-H.18,bd|unit_rms,chains_12,0.00609,1
+osm-table-H.18,bd|unit_rms,chains_34,0.00861,1
+osm-table-H.18,bd|unit_rms,within_gamma,0.00280,1
+osm-table-H.18,bd|unit_rms,within_dual,0.00369,1
+osm-table-H.18,rasch|w2,full,0.01811,1
+osm-table-H.18,rasch|w2,chains_12,0.02114,1
+osm-table-H.18,rasch|w2,chains_34,0.02356,1
+osm-table-H.18,rasch|w2,within_gamma,0.01496,1
+osm-table-H.18,rasch|w2,within_dual,0.01671,1
+osm-table-H.18,rasch|w2_central_90,full,0.00728,1
+osm-table-H.18,rasch|w2_central_90,chains_12,0.00620,1
+osm-table-H.18,rasch|w2_central_90,chains_34,0.00943,1
+osm-table-H.18,rasch|w2_central_90,within_gamma,0.00786,1
+osm-table-H.18,rasch|w2_central_90,within_dual,0.00572,1
+osm-table-H.18,rasch|unit_rms,full,0.01227,1
+osm-table-H.18,rasch|unit_rms,chains_12,0.01253,1
+osm-table-H.18,rasch|unit_rms,chains_34,0.01288,1
+osm-table-H.18,rasch|unit_rms,within_gamma,0.00754,1
+osm-table-H.18,rasch|unit_rms,within_dual,0.00574,1
+osm-table-H.19,star|upper,n,8,1
+osm-table-H.19,star|upper,coassign_gamma,86.73,100
+osm-table-H.19,star|upper,coassign_dual,57.87,100
+osm-table-H.19,star|upper,coassign_reduction_pp,28.87,1
+osm-table-H.19,star|upper,distance_gamma,0.6633,1
+osm-table-H.19,star|upper,distance_dual,0.6443,1
+osm-table-H.19,star|upper,distance_reduction,0.0190,1
+osm-table-H.19,star|central,n,39,1
+osm-table-H.19,star|central,coassign_gamma,89.14,100
+osm-table-H.19,star|central,coassign_dual,63.13,100
+osm-table-H.19,star|central,coassign_reduction_pp,26.01,1
+osm-table-H.19,star|central,distance_gamma,0.1008,1
+osm-table-H.19,star|central,distance_dual,0.0988,1
+osm-table-H.19,star|central,distance_reduction,0.0019,1
+osm-table-H.19,star|excess,coassign_reduction_pp,2.86,1
+osm-table-H.19,star|excess,distance_reduction,0.0170,1
+osm-table-H.19,star|mcse,coassign_reduction_pp,0.17,1
+osm-table-H.19,star|mcse,distance_reduction,0.0018,1
+osm-table-H.19,bd|upper,n,5,1
+osm-table-H.19,bd|upper,coassign_gamma,83.37,100
+osm-table-H.19,bd|upper,coassign_dual,63.80,100
+osm-table-H.19,bd|upper,coassign_reduction_pp,19.57,1
+osm-table-H.19,bd|upper,distance_gamma,0.4627,1
+osm-table-H.19,bd|upper,distance_dual,0.4506,1
+osm-table-H.19,bd|upper,distance_reduction,0.0121,1
+osm-table-H.19,bd|central,n,25,1
+osm-table-H.19,bd|central,coassign_gamma,88.28,100
+osm-table-H.19,bd|central,coassign_dual,72.08,100
+osm-table-H.19,bd|central,coassign_reduction_pp,16.20,1
+osm-table-H.19,bd|central,distance_gamma,0.0567,1
+osm-table-H.19,bd|central,distance_dual,0.0566,1
+osm-table-H.19,bd|central,distance_reduction,0.0001,1
+osm-table-H.19,bd|excess,coassign_reduction_pp,3.37,1
+osm-table-H.19,bd|excess,distance_reduction,0.0120,1
+osm-table-H.19,bd|mcse,coassign_reduction_pp,0.39,1
+osm-table-H.19,bd|mcse,distance_reduction,0.0029,1

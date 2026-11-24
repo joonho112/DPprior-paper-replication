@@ -25,3 +25,7 @@ The `schedule_overridden` field inherited from the software concerns an override
 The public-source order matters: sort the 2,495 source IDs as character values, sample 500 row positions with seed 81770971, and only then remove the three nonwords VCL6, VCL9 and VCL12. Sixteen item endorsement aggregates remain available for OSM Table H.8; the response model and WLE use only the 13 real words. See `DATA_ACCESS.md` for OSPP/IRW attribution and upstream terms.
 
 `verification/check_rasch.R` checks the newly generated outputs. It does not count the historical 746-claim ledger's PASS rows as 746 new calculations.
+
+## Vocabulary changes in the November manuscript
+
+The three-application results use fourteen score groups for the 500 respondents and four-chain or split-chain summaries of the finite distribution. Tables H.3–H.4 and H.16–H.18 and Figures 5 and H.2–H.4 use these aggregate inputs. See the [application exhibit guide](../applications/v104/README.md).

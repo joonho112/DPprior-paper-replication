@@ -22,10 +22,11 @@ source(file.path(.script_dir, 'R', 'bootstrap.R'))
 main <- function() {
   args <- commandArgs(trailingOnly = TRUE)
   execute <- '--execute' %in% args
-  args <- args[args != '--execute']
+  prefer_binary <- '--prefer-binaries' %in% args && startsWith(.Platform$pkgType, 'mac.binary')
+  args <- args[!args %in% c('--execute', '--prefer-binaries')]
   if (length(args) != 2L || args[1] != '--profile' ||
     !args[2] %in% c('core', 'rebuild', 'calibration', 'public-data', 'refit', 'book'))
-    stop('Usage: Rscript common/install_dependencies.R --profile PROFILE [--execute]',
+    stop('Usage: Rscript common/install_dependencies.R --profile PROFILE [--execute] [--prefer-binaries]',
       call. = FALSE
     )
   profile <- args[2]
@@ -99,13 +100,23 @@ main <- function() {
         '.tar.gz'
       )
     )
+    package_type <- 'source'
+    if (prefer_binary && (!nrow(row) || row$source != 'GitHub')) {
+      binary_root <- utils::contrib.url('https://cloud.r-project.org', type = .Platform$pkgType)
+      urls <- c(paste0(binary_root, '/', p, '_', expected, '.tgz'), urls)
+    }
     downloaded <- FALSE
     for (url in urls) {
+      # The macOS package installer recognizes the .tgz suffix.
+      is_binary <- endsWith(url, '.tgz')
+      archive <- file.path(work, paste0(p, '_', expected, if (is_binary) '.tgz' else '.tar.gz'))
       status <- tryCatch(suppressWarnings(utils::download.file(url, archive, mode = 'wb', quiet = TRUE)),
         error = function(e) 1L
       )
       if (identical(status, 0L)) {
         downloaded <- TRUE
+        package_type <- if (is_binary) .Platform$pkgType else 'source'
+        cat('Installing', p, expected, 'from', package_type, url, '\n')
         break
       }
     }
@@ -127,7 +138,7 @@ main <- function() {
     metadata <- read.dcf(file.path(checkdir, desc))
     if (metadata[1, 'Package'] != p ||
       package_version(metadata[1, 'Version']) != package_version(expected)) stop('Downloaded package identity/version mismatch.', call. = FALSE)
-    utils::install.packages(archive, repos = NULL, type = 'source', lib = lib, dependencies = FALSE)
+    utils::install.packages(archive, repos = NULL, type = package_type, lib = lib, dependencies = FALSE)
     if (utils::packageVersion(p, lib.loc = lib) != package_version(expected)) stop('Installed package version mismatch.', call. = FALSE)
   }
   cat(

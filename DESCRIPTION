@@ -1,7 +1,7 @@
 Package: DPpriorPaperReplication
 Type: Project
 Title: Replication Materials for Design-Conditional Prior Elicitation
-Version: 0.1.0.9000
+Version: 0.2.0.9000
 Authors@R: person("JoonHo", "Lee", email = "jlee296@ua.edu", role = c("aut", "cre"))
 Description: Rebuilds manuscript and supplemental results from frozen analysis
     summaries, recalculates concentration priors and conditional WLE reliability,
@@ -14,3 +14,5 @@ Suggests: DPprior, DPMirt, nimble, posterior, digest, jsonlite, ggplot2,
     coda, Matrix, statmod
 Config/replication/software-lock: provenance/software-lock.csv
 Config/replication/default-profile: core
+Config/replication/manuscript: arXiv:2602.06301v3 (revision 104)
+SystemRequirements: Python, ReportLab, Lato, Fontconfig, Poppler, pdfLaTeX and Quarto

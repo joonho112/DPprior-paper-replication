@@ -1,50 +1,22 @@
 {
-  "schema": "public-validation-summary/1",
-  "as_of": "2026-09-05",
-  "quick_verification": {
-    "schema": "quick-verification/1",
-    "passed": true,
-    "checks": [
-      "check_simulation.R",
-      "check_applications.R",
-      "check_rasch.R",
-      "check_exhibits.R"
-    ],
-    "expected_manifest_sha256": "c98aeae08820512b3de2f145e17fb2cb4d5e4628c73f2003b305454d998dd757",
-    "production_refit_performed": false,
-    "known_manuscript_discrepancies": "provenance/manuscript-discrepancies.csv"
-  },
+  "schema": "november-validation/1",
+  "as_of": "2026-11-24",
+  "edition": "arXiv v3, manuscript revision 104",
+  "scope": "Local reproducibility from reviewed frozen inputs",
   "numerical_comparisons": {
-    "simulation_columns": 255,
-    "application_columns": 290,
-    "tables_and_figures": 41,
-    "selected_numbers": 68,
-    "rasch": "WLE, score contrasts, population density and count distribution"
+    "tables": 43,
+    "figures": 19,
+    "retained_selected_numbers": 68,
+    "simulation_legacy_column_checks": 255,
+    "application_legacy_column_checks": 290,
+    "current_simulation_printed_numeric_cells": 1291,
+    "current_application_printed_numeric_cells": 458,
+    "current_method_table_numeric_cells": 76
   },
-  "isolated_execution": {
-    "passed": true,
-    "runtime_cache_packages": 26,
-    "personal_profiles_disabled": true,
-    "original_home_and_network_denied": true,
-    "source_install_tested": false,
-    "platform": "macOS arm64",
-    "command": "sh verification/cold_start.sh --execute"
-  },
-  "negative_controls": {
-    "cases": 11,
-    "passed": true,
-    "command": "python3 verification/negative_controls.py"
-  },
-  "guide": {
-    "chapters": 9,
-    "source_matched_assets": 197,
-    "command": "python3 verification/check_book.py"
-  },
-  "scope_notes": [
-    "Full production posterior fits have not been repeated for this package.",
-    "Linux execution and Pages deployment have not been recorded.",
-    "The Table 2 rounding difference is documented in provenance/manuscript-discrepancies.csv.",
-    "The four-chain Rasch combination has component and dry-run checks."
-  ],
-  "verification_outputs": "Run the verification commands to write detailed results under outputs/verification/."
+  "figures_4_5_6": "Matched submitted artwork at 140 dpi on the tested macOS system. Numeric comparisons use unrounded frames.",
+  "selected_replay": "Four optional full-schedule synthetic fits for Table F.15 were repeated. See selected-replay-verification.csv.",
+  "comparison_notes": "manuscript-discrepancies.csv",
+  "verification_command": "Rscript verify_reproduction.R",
+  "platform_scope": "platform-matrix.csv",
+  "clean_execution_command": "python3 verification/cold_start.py --execute"
 }

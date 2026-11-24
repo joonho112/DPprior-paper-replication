@@ -48,6 +48,7 @@ FORBIDDEN_COLUMNS = {
 }
 MAX_BYTES = 80 * 1024 * 1024
 TEXT_EXT = {
+    '.cpp',
     '.R',
     '.r',
     '.py',
@@ -142,17 +143,23 @@ def inspect_bytes(data, name, failures, depth=0):
             chunk = data[pos + 8 : pos + 8 + size]
             if kind in (b'tEXt', b'iTXt', b'zTXt'):
                 try:
-                    if kind == b'zTXt':
-                        chunk = zlib.decompress(chunk.split(b'\x00', 1)[1][1:])
+                    keyword, payload = chunk.split(b'\x00', 1)
+                    fields = [keyword.decode('latin-1')]
                     if kind == b'iTXt':
-                        fields = chunk.split(b'\x00', 5)
-                        if len(fields) == 6 and fields[1] == b'\x01':
-                            chunk = zlib.decompress(fields[5])
-                    inspect_text(
-                        chunk.decode('utf-8', errors='replace'),
-                        name + ' metadata',
-                        failures,
-                    )
+                        flag, method = payload[:2]
+                        language, translation, value = payload[2:].split(b'\x00', 2)
+                        if flag not in (0, 1) or method != 0:
+                            raise ValueError('Invalid PNG text compression')
+                        fields.extend([language.decode('ascii'), translation.decode('utf-8')])
+                        fields.append((zlib.decompress(value) if flag else value).decode('utf-8'))
+                    else:
+                        if kind == b'zTXt':
+                            if payload[0] != 0:
+                                raise ValueError('Invalid PNG text compression')
+                            payload = zlib.decompress(payload[1:])
+                        fields.append(payload.decode('latin-1'))
+                    for field in fields:
+                        inspect_text(field, name + ' metadata', failures)
                 except Exception:
                     failures.append(f'PNG metadata inspection failed: {name}')
             pos += 12 + size
@@ -224,6 +231,7 @@ def scan(root, site_only=False):
             for x in [
                 '.git',
                 '.library',
+                '.venv',
                 '.private',
                 '.staging',
                 'log',

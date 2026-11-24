@@ -1,12 +1,17 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
 % Requires booktabs and longtable. Numeric source is the adjacent CSV.
-\begin{longtable}{llllllll}
+\begin{longtable}{lllllll}
 \toprule
-label & observed\_largest\_share\_mean & observed\_largest\_share\_q025 & observed\_largest\_share\_q975 & population\_largest\_atom\_weight\_mean & population\_largest\_atom\_weight\_q025 & population\_largest\_atom\_weight\_q975 & p\_population\_largest\_atom\_weight\_gt\_05 \\
+arm & label & attempt & rhat\_max\_gated & ess\_bulk\_min\_gated & ess\_tail\_min\_gated & gate\_pass \\
 \midrule\endhead
-Vague & 0.859838 & 0.484 & 0.984 & 0.858941 & 0.482950 & 0.987526 & 0.968688 \\ \addlinespace[3pt]
-Literature default & 0.885962 & 0.516 & 0.988 & 0.885487 & 0.520287 & 0.990307 & 0.983500 \\ \addlinespace[3pt]
-TSMM & 0.866608 & 0.498 & 0.984 & 0.865661 & 0.498775 & 0.986459 & 0.974375 \\ \addlinespace[3pt]
-Dual-Anchor & 0.797377 & 0.444 & 0.972 & 0.795553 & 0.441038 & 0.973433 & 0.935438 \\ \addlinespace[3pt]
-Dual-Anchor (hard) & 0.747646 & 0.404 & 0.958 & 0.744842 & 0.402445 & 0.955026 & 0.896312 \\ \addlinespace[3pt]
-Count 25 & 0.691298 & 0.370 & 0.946 & 0.687490 & 0.366183 & 0.944098 & 0.818937 \\ \addlinespace[3pt]
+main & Vague & 3 & 1.00335 & 795.7774 & 759.0180 & TRUE \\ \addlinespace[3pt]
+main & Gamma(1, 3) reference & 3 & 1.00354 & 828.5210 & 817.7223 & TRUE \\ \addlinespace[3pt]
+main & TSMM & 2 & 1.00421 & 459.7726 & 473.4135 & TRUE \\ \addlinespace[3pt]
+main & Dual-Anchor & 3 & 1.00237 & 1038.6626 & 1252.3074 & TRUE \\ \addlinespace[3pt]
+main & Dual-Anchor (hard) & 3 & 1.00299 & 1057.1702 & 1460.4457 & TRUE \\ \addlinespace[3pt]
+sens & Vague & 1 & 1.04775 & 134.8650 & 109.8325 & FALSE \\ \addlinespace[3pt]
+sens & Gamma(1, 3) reference & 1 & 1.05506 & 72.0370 & 97.8136 & FALSE \\ \addlinespace[3pt]
+sens & TSMM & 3 & 1.00288 & 974.6443 & 1486.7226 & TRUE \\ \addlinespace[3pt]
+sens & Dual-Anchor & 1 & 1.06743 & 46.0465 & 67.9726 & FALSE \\ \addlinespace[3pt]
+sens & Dual-Anchor (hard) & 1 & 1.02230 & 123.2738 & 110.4037 & FALSE \\ \addlinespace[3pt]
 \bottomrule\end{longtable}

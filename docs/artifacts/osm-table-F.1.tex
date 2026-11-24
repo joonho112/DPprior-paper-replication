@@ -1,12 +1,13 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
 % Requires booktabs and longtable. Numeric source is the adjacent CSV.
-\begin{longtable}{lll}
+\begin{longtable}{llll}
 \toprule
-Suite & Cells & Fits \\
+Suite & Purpose & Cells & Fits \\
 \midrule\endhead
-Additional cells & 71 & 14200 \\ \addlinespace[3pt]
-Central dominant & 16 & 3200 \\ \addlinespace[3pt]
-Initial set & 145 & 29000 \\ \addlinespace[3pt]
-Main N(0,1) & 45 & 9000 \\ \addlinespace[3pt]
-Matched N(0,.01) & 45 & 9000 \\ \addlinespace[3pt]
-Total & 322 & 64400 \\ \addlinespace[3pt]
+Initial set & Prespecified sensitivity and design-size conditions under N(0,100). & 145 & 29000 \\ \addlinespace[3pt]
+Matched N(0,.01) & Matched conditions for the grand-mean prior comparison. & 45 & 9000 \\ \addlinespace[3pt]
+Main N(0,1) & Primary conditions, including the 15 low-information cells. & 45 & 9000 \\ \addlinespace[3pt]
+Central dominant & Location sensitivity with a 60\% component. & 16 & 3200 \\ \addlinespace[3pt]
+Additional cells & Additional misspecification, design-size and location conditions. & 71 & 14200 \\ \addlinespace[3pt]
+Total & All planned conditions. & 322 & 64400 \\ \addlinespace[3pt]
 \bottomrule\end{longtable}

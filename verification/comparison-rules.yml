@@ -7,5 +7,10 @@ rasch_score_contrasts: score/role identity and original contrasts; absolute tole
 key_numbers: printed precision; exact integer counts; no rounded intermediate parameters
 figures: contracted numerical frame, geometry and font checks; no pixel-identity claim
 refits: original seeds/settings plus scientific gates; smoke never certifies convergence
-known_discrepancy: main Table 2 VIF 1.25 near-universal tail .15 versus exact .144969; values retained in the numerical comparison note
+rounding: Table 2 VIF 1.25 near-universal tail is approximately .144969 and displays as .14 in the November preprint
 expected_inputs_are_read_only: true
+finite_CDF: "Average the empirical CDFs over posterior draws of effects at the observed units. The SD uses denominator J within a draw. Population-density output targets a new unit."
+percentile_RMS: "Pair equal ranks of the two pooled posteriors. Full RMS includes all ranks; central RMS is restricted to the middle 90 percent. Signed percentile profiles and absolute changes have separate columns."
+same_unit_RMS: "Compare posterior means for the same school or study. For the Rasch analysis weight each score-level EAP contrast by its observed frequency; the 14 weights sum to 500."
+pooling_sign: "Figure 6 plots Dual-Anchor minus Gamma(1,1). A reduction is negative on this axis and positive in Table H.19. Leave the focal unit out of its own central comparison."
+density_diagnostics: "Use the six dedicated school and study population-density fits and preserve the reported grid and precision statuses; inspect the Rasch population grid separately."

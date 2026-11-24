@@ -1,13 +1,15 @@
-# Rebuild the current exhibits
+# Rebuild the manuscript exhibits
 
-Author: JoonHo Lee (jlee296@ua.edu)
+From the package root, run the environment check and the exhibit build.
 
-Run `Rscript exhibits/00_build_all.R` after checking the `rebuild` profile. It runs the small simulation, application-summary and Rasch-summary scripts, then renders 30 tables and 11 figures. It does not download source data, optimize priors, fit an item model, or launch MCMC.
+```sh
+Rscript 00_setup.R --profile rebuild
+Rscript exhibits/00_build_all.R
+Rscript verify_reproduction.R
+```
 
-Figures are PDF/300-dpi PNG pairs. Tables are readable HTML plus portable LaTeX longtable fragments. Each has an adjacent numeric CSV. `outputs/exhibit-receipts/` binds inputs and outputs with SHA-256 hashes. `outputs/key_numbers.csv` holds 68 predeclared headline numbers; `verification/check_exhibits.R` compares them with the manuscript contract independently of generation.
+The November manuscript has 43 tables and 19 figures. Each ID in the [exhibit contract](../provenance/artifact-contract.csv) identifies a CSV in `outputs/v104/` and two display files. Tables have HTML and LaTeX versions. Figures have PDF and PNG versions at the sizes used by their renderers. The worked G.2 example also produces `outputs/v104/G2-example.json`. The [reproduction map](../provenance/reproduction-map.csv) connects each printed number and LaTeX label to its runner, inputs, and verification.
 
-The [reproduction map](../provenance/reproduction-map.csv) lists all 41 current items and their levels of reproduction. Numerical frames and scientific contrasts are preserved; layouts are adapted for the guide and are not pixel replicas of journal pages. Grouped design-size tables retain per-cell denominators. Main Figure 8 contains only occupied-component counts; the fitted density stays in OSM Figure H.1. OCRS Table H.5 is rebuilt from reviewed school/model summaries, with a separate public-use source preparation and optional refit path.
+Main Table 3 and Figure 4 use the synthetic fit records and site vectors. Main Table 4 and Figures 5–6 use public application summaries. Each exhibit receipt in `outputs/exhibit-receipts/` records its reproduction tier, input hashes, numeric frame hash and the hashes of its two display files. The contract distinguishes definition tables, source artwork, numerical recomputations and summaries of original model fits.
 
-The quick path uses small frozen calibration snapshots produced by the original analysis or verified package calculations. Optional `calibration/01_*.R` through `05_*.R` regenerate the worked solutions. Main Figure 1 is recomputed from closed forms; Figure 2 independently rechecks catalogue Gamma moments and tails while preserving original discrete quantiles. OSM F.3's informativeness inputs are frozen design values, not a rerun of their historical calibration search.
-
-Known difference: main Table 2's VIF=1.25 near-universal tail is .144969 from exact parameters, rounding to .14. The locked manuscript prints .15, consistent with evaluating already rounded parameters. We show the full-precision calculation and preserve the discrepancy in `provenance/manuscript-discrepancies.csv`. No manuscript was changed by this build.
+The simulation illustrations use 1,800 planned data sets, with figure-specific convergence sets. Figure 5 compares changes in individual means with changes at the same percentile of the finite-effect distribution. Figure 6 compares a fixed set of upper and middle units under two priors. The [simulation guide](../simulation/v104/README.md) and [application guide](../applications/v104/README.md) describe the populations and units. Documented differences from the manuscript have a [separate record](../provenance/manuscript-discrepancies.csv).

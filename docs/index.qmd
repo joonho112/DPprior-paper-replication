@@ -16,7 +16,7 @@ We provide examples of prior calibration, a simulation study and applications to
 | Vocabulary responses and score reliability | [Rasch model](06-rasch-wle.qmd) |
 | Verification and new model fits | [Verification and refitting](07-verification-refit.qmd) |
 
-The [table and figure index](08-artifact-index.qmd) links each result to its data and R script. It includes analyses developed after the initial preprint; table and figure numbers refer to the materials in this repository. OSM denotes the online supplementary material.
+The [table and figure index](08-artifact-index.qmd) follows the 104 manuscript, including its online supplementary material (OSM). Each of the 62 entries links to its displayed result, calculation and numerical data.
 
 ## Reference {.unnumbered}
 

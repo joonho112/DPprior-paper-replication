@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="JoonHo Lee (jlee296@ua.edu)" />
+  <title>Tables and figures | DPprior replication</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 68em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="tables-and-figures">Tables and figures</h1>
+<p>The index covers the 43 tables and 19 figures in manuscript version
+104. Download a table as HTML or LaTeX, a figure as PNG or PDF, and the
+unrounded data as CSV. The calculation column distinguishes source
+specifications and computations from supplied data. The reproduction map
+records additional input files for figures with multiple panels. <a
+href="records/reproduction-map.csv">Reproduction map</a></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Manuscript result</th>
+<th>Preview</th>
+<th>Print format</th>
+<th>Data</th>
+<th>Builder</th>
+<th>Calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main Table 1</td>
+<td><a href="artifacts/main-table-1.html">View</a></td>
+<td><a href="artifacts/main-table-1.tex">TEX</a></td>
+<td><a href="artifacts/main-table-1.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>definition</td>
+</tr>
+<tr>
+<td>Main Figure 1</td>
+<td><a href="artifacts/main-figure-1.png">View</a></td>
+<td><a href="artifacts/main-figure-1.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-1.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>recalculated</td>
+</tr>
+<tr>
+<td>Main Figure 2</td>
+<td><a href="artifacts/main-figure-2.png">View</a></td>
+<td><a href="artifacts/main-figure-2.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-2.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>recalculated moments with frozen discrete quantiles</td>
+</tr>
+<tr>
+<td>Main Figure 3</td>
+<td><a href="artifacts/main-figure-3.png">View</a></td>
+<td><a href="artifacts/main-figure-3.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-3.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>editable manuscript schematic</td>
+</tr>
+<tr>
+<td>Main Table 2</td>
+<td><a href="artifacts/main-table-2.html">View</a></td>
+<td><a href="artifacts/main-table-2.tex">TEX</a></td>
+<td><a href="artifacts/main-table-2.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>recalculated</td>
+</tr>
+<tr>
+<td>Main Table 3</td>
+<td><a href="artifacts/main-table-3.html">View</a></td>
+<td><a href="artifacts/main-table-3.tex">TEX</a></td>
+<td><a href="artifacts/main-table-3.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>Main Figure 4</td>
+<td><a href="artifacts/main-figure-4.png">View</a></td>
+<td><a href="artifacts/main-figure-4.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-4.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from synthetic replicates</td>
+</tr>
+<tr>
+<td>Main Table 4</td>
+<td><a href="artifacts/main-table-4.html">View</a></td>
+<td><a href="artifacts/main-table-4.tex">TEX</a></td>
+<td><a href="artifacts/main-table-4.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>Main Figure 5</td>
+<td><a href="artifacts/main-figure-5.png">View</a></td>
+<td><a href="artifacts/main-figure-5.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-5.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>Main Figure 6</td>
+<td><a href="artifacts/main-figure-6.png">View</a></td>
+<td><a href="artifacts/main-figure-6.pdf">PDF</a></td>
+<td><a href="artifacts/main-figure-6.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table E.1</td>
+<td><a href="artifacts/osm-table-E.1.html">View</a></td>
+<td><a href="artifacts/osm-table-E.1.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-E.1.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>recalculated</td>
+</tr>
+<tr>
+<td>OSM Table F.1</td>
+<td><a href="artifacts/osm-table-F.1.html">View</a></td>
+<td><a href="artifacts/osm-table-F.1.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.1.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.2</td>
+<td><a href="artifacts/osm-table-F.2.html">View</a></td>
+<td><a href="artifacts/osm-table-F.2.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.2.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>design specification</td>
+</tr>
+<tr>
+<td>OSM Table F.3</td>
+<td><a href="artifacts/osm-table-F.3.html">View</a></td>
+<td><a href="artifacts/osm-table-F.3.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.3.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>frozen design input</td>
+</tr>
+<tr>
+<td>OSM Table F.4</td>
+<td><a href="artifacts/osm-table-F.4.html">View</a></td>
+<td><a href="artifacts/osm-table-F.4.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.4.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.5</td>
+<td><a href="artifacts/osm-table-F.5.html">View</a></td>
+<td><a href="artifacts/osm-table-F.5.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.5.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.1</td>
+<td><a href="artifacts/osm-figure-F.1.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.1.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.1.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.6</td>
+<td><a href="artifacts/osm-table-F.6.html">View</a></td>
+<td><a href="artifacts/osm-table-F.6.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.6.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.7</td>
+<td><a href="artifacts/osm-table-F.7.html">View</a></td>
+<td><a href="artifacts/osm-table-F.7.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.7.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.2</td>
+<td><a href="artifacts/osm-figure-F.2.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.2.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.2.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.3</td>
+<td><a href="artifacts/osm-figure-F.3.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.3.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.3.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.8</td>
+<td><a href="artifacts/osm-table-F.8.html">View</a></td>
+<td><a href="artifacts/osm-table-F.8.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.8.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.9</td>
+<td><a href="artifacts/osm-table-F.9.html">View</a></td>
+<td><a href="artifacts/osm-table-F.9.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.9.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.10</td>
+<td><a href="artifacts/osm-table-F.10.html">View</a></td>
+<td><a href="artifacts/osm-table-F.10.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.10.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.11</td>
+<td><a href="artifacts/osm-table-F.11.html">View</a></td>
+<td><a href="artifacts/osm-table-F.11.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.11.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.4</td>
+<td><a href="artifacts/osm-figure-F.4.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.4.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.4.csv">CSV</a></td>
+<td><a href="code/exhibits/02_simulation.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.12</td>
+<td><a href="artifacts/osm-table-F.12.html">View</a></td>
+<td><a href="artifacts/osm-table-F.12.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.12.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.13</td>
+<td><a href="artifacts/osm-table-F.13.html">View</a></td>
+<td><a href="artifacts/osm-table-F.13.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.13.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.14</td>
+<td><a href="artifacts/osm-table-F.14.html">View</a></td>
+<td><a href="artifacts/osm-table-F.14.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.14.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.5</td>
+<td><a href="artifacts/osm-figure-F.5.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.5.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.5.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from synthetic replicates</td>
+</tr>
+<tr>
+<td>OSM Table F.15</td>
+<td><a href="artifacts/osm-table-F.15.html">View</a></td>
+<td><a href="artifacts/osm-table-F.15.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.15.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure F.6</td>
+<td><a href="artifacts/osm-figure-F.6.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.6.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.6.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from synthetic replicates</td>
+</tr>
+<tr>
+<td>OSM Figure F.7</td>
+<td><a href="artifacts/osm-figure-F.7.png">View</a></td>
+<td><a href="artifacts/osm-figure-F.7.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-F.7.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from synthetic replicates</td>
+</tr>
+<tr>
+<td>OSM Table F.16</td>
+<td><a href="artifacts/osm-table-F.16.html">View</a></td>
+<td><a href="artifacts/osm-table-F.16.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.16.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.17</td>
+<td><a href="artifacts/osm-table-F.17.html">View</a></td>
+<td><a href="artifacts/osm-table-F.17.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.17.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table F.18</td>
+<td><a href="artifacts/osm-table-F.18.html">View</a></td>
+<td><a href="artifacts/osm-table-F.18.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-F.18.csv">CSV</a></td>
+<td><a href="code/simulation/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table G.1</td>
+<td><a href="artifacts/osm-table-G.1.html">View</a></td>
+<td><a href="artifacts/osm-table-G.1.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-G.1.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>fresh G.2 calibration</td>
+</tr>
+<tr>
+<td>OSM Figure G.1</td>
+<td><a href="artifacts/osm-figure-G.1.png">View</a></td>
+<td><a href="artifacts/osm-figure-G.1.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-G.1.csv">CSV</a></td>
+<td><a href="code/calibration/v104/build.R">Code</a></td>
+<td>fresh G.2 calibration</td>
+</tr>
+<tr>
+<td>OSM Table H.1</td>
+<td><a href="artifacts/osm-table-H.1.html">View</a></td>
+<td><a href="artifacts/osm-table-H.1.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.1.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.2</td>
+<td><a href="artifacts/osm-table-H.2.html">View</a></td>
+<td><a href="artifacts/osm-table-H.2.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.2.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.3</td>
+<td><a href="artifacts/osm-table-H.3.html">View</a></td>
+<td><a href="artifacts/osm-table-H.3.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.3.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.4</td>
+<td><a href="artifacts/osm-table-H.4.html">View</a></td>
+<td><a href="artifacts/osm-table-H.4.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.4.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.5</td>
+<td><a href="artifacts/osm-table-H.5.html">View</a></td>
+<td><a href="artifacts/osm-table-H.5.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.5.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.6</td>
+<td><a href="artifacts/osm-table-H.6.html">View</a></td>
+<td><a href="artifacts/osm-table-H.6.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.6.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.7</td>
+<td><a href="artifacts/osm-table-H.7.html">View</a></td>
+<td><a href="artifacts/osm-table-H.7.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.7.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.8</td>
+<td><a href="artifacts/osm-table-H.8.html">View</a></td>
+<td><a href="artifacts/osm-table-H.8.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.8.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.9</td>
+<td><a href="artifacts/osm-table-H.9.html">View</a></td>
+<td><a href="artifacts/osm-table-H.9.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.9.csv">CSV</a></td>
+<td><a href="code/exhibits/03_applications.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.10</td>
+<td><a href="artifacts/osm-table-H.10.html">View</a></td>
+<td><a href="artifacts/osm-table-H.10.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.10.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.11</td>
+<td><a href="artifacts/osm-table-H.11.html">View</a></td>
+<td><a href="artifacts/osm-table-H.11.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.11.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>independently recomputed WLE</td>
+</tr>
+<tr>
+<td>OSM Table H.12</td>
+<td><a href="artifacts/osm-table-H.12.html">View</a></td>
+<td><a href="artifacts/osm-table-H.12.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.12.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.13</td>
+<td><a href="artifacts/osm-table-H.13.html">View</a></td>
+<td><a href="artifacts/osm-table-H.13.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.13.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure H.1</td>
+<td><a href="artifacts/osm-figure-H.1.png">View</a></td>
+<td><a href="artifacts/osm-figure-H.1.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-H.1.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.14</td>
+<td><a href="artifacts/osm-table-H.14.html">View</a></td>
+<td><a href="artifacts/osm-table-H.14.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.14.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.15</td>
+<td><a href="artifacts/osm-table-H.15.html">View</a></td>
+<td><a href="artifacts/osm-table-H.15.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.15.csv">CSV</a></td>
+<td><a href="code/exhibits/04_rasch.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure H.2</td>
+<td><a href="artifacts/osm-figure-H.2.png">View</a></td>
+<td><a href="artifacts/osm-figure-H.2.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-H.2.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.16</td>
+<td><a href="artifacts/osm-table-H.16.html">View</a></td>
+<td><a href="artifacts/osm-table-H.16.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.16.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.17</td>
+<td><a href="artifacts/osm-table-H.17.html">View</a></td>
+<td><a href="artifacts/osm-table-H.17.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.17.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.18</td>
+<td><a href="artifacts/osm-table-H.18.html">View</a></td>
+<td><a href="artifacts/osm-table-H.18.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.18.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure H.3</td>
+<td><a href="artifacts/osm-figure-H.3.png">View</a></td>
+<td><a href="artifacts/osm-figure-H.3.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-H.3.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure H.4</td>
+<td><a href="artifacts/osm-figure-H.4.png">View</a></td>
+<td><a href="artifacts/osm-figure-H.4.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-H.4.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Table H.19</td>
+<td><a href="artifacts/osm-table-H.19.html">View</a></td>
+<td><a href="artifacts/osm-table-H.19.tex">TEX</a></td>
+<td><a href="artifacts/osm-table-H.19.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+<tr>
+<td>OSM Figure H.5</td>
+<td><a href="artifacts/osm-figure-H.5.png">View</a></td>
+<td><a href="artifacts/osm-figure-H.5.pdf">PDF</a></td>
+<td><a href="artifacts/osm-figure-H.5.csv">CSV</a></td>
+<td><a href="code/applications/v104/build.R">Code</a></td>
+<td>rebuilt from public summary</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

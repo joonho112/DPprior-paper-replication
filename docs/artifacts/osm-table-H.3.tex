@@ -1,21 +1,22 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
 % Requires booktabs and longtable. Numeric source is the adjacent CSV.
 \begin{longtable}{llllll}
 \toprule
-application\_short\_label & display\_label & final\_attempt & max\_rhat & min\_ess\_bulk & min\_ess\_tail \\
+Application & Prior & Gamma (shape, rate) & Expected count [90\% interval] & Pr(weight > .5) & Pr(weight > .9) \\
 \midrule\endhead
-STAR & Vague & 2 & 1.00163 & 4315.284 & 3884.410 \\ \addlinespace[3pt]
-STAR & DORO-Unif & 2 & 1.00085 & 4868.099 & 3254.155 \\ \addlinespace[3pt]
-STAR & TSMM & 1 & 1.00343 & 574.957 & 561.103 \\ \addlinespace[3pt]
-STAR & Dual-Anchor & 2 & 1.00155 & 3223.476 & 2305.752 \\ \addlinespace[3pt]
-STAR & Dual-Anchor (hard) & 2 & 1.00179 & 1841.093 & 1010.940 \\ \addlinespace[3pt]
-Bangert--Drowns & Vague & 1 & 1.00384 & 1010.324 & 1194.736 \\ \addlinespace[3pt]
-Bangert--Drowns & DORO-Unif & 2 & 1.00084 & 7352.652 & 4005.062 \\ \addlinespace[3pt]
-Bangert--Drowns & TSMM & 2 & 1.00031 & 7362.524 & 5338.341 \\ \addlinespace[3pt]
-Bangert--Drowns & Dual-Anchor & 1 & 1.00733 & 783.288 & 573.728 \\ \addlinespace[3pt]
-Bangert--Drowns & Dual-Anchor (hard) & 1 & 1.00932 & 874.954 & 869.032 \\ \addlinespace[3pt]
-OCRS & Vague & 1 & 1.00385 & 892.136 & 679.876 \\ \addlinespace[3pt]
-OCRS & DORO-Unif & 1 & 1.00413 & 777.248 & 526.494 \\ \addlinespace[3pt]
-OCRS & TSMM & 1 & 1.00372 & 1126.852 & 765.951 \\ \addlinespace[3pt]
-OCRS & Dual-Anchor & 1 & 1.00922 & 855.674 & 556.404 \\ \addlinespace[3pt]
-OCRS & Dual-Anchor (hard) & 2 & 1.00186 & 3729.892 & 1950.685 \\ \addlinespace[3pt]
+Project STAR & Gamma(1,1) & (1.00, 1.00) & 4.61 [1, 11] & 0.591 & 0.303 \\ \addlinespace[3pt]
+Project STAR & TSMM & (5.13, 4.94) & 5.00 [2, 9] & 0.510 & 0.140 \\ \addlinespace[3pt]
+Project STAR & Dual-Anchor & (15.77, 11.11) & 6.24 [3, 10] & 0.385 & 0.051 \\ \addlinespace[3pt]
+Project STAR & DORO-Unif & (2.33, 2.18) & 4.99 [1, 10] & 0.527 & 0.187 \\ \addlinespace[3pt]
+Project STAR & Dual-Anchor (hard) & alpha approximately 2 & 7.93 [4, 12] & 0.250 & 0.010 \\ \addlinespace[3pt]
+Writing-to-learn & Gamma(1,1) & (1.00, 1.00) & 4.12 [1, 10] & 0.591 & 0.303 \\ \addlinespace[3pt]
+Writing-to-learn & TSMM & (1.15, 1.22) & 4.00 [1, 9] & 0.597 & 0.297 \\ \addlinespace[3pt]
+Writing-to-learn & Dual-Anchor & (3.78, 2.50) & 5.66 [2, 10] & 0.395 & 0.084 \\ \addlinespace[3pt]
+Writing-to-learn & DORO-Unif & (2.81, 3.19) & 3.99 [1, 8] & 0.576 & 0.217 \\ \addlinespace[3pt]
+Writing-to-learn & Dual-Anchor (hard) & (11.56, 5.44) & 7.15 [3, 12] & 0.250 & 0.017 \\ \addlinespace[3pt]
+Vocabulary checklist & Gamma(1,1) & (1.00, 1.00) & 6.44 [1, 17] & 0.591 & 0.303 \\ \addlinespace[3pt]
+Vocabulary checklist & TSMM & (2.11, 3.08) & 5.00 [1, 11] & 0.652 & 0.308 \\ \addlinespace[3pt]
+Vocabulary checklist & Dual-Anchor & (20.30, 14.51) & 8.75 [4, 14] & 0.388 & 0.050 \\ \addlinespace[3pt]
+Vocabulary checklist & Gamma(1,3) reference & (1.00, 3.00) & 3.03 [1, 8] & 0.812 & 0.566 \\ \addlinespace[3pt]
+Vocabulary checklist & Dual-Anchor (hard) & alpha approximately 2 & 11.59 [7, 17] & 0.250 & 0.010 \\ \addlinespace[3pt]
 \bottomrule\end{longtable}

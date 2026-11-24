@@ -37,3 +37,7 @@ The placeholder path must be replaced by the downloaded [AIR/ICPSR public-use V1
 The data-preparation path writes only school/study aggregates to `data-derived/applications/`. It checks them against the locked analysis inputs, then independently recalculates conventional normal random-effects benchmarks. The normal model summarizes continuous heterogeneity; it does not estimate DP cluster counts. The optional posterior-refit commands are documented separately under `refit/` as they become available.
 
 All generated tables go to `data-derived/applications/`; verification receipts go to `outputs/verification/`. See `CODEBOOK.md` for frozen inputs and their limits.
+
+## Revised cross-application comparisons
+
+The [application exhibit runner](v104/README.md) uses the reviewed cross-application inputs for Table 4, Figures 5 and 6, and OSM H.2–H.5 figures and H.3–H.4/H.16–H.19 tables. `Rscript applications/v104/build.R` runs after the normal-normal and Rasch summary steps. The complete exhibit runner dispatches these dependencies in order.

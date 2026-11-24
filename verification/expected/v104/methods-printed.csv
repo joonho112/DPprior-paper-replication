@@ -1,0 +1,77 @@
+exhibit,row_key,field,printed
+main-table-2,VIF = 1.25,target_variance,5
+main-table-2,VIF = 1.25,a,7.13
+main-table-2,VIF = 1.25,b,7.41
+main-table-2,VIF = 1.25,mean_alpha,0.96
+main-table-2,VIF = 1.5,target_variance,6
+main-table-2,VIF = 1.5,a,4.35
+main-table-2,VIF = 1.5,b,4.47
+main-table-2,VIF = 1.5,mean_alpha,0.97
+main-table-2,VIF = 2.5,target_variance,10
+main-table-2,VIF = 2.5,a,1.67
+main-table-2,VIF = 2.5,b,1.65
+main-table-2,VIF = 2.5,mean_alpha,1.01
+main-table-2,VIF = 5,target_variance,20
+main-table-2,VIF = 5,a,0.62
+main-table-2,VIF = 5,b,0.56
+main-table-2,VIF = 5,mean_alpha,1.11
+main-table-2,"Gamma(1, 1) default",a,1
+main-table-2,"Gamma(1, 1) default",b,1
+main-table-2,"Gamma(1, 1) default",mean_alpha,1.00
+main-table-2,VIF = 1.25,tail_05,0.53
+main-table-2,VIF = 1.25,tail_09,0.14
+main-table-2,VIF = 1.25,p_alpha_lt_01,0.000
+main-table-2,VIF = 1.5,tail_05,0.53
+main-table-2,VIF = 1.5,tail_09,0.16
+main-table-2,VIF = 1.5,p_alpha_lt_01,0.001
+main-table-2,VIF = 2.5,tail_05,0.56
+main-table-2,VIF = 2.5,tail_09,0.23
+main-table-2,VIF = 2.5,p_alpha_lt_01,0.030
+main-table-2,VIF = 5,tail_05,0.61
+main-table-2,VIF = 5,tail_09,0.36
+main-table-2,VIF = 5,p_alpha_lt_01,0.182
+main-table-2,"Gamma(1, 1) default",tail_05,0.59
+main-table-2,"Gamma(1, 1) default",tail_09,0.30
+main-table-2,"Gamma(1, 1) default",p_alpha_lt_01,0.095
+osm-table-E.1,STAR|count-calibrated,mean_count,5.000
+osm-table-E.1,STAR|count-calibrated,variance_count,5.480
+osm-table-E.1,STAR|count-calibrated,interval_mass,0.884
+osm-table-E.1,STAR|count-weight compromise,mean_count,6.237
+osm-table-E.1,STAR|count-weight compromise,variance_count,5.370
+osm-table-E.1,STAR|count-weight compromise,interval_mass,0.833
+osm-table-E.1,STAR|weight-bound sensitivity,mean_count,7.931
+osm-table-E.1,STAR|weight-bound sensitivity,variance_count,5.401
+osm-table-E.1,STAR|weight-bound sensitivity,interval_mass,0.614
+osm-table-E.1,Bangert-Drowns|count-calibrated,mean_count,4.000
+osm-table-E.1,Bangert-Drowns|count-calibrated,variance_count,7.459
+osm-table-E.1,Bangert-Drowns|count-calibrated,interval_mass,0.927
+osm-table-E.1,Bangert-Drowns|count-weight compromise,mean_count,5.658
+osm-table-E.1,Bangert-Drowns|count-weight compromise,variance_count,7.008
+osm-table-E.1,Bangert-Drowns|count-weight compromise,interval_mass,0.856
+osm-table-E.1,Bangert-Drowns|weight-bound sensitivity,mean_count,7.154
+osm-table-E.1,Bangert-Drowns|weight-bound sensitivity,variance_count,6.346
+osm-table-E.1,Bangert-Drowns|weight-bound sensitivity,interval_mass,0.720
+osm-table-E.1,Rasch|count-calibrated,mean_count,5.000
+osm-table-E.1,Rasch|count-calibrated,variance_count,9.742
+osm-table-E.1,Rasch|count-calibrated,interval_mass,0.849
+osm-table-E.1,Rasch|count-weight compromise,mean_count,8.752
+osm-table-E.1,Rasch|count-weight compromise,variance_count,8.986
+osm-table-E.1,Rasch|count-weight compromise,interval_mass,0.736
+osm-table-E.1,Rasch|weight-bound sensitivity,mean_count,11.590
+osm-table-E.1,Rasch|weight-bound sensitivity,variance_count,9.018
+osm-table-E.1,Rasch|weight-bound sensitivity,interval_mass,0.373
+osm-table-G.1,TSMM,a,1.4082
+osm-table-G.1,TSMM,b,1.0770
+osm-table-G.1,TSMM,E_K,5.000
+osm-table-G.1,TSMM,Var_K,10.000
+osm-table-G.1,TSMM,tail,0.497
+osm-table-G.1,Dual-Anchor,a,2.3158
+osm-table-G.1,Dual-Anchor,b,1.4204
+osm-table-G.1,Dual-Anchor,E_K,5.884
+osm-table-G.1,Dual-Anchor,Var_K,9.738
+osm-table-G.1,Dual-Anchor,tail,0.398
+osm-table-G.1,Dual-Anchor (hard),a,5.2745
+osm-table-G.1,Dual-Anchor (hard),b,2.3059
+osm-table-G.1,Dual-Anchor (hard),E_K,7.488
+osm-table-G.1,Dual-Anchor (hard),Var_K,9.051
+osm-table-G.1,Dual-Anchor (hard),tail,0.250

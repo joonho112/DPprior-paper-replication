@@ -50,4 +50,16 @@ Every result has an identity built from settings, data, assigned seeds, code has
 
 The drivers save locally under `outputs/refit/`, which is excluded from release. Rasch draw files contain person-level latent draws and must remain local. Run one job per process; collect completed receipts explicitly. No scheduler, cloud credentials or automatic fleet launch is included. For long production jobs, submit individual commands to your own execution system and collect their receipts before combining.
 
-See [refit-status.csv](../provenance/refit-status.csv) and [the smoke record](../verification/refit-smoke.md). We tested one simulation fit, one OCRS fit, one Rasch chain, conditional density extraction and eight guard checks. The four-real-chain Rasch combiner has not been executed end to end. These tests establish an executable path; they do not establish production convergence or numerical identity with the paper.
+See [refit-status.csv](../provenance/refit-status.csv) and [the smoke record](../verification/refit-smoke.md). The recorded checks cover short simulation, OCRS and Rasch jobs, conditional density extraction, eight guard checks, and four full selected simulation replays. End-to-end combination of four newly fitted Rasch chains remains untested.
+
+### Selected posterior-CDF replay
+
+Figure F.5 and Table F.15 use two generated datasets and four recorded terminal fits. To rerun a single fit, use the key in `data-frozen/simulation104/selected-replay-audit.csv`. The command below describes the first selected fit and its actual terminal schedule.
+
+```sh
+Rscript refit/simulation/replay_selected.R
+```
+
+Add `--fit-key KEY --execute` to sample from that fit using its four recorded seeds. The result under `outputs/refit/selected-simulation-replay/` includes the convergence flag, retained draw count, two full-line CDF distances, the GR distances and their differences from the archived replay. It also contains the plot grid; the distances use every jump in the pooled posterior CDF. The rebuild of the published exhibits uses the frozen four-fit replay summaries. Short chains can be requested with `--profile smoke` for a software check.
+
+The [selected replay verification](../provenance/selected-replay-verification.csv) records the observed convergence and numerical agreement for all four production jobs.

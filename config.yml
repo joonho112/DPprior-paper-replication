@@ -1,16 +1,18 @@
-schema_version: 1
-paper_url: https://arxiv.org/abs/2602.06301
+schema_version: 2
+manuscript_revision: 104
+paper_url: https://arxiv.org/abs/2602.06301v3
 root_marker: .replication-root
 frozen_dir: data-frozen
 derived_dir: data-derived
 output_dir: outputs
+exhibit_dir: outputs/v104
 profiles:
   core:
     purpose: Check paths and perform base-R calculations; no downloads or fitting.
     fit: false
     download: false
   rebuild:
-    purpose: Rebuild exhibits from frozen summaries.
+    purpose: Rebuild manuscript revision 104 exhibits from synthetic-site vectors, calibration inputs and application summaries.
     fit: false
     download: false
   calibration:
@@ -27,7 +29,7 @@ profiles:
     default_jobs: 1
     full_production_grid_default: false
   book:
-    purpose: Render the static replication guide; never execute analysis chunks.
+    purpose: Render the replication guide from the reviewed exhibit snapshots.
     fit: false
     execute_eval: false
 seed_policy: scientific run manifests preserve source seeds; no automatic random reseeding

@@ -1,13 +1,13 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="author" content="JoonHo Lee (jlee296@ua.edu)"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OSM Table F.2</title>
 <style>body{font:16px/1.5 system-ui,sans-serif;color:#243040;margin:2rem auto;max-width:1100px;padding:0 1rem}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid #dde3e9;text-align:left}th{background:#eef3f8}tr:nth-child(even){background:#f8fafc}.scroll{overflow-x:auto}p{max-width:85ch}</style>
-<h1>OSM Table F.2</h1><p>Constants are implemented in the preserved DGP and checked by verification/check_dgp.R.</p><div class="scroll"><table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
-<tr><td>J</td><td>25, 50, 100, 200</td></tr>
-<tr><td>Between-site SD</td><td>.25</td></tr>
-<tr><td>Within-component SD</td><td>.15</td></tr>
-<tr><td>Separation span</td><td>2.5</td></tr>
-<tr><td>SE variance scale</td><td>4</td></tr>
-<tr><td>Site-size CV</td><td>.5</td></tr>
-<tr><td>Minimum size</td><td>5</td></tr>
-<tr><td>Allocation</td><td>Exact integer; equal or 60% dominant</td></tr>
+<h1>OSM Table F.2</h1><p>Constants are implemented in the preserved DGP and checked by verification/check_dgp.R.</p><div class="scroll"><table><thead><tr><th>Parameter</th><th>Value</th><th>Role</th></tr></thead><tbody>
+<tr><td>J</td><td>25, 50, 100, 200</td><td>Main comparison uses 100 sites. Design-size comparisons vary J.</td></tr>
+<tr><td>Between-site SD</td><td>0.25</td><td>Sample SD of the generated site effects, using denominator J-1.</td></tr>
+<tr><td>Within-component SD</td><td>0.15</td><td>Controls overlap among components.</td></tr>
+<tr><td>Separation span</td><td>2.5</td><td>Component means span the interval from -d to d.</td></tr>
+<tr><td>SE variance scale</td><td>4</td><td>Site sampling variance equals this scale divided by site size.</td></tr>
+<tr><td>Site-size CV</td><td>0.5</td><td>Coefficient of variation before applying the minimum and rounding.</td></tr>
+<tr><td>Minimum size</td><td>5</td><td>Lower bound on site size.</td></tr>
+<tr><td>Allocation</td><td>Exact integer counts</td><td>Equal or exactly 60% dominant allocation.</td></tr>
 </tbody></table></div></html>

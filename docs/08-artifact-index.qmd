@@ -1,55 +1,68 @@
 # Tables and figures
 
-The index links each table and figure to its numerical data and R script. The previews are included with the package; the CSV files retain unrounded values.
+The index covers the 43 tables and 19 figures in manuscript version 104. Download a table as HTML or LaTeX, a figure as PNG or PDF, and the unrounded data as CSV. The calculation column distinguishes source specifications and computations from supplied data. The reproduction map records additional input files for figures with multiple panels. [Reproduction map](records/reproduction-map.csv)
 
-| Result | Preview | Data | R script | Calculation |
-|---|---|---|---|---|
-| Main Table 1 | [View](artifacts/main-table-1.html) | [CSV](artifacts/main-table-1.csv) | [Source](code/exhibits/01_methods.R) | Conceptual summary |
-| Main Figure 1 | [View](artifacts/main-figure-1.png) | [CSV](artifacts/main-figure-1.csv) | [Source](code/exhibits/01_methods.R) | Closed-form calculation |
-| Main Figure 2 | [View](artifacts/main-figure-2.png) | [CSV](artifacts/main-figure-2.csv) | [Source](code/exhibits/01_methods.R) | From supplied summaries |
-| Main Figure 3 | [View](artifacts/main-figure-3.png) | [CSV](artifacts/main-figure-3.csv) | [Source](code/exhibits/01_methods.R) | Conceptual summary |
-| Main Table 2 | [View](artifacts/main-table-2.html) | [CSV](artifacts/main-table-2.csv) | [Source](code/exhibits/01_methods.R) | From calibrated priors |
-| Main Figure 4 | [View](artifacts/main-figure-4.png) | [CSV](artifacts/main-figure-4.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| Main Table 3 | [View](artifacts/main-table-3.html) | [CSV](artifacts/main-table-3.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| Main Figure 5 | [View](artifacts/main-figure-5.png) | [CSV](artifacts/main-figure-5.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| Main Figure 6 | [View](artifacts/main-figure-6.png) | [CSV](artifacts/main-figure-6.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| Main Figure 7 | [View](artifacts/main-figure-7.png) | [CSV](artifacts/main-figure-7.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| Main Table 4 | [View](artifacts/main-table-4.html) | [CSV](artifacts/main-table-4.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| Main Table 5 | [View](artifacts/main-table-5.html) | [CSV](artifacts/main-table-5.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| Main Figure 8 | [View](artifacts/main-figure-8.png) | [CSV](artifacts/main-figure-8.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Table F.1 | [View](artifacts/osm-table-F.1.html) | [CSV](artifacts/osm-table-F.1.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.2 | [View](artifacts/osm-table-F.2.html) | [CSV](artifacts/osm-table-F.2.csv) | [Source](code/exhibits/02_simulation.R) | Specified design |
-| OSM Table F.3 | [View](artifacts/osm-table-F.3.html) | [CSV](artifacts/osm-table-F.3.csv) | [Source](code/exhibits/02_simulation.R) | Specified design |
-| OSM Table F.4 | [View](artifacts/osm-table-F.4.html) | [CSV](artifacts/osm-table-F.4.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.5 | [View](artifacts/osm-table-F.5.html) | [CSV](artifacts/osm-table-F.5.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.6 | [View](artifacts/osm-table-F.6.html) | [CSV](artifacts/osm-table-F.6.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Figure F.1 | [View](artifacts/osm-figure-F.1.png) | [CSV](artifacts/osm-figure-F.1.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.7 | [View](artifacts/osm-table-F.7.html) | [CSV](artifacts/osm-table-F.7.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.8 | [View](artifacts/osm-table-F.8.html) | [CSV](artifacts/osm-table-F.8.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.9 | [View](artifacts/osm-table-F.9.html) | [CSV](artifacts/osm-table-F.9.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.10 | [View](artifacts/osm-table-F.10.html) | [CSV](artifacts/osm-table-F.10.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table F.11 | [View](artifacts/osm-table-F.11.html) | [CSV](artifacts/osm-table-F.11.csv) | [Source](code/exhibits/02_simulation.R) | From supplied summaries |
-| OSM Table G.1 | [View](artifacts/osm-table-G.1.html) | [CSV](artifacts/osm-table-G.1.csv) | [Source](code/exhibits/01_methods.R) | From calibrated priors |
-| OSM Figure G.1 | [View](artifacts/osm-figure-G.1.png) | [CSV](artifacts/osm-figure-G.1.csv) | [Source](code/exhibits/01_methods.R) | From supplied summaries |
-| OSM Table H.1 | [View](artifacts/osm-table-H.1.html) | [CSV](artifacts/osm-table-H.1.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.2 | [View](artifacts/osm-table-H.2.html) | [CSV](artifacts/osm-table-H.2.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.3 | [View](artifacts/osm-table-H.3.html) | [CSV](artifacts/osm-table-H.3.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.4 | [View](artifacts/osm-table-H.4.html) | [CSV](artifacts/osm-table-H.4.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.5 | [View](artifacts/osm-table-H.5.html) | [CSV](artifacts/osm-table-H.5.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.6 | [View](artifacts/osm-table-H.6.html) | [CSV](artifacts/osm-table-H.6.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.7 | [View](artifacts/osm-table-H.7.html) | [CSV](artifacts/osm-table-H.7.csv) | [Source](code/exhibits/03_applications.R) | From supplied summaries |
-| OSM Table H.8 | [View](artifacts/osm-table-H.8.html) | [CSV](artifacts/osm-table-H.8.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Table H.9 | [View](artifacts/osm-table-H.9.html) | [CSV](artifacts/osm-table-H.9.csv) | [Source](code/exhibits/04_rasch.R) | WLE calculation |
-| OSM Table H.10 | [View](artifacts/osm-table-H.10.html) | [CSV](artifacts/osm-table-H.10.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Table H.11 | [View](artifacts/osm-table-H.11.html) | [CSV](artifacts/osm-table-H.11.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Table H.12 | [View](artifacts/osm-table-H.12.html) | [CSV](artifacts/osm-table-H.12.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Table H.13 | [View](artifacts/osm-table-H.13.html) | [CSV](artifacts/osm-table-H.13.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-| OSM Figure H.1 | [View](artifacts/osm-figure-H.1.png) | [CSV](artifacts/osm-figure-H.1.csv) | [Source](code/exhibits/04_rasch.R) | From supplied summaries |
-
-## Formats and verification
-
-Each figure also has a PDF, and each table has a LaTeX fragment. The LaTeX files use `booktabs` and `longtable`. Formatting is adapted for reading in the guide.
-
-Run `Rscript exhibits/00_build_all.R` to rebuild the results, followed by `Rscript verify_reproduction.R` to check them. The [reproduction map](records/reproduction-map.csv) gives the input and output paths; selected numerical results are written to `outputs/key_numbers.csv`.
-
-The comparisons use the numerical data and figure geometry. PDF creation metadata can change between runs. The [verification chapter](07-verification-refit.qmd) describes the checks and the Table 2 rounding difference.
+| Manuscript result | Preview | Print format | Data | Builder | Calculation |
+|---|---|---|---|---|---|
+| Main Table 1 | [View](artifacts/main-table-1.html) | [TEX](artifacts/main-table-1.tex) | [CSV](artifacts/main-table-1.csv) | [Code](code/calibration/v104/build.R) | definition |
+| Main Figure 1 | [View](artifacts/main-figure-1.png) | [PDF](artifacts/main-figure-1.pdf) | [CSV](artifacts/main-figure-1.csv) | [Code](code/calibration/v104/build.R) | recalculated |
+| Main Figure 2 | [View](artifacts/main-figure-2.png) | [PDF](artifacts/main-figure-2.pdf) | [CSV](artifacts/main-figure-2.csv) | [Code](code/calibration/v104/build.R) | recalculated moments with frozen discrete quantiles |
+| Main Figure 3 | [View](artifacts/main-figure-3.png) | [PDF](artifacts/main-figure-3.pdf) | [CSV](artifacts/main-figure-3.csv) | [Code](code/calibration/v104/build.R) | editable manuscript schematic |
+| Main Table 2 | [View](artifacts/main-table-2.html) | [TEX](artifacts/main-table-2.tex) | [CSV](artifacts/main-table-2.csv) | [Code](code/calibration/v104/build.R) | recalculated |
+| Main Table 3 | [View](artifacts/main-table-3.html) | [TEX](artifacts/main-table-3.tex) | [CSV](artifacts/main-table-3.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| Main Figure 4 | [View](artifacts/main-figure-4.png) | [PDF](artifacts/main-figure-4.pdf) | [CSV](artifacts/main-figure-4.csv) | [Code](code/simulation/v104/build.R) | rebuilt from synthetic replicates |
+| Main Table 4 | [View](artifacts/main-table-4.html) | [TEX](artifacts/main-table-4.tex) | [CSV](artifacts/main-table-4.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| Main Figure 5 | [View](artifacts/main-figure-5.png) | [PDF](artifacts/main-figure-5.pdf) | [CSV](artifacts/main-figure-5.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| Main Figure 6 | [View](artifacts/main-figure-6.png) | [PDF](artifacts/main-figure-6.pdf) | [CSV](artifacts/main-figure-6.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table E.1 | [View](artifacts/osm-table-E.1.html) | [TEX](artifacts/osm-table-E.1.tex) | [CSV](artifacts/osm-table-E.1.csv) | [Code](code/calibration/v104/build.R) | recalculated |
+| OSM Table F.1 | [View](artifacts/osm-table-F.1.html) | [TEX](artifacts/osm-table-F.1.tex) | [CSV](artifacts/osm-table-F.1.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.2 | [View](artifacts/osm-table-F.2.html) | [TEX](artifacts/osm-table-F.2.tex) | [CSV](artifacts/osm-table-F.2.csv) | [Code](code/exhibits/02_simulation.R) | design specification |
+| OSM Table F.3 | [View](artifacts/osm-table-F.3.html) | [TEX](artifacts/osm-table-F.3.tex) | [CSV](artifacts/osm-table-F.3.csv) | [Code](code/exhibits/02_simulation.R) | frozen design input |
+| OSM Table F.4 | [View](artifacts/osm-table-F.4.html) | [TEX](artifacts/osm-table-F.4.tex) | [CSV](artifacts/osm-table-F.4.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.5 | [View](artifacts/osm-table-F.5.html) | [TEX](artifacts/osm-table-F.5.tex) | [CSV](artifacts/osm-table-F.5.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Figure F.1 | [View](artifacts/osm-figure-F.1.png) | [PDF](artifacts/osm-figure-F.1.pdf) | [CSV](artifacts/osm-figure-F.1.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.6 | [View](artifacts/osm-table-F.6.html) | [TEX](artifacts/osm-table-F.6.tex) | [CSV](artifacts/osm-table-F.6.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table F.7 | [View](artifacts/osm-table-F.7.html) | [TEX](artifacts/osm-table-F.7.tex) | [CSV](artifacts/osm-table-F.7.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Figure F.2 | [View](artifacts/osm-figure-F.2.png) | [PDF](artifacts/osm-figure-F.2.pdf) | [CSV](artifacts/osm-figure-F.2.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Figure F.3 | [View](artifacts/osm-figure-F.3.png) | [PDF](artifacts/osm-figure-F.3.pdf) | [CSV](artifacts/osm-figure-F.3.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.8 | [View](artifacts/osm-table-F.8.html) | [TEX](artifacts/osm-table-F.8.tex) | [CSV](artifacts/osm-table-F.8.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.9 | [View](artifacts/osm-table-F.9.html) | [TEX](artifacts/osm-table-F.9.tex) | [CSV](artifacts/osm-table-F.9.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.10 | [View](artifacts/osm-table-F.10.html) | [TEX](artifacts/osm-table-F.10.tex) | [CSV](artifacts/osm-table-F.10.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.11 | [View](artifacts/osm-table-F.11.html) | [TEX](artifacts/osm-table-F.11.tex) | [CSV](artifacts/osm-table-F.11.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Figure F.4 | [View](artifacts/osm-figure-F.4.png) | [PDF](artifacts/osm-figure-F.4.pdf) | [CSV](artifacts/osm-figure-F.4.csv) | [Code](code/exhibits/02_simulation.R) | rebuilt from public summary |
+| OSM Table F.12 | [View](artifacts/osm-table-F.12.html) | [TEX](artifacts/osm-table-F.12.tex) | [CSV](artifacts/osm-table-F.12.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table F.13 | [View](artifacts/osm-table-F.13.html) | [TEX](artifacts/osm-table-F.13.tex) | [CSV](artifacts/osm-table-F.13.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table F.14 | [View](artifacts/osm-table-F.14.html) | [TEX](artifacts/osm-table-F.14.tex) | [CSV](artifacts/osm-table-F.14.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Figure F.5 | [View](artifacts/osm-figure-F.5.png) | [PDF](artifacts/osm-figure-F.5.pdf) | [CSV](artifacts/osm-figure-F.5.csv) | [Code](code/simulation/v104/build.R) | rebuilt from synthetic replicates |
+| OSM Table F.15 | [View](artifacts/osm-table-F.15.html) | [TEX](artifacts/osm-table-F.15.tex) | [CSV](artifacts/osm-table-F.15.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Figure F.6 | [View](artifacts/osm-figure-F.6.png) | [PDF](artifacts/osm-figure-F.6.pdf) | [CSV](artifacts/osm-figure-F.6.csv) | [Code](code/simulation/v104/build.R) | rebuilt from synthetic replicates |
+| OSM Figure F.7 | [View](artifacts/osm-figure-F.7.png) | [PDF](artifacts/osm-figure-F.7.pdf) | [CSV](artifacts/osm-figure-F.7.csv) | [Code](code/simulation/v104/build.R) | rebuilt from synthetic replicates |
+| OSM Table F.16 | [View](artifacts/osm-table-F.16.html) | [TEX](artifacts/osm-table-F.16.tex) | [CSV](artifacts/osm-table-F.16.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table F.17 | [View](artifacts/osm-table-F.17.html) | [TEX](artifacts/osm-table-F.17.tex) | [CSV](artifacts/osm-table-F.17.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table F.18 | [View](artifacts/osm-table-F.18.html) | [TEX](artifacts/osm-table-F.18.tex) | [CSV](artifacts/osm-table-F.18.csv) | [Code](code/simulation/v104/build.R) | rebuilt from public summary |
+| OSM Table G.1 | [View](artifacts/osm-table-G.1.html) | [TEX](artifacts/osm-table-G.1.tex) | [CSV](artifacts/osm-table-G.1.csv) | [Code](code/calibration/v104/build.R) | fresh G.2 calibration |
+| OSM Figure G.1 | [View](artifacts/osm-figure-G.1.png) | [PDF](artifacts/osm-figure-G.1.pdf) | [CSV](artifacts/osm-figure-G.1.csv) | [Code](code/calibration/v104/build.R) | fresh G.2 calibration |
+| OSM Table H.1 | [View](artifacts/osm-table-H.1.html) | [TEX](artifacts/osm-table-H.1.tex) | [CSV](artifacts/osm-table-H.1.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.2 | [View](artifacts/osm-table-H.2.html) | [TEX](artifacts/osm-table-H.2.tex) | [CSV](artifacts/osm-table-H.2.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.3 | [View](artifacts/osm-table-H.3.html) | [TEX](artifacts/osm-table-H.3.tex) | [CSV](artifacts/osm-table-H.3.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.4 | [View](artifacts/osm-table-H.4.html) | [TEX](artifacts/osm-table-H.4.tex) | [CSV](artifacts/osm-table-H.4.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.5 | [View](artifacts/osm-table-H.5.html) | [TEX](artifacts/osm-table-H.5.tex) | [CSV](artifacts/osm-table-H.5.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.6 | [View](artifacts/osm-table-H.6.html) | [TEX](artifacts/osm-table-H.6.tex) | [CSV](artifacts/osm-table-H.6.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.7 | [View](artifacts/osm-table-H.7.html) | [TEX](artifacts/osm-table-H.7.tex) | [CSV](artifacts/osm-table-H.7.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.8 | [View](artifacts/osm-table-H.8.html) | [TEX](artifacts/osm-table-H.8.tex) | [CSV](artifacts/osm-table-H.8.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.9 | [View](artifacts/osm-table-H.9.html) | [TEX](artifacts/osm-table-H.9.tex) | [CSV](artifacts/osm-table-H.9.csv) | [Code](code/exhibits/03_applications.R) | rebuilt from public summary |
+| OSM Table H.10 | [View](artifacts/osm-table-H.10.html) | [TEX](artifacts/osm-table-H.10.tex) | [CSV](artifacts/osm-table-H.10.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Table H.11 | [View](artifacts/osm-table-H.11.html) | [TEX](artifacts/osm-table-H.11.tex) | [CSV](artifacts/osm-table-H.11.csv) | [Code](code/exhibits/04_rasch.R) | independently recomputed WLE |
+| OSM Table H.12 | [View](artifacts/osm-table-H.12.html) | [TEX](artifacts/osm-table-H.12.tex) | [CSV](artifacts/osm-table-H.12.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Table H.13 | [View](artifacts/osm-table-H.13.html) | [TEX](artifacts/osm-table-H.13.tex) | [CSV](artifacts/osm-table-H.13.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Figure H.1 | [View](artifacts/osm-figure-H.1.png) | [PDF](artifacts/osm-figure-H.1.pdf) | [CSV](artifacts/osm-figure-H.1.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Table H.14 | [View](artifacts/osm-table-H.14.html) | [TEX](artifacts/osm-table-H.14.tex) | [CSV](artifacts/osm-table-H.14.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Table H.15 | [View](artifacts/osm-table-H.15.html) | [TEX](artifacts/osm-table-H.15.tex) | [CSV](artifacts/osm-table-H.15.csv) | [Code](code/exhibits/04_rasch.R) | rebuilt from public summary |
+| OSM Figure H.2 | [View](artifacts/osm-figure-H.2.png) | [PDF](artifacts/osm-figure-H.2.pdf) | [CSV](artifacts/osm-figure-H.2.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.16 | [View](artifacts/osm-table-H.16.html) | [TEX](artifacts/osm-table-H.16.tex) | [CSV](artifacts/osm-table-H.16.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.17 | [View](artifacts/osm-table-H.17.html) | [TEX](artifacts/osm-table-H.17.tex) | [CSV](artifacts/osm-table-H.17.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.18 | [View](artifacts/osm-table-H.18.html) | [TEX](artifacts/osm-table-H.18.tex) | [CSV](artifacts/osm-table-H.18.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Figure H.3 | [View](artifacts/osm-figure-H.3.png) | [PDF](artifacts/osm-figure-H.3.pdf) | [CSV](artifacts/osm-figure-H.3.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Figure H.4 | [View](artifacts/osm-figure-H.4.png) | [PDF](artifacts/osm-figure-H.4.pdf) | [CSV](artifacts/osm-figure-H.4.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Table H.19 | [View](artifacts/osm-table-H.19.html) | [TEX](artifacts/osm-table-H.19.tex) | [CSV](artifacts/osm-table-H.19.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |
+| OSM Figure H.5 | [View](artifacts/osm-figure-H.5.png) | [PDF](artifacts/osm-figure-H.5.pdf) | [CSV](artifacts/osm-figure-H.5.csv) | [Code](code/applications/v104/build.R) | rebuilt from public summary |

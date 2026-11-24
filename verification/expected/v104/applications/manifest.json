@@ -1,0 +1,139 @@
+{
+  "sources": {
+    "v6/analysis/application-storyline/spread/finite-spread.csv": "d6d3d534b3053612ec08e4fb741ceffd0782dcd35a2cda4213ff55294b70db7b",
+    "v4/outputs/tables/applications_v2_verified/table_application_primary_results_v2.csv": "aab2ec5a9ff86327baf614158c08dbfacc41a6ed5eccd2d351c63cfcc641a456",
+    "v4/outputs/psychometric_v3/priors_irt.csv": "2b8f7d9cf4f3eb261301d3f12eddfb509f92d614a19606d5a965dba5c587454c",
+    "v4/outputs/psychometric_v3/posterior_summary_irt.csv": "a627302ca9a0c1dec03e5b6b7b620182991927857e2d709b0b34fcd1fbf2a1a1",
+    "v6/analysis/application-storyline/prior-shifts/common-scale.csv": "1d0dbdcb46653a433468c2e323735a8207a33013bd79c7122f96d541094030ba",
+    "v6/analysis/application-storyline/prior-shifts/within-prior-split.csv": "c93fdaa5a61d1450688e49d00216fd74fc25597f8daffd1bc87304bae88a8070",
+    "v6/analysis/application-displays-v3/figure/panel-a-values.csv": "ab5dd441fba7d84df469a1cdeaeaaf5c77c171d00c231a9ab7e3961044c930f4",
+    "v6/analysis/application-displays-v3/figure/panel-b-values.csv": "c0587cc9d65ae38532645e7d538a048a9bef9fe2471ad7380b2ed2d89bf72112",
+    "v6/analysis/application-displays-v2/figure/quantile-profiles.csv": "89205281d3bd7e317214aca1194bf82879ca99b7ca7c920efb972495654c89cb",
+    "v6/analysis/application-storyline/finite-cdf/finite-cdf-curves.csv": "96733f8932e682a8547f10d0ea09043b508b0dbffdb1173bb0d220436ea8bb32",
+    "v6/analysis/application-storyline/finite-cdf/grid-maxima.csv": "b3987da77d13189eb4c226835c728acc40066375509c36c6f03898c4e17f3975",
+    "v6/analysis/application-storyline/supplement/population-density-distances.csv": "642f28b63756cfb3f32758e7bd0a664b6a09ffc203e69000e13fed269d0803fc",
+    "v6/analysis/application-storyline/finite-cdf/pointwise-prior-ranges.csv": "c4d1a9469dae0a157b62e452a6446d8bcc7f658d5b11adc4d4b4b8f389c9d5b5",
+    "v6/analysis/application-storyline/unit-effects/interval-exceptions.csv": "1f2d97888c5bbc681d09fa5b928ece7736a5714eb14f3c4c24dacc75a6de2889",
+    "v6/analysis/application-storyline/unit-effects/rasch-score-changes.csv": "e7729276ba577db3ee1ee0c801f0c829408966a208c202c638c9efc7fa26c12f",
+    "v6/analysis/tail-unit-pooling/unit-results.csv": "8561b2766720c83d554d7ccd13747548248e4ecf1512a6f48dc31e2d55697e80",
+    "v6/analysis/tail-unit-pooling/group-summary.csv": "b8663352e12eafbe7402b729cf9bd0fb0a381e85fd64cd34bfdcc7745df3b135",
+    "v6/analysis/tail-unit-pooling/robustness-cutoffs.csv": "8052257214a0e8a2a3bd08b15f0476f51bea1779e88868102f47222971709639",
+    "v6/analysis/tail-unit-pooling/robustness-fixed-K.csv": "870b1eaeedb16678d987ad876fe3dc57a32a3447095242af9a25c7d4af11e675",
+    "v6/analysis/tail-unit-pooling/split-chain-check.csv": "142695fce8c5038ea49a5743388c135993c60dc79021d5cdc387bd6ba8937fa8",
+    "v5/replication-staging/distribution-comparisons/outputs/density/bd/Dual-Soft-Selected/density-summary.csv": "5e6eec225475ae4abdebce105fe87f15fabf6782583c05743b3a3603ba69888b",
+    "v5/replication-staging/distribution-comparisons/outputs/density/bd/TSMM/density-summary.csv": "84b12c82db33df2a85d40f2ff8c224d45cda53a1d3f1be63104b1218d1289b64",
+    "v5/replication-staging/distribution-comparisons/outputs/density/bd/Vague/density-summary.csv": "6b6121deae6778d182cf8bd4a8f1ee779de651fceeb8eed37f168f87aeff2c32",
+    "v5/replication-staging/distribution-comparisons/outputs/density/star/Dual-Soft-Selected/density-summary.csv": "dcddabdcd55492a92d0731fc5b450ef94e4ee7d008ba810d86e9cd7325104b83",
+    "v5/replication-staging/distribution-comparisons/outputs/density/star/TSMM/density-summary.csv": "c776d584e3ec95aa2fdf33e552260d425fd32715720985103df5732f8966697f",
+    "v5/replication-staging/distribution-comparisons/outputs/density/star/Vague/density-summary.csv": "62193c72383e674b6cd03afeb7d4787571ac24ffa37bfb8349e5803e804babaa",
+    "v5/replication-staging/distribution-comparisons/outputs/tables/rasch-density-grid.csv": "a430f9130e858266a4b87b0ab6d585dd81dedd43d979e75d4f1e0f4d67dc4b8a",
+    "v6/manuscript/amsart/main.tex": "d215e83d2df1f85d4c6f5aee38a29149ee0ccf93f6065ee7d0378e219945d552",
+    "v6/manuscript/amsart/osm_body.tex": "8201619baf5fa53e8fec4518c16dbd0f1c29805fa32d7cc3e4be40ecbc03fef8"
+  },
+  "origins": {
+    "main-table.csv": [
+      "v6/analysis/application-storyline/spread/finite-spread.csv",
+      "v4/outputs/tables/applications_v2_verified/table_application_primary_results_v2.csv",
+      "v4/outputs/psychometric_v3/priors_irt.csv",
+      "v4/outputs/psychometric_v3/posterior_summary_irt.csv"
+    ],
+    "all-priors.csv": [
+      "v4/outputs/tables/applications_v2_verified/table_application_primary_results_v2.csv",
+      "v4/outputs/psychometric_v3/priors_irt.csv"
+    ],
+    "all-posteriors.csv": [
+      "v4/outputs/tables/applications_v2_verified/table_application_primary_results_v2.csv",
+      "v4/outputs/psychometric_v3/posterior_summary_irt.csv",
+      "v6/analysis/application-storyline/prior-shifts/common-scale.csv"
+    ],
+    "changes.csv": [
+      "v6/analysis/application-storyline/prior-shifts/common-scale.csv"
+    ],
+    "chain-checks.csv": [
+      "v6/analysis/application-storyline/prior-shifts/common-scale.csv",
+      "v6/analysis/application-storyline/prior-shifts/within-prior-split.csv"
+    ],
+    "spread.csv": [
+      "v6/analysis/application-storyline/spread/finite-spread.csv"
+    ],
+    "figure5-a.csv": [
+      "v6/analysis/application-displays-v3/figure/panel-a-values.csv"
+    ],
+    "figure5-b.csv": [
+      "v6/analysis/application-displays-v3/figure/panel-b-values.csv"
+    ],
+    "profiles.csv": [
+      "v6/analysis/application-displays-v2/figure/quantile-profiles.csv"
+    ],
+    "cdf.csv": [
+      "v6/analysis/application-storyline/finite-cdf/finite-cdf-curves.csv"
+    ],
+    "cdf-ranges.csv": [
+      "v6/analysis/application-storyline/finite-cdf/pointwise-prior-ranges.csv"
+    ],
+    "cdf-maxima.csv": [
+      "v6/analysis/application-storyline/finite-cdf/grid-maxima.csv"
+    ],
+    "score-changes.csv": [
+      "v6/analysis/application-storyline/unit-effects/rasch-score-changes.csv"
+    ],
+    "interval-exceptions.csv": [
+      "v6/analysis/application-storyline/unit-effects/interval-exceptions.csv"
+    ],
+    "density.csv": [
+      "v5/replication-staging/distribution-comparisons/outputs/density/bd/Dual-Soft-Selected/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/density/bd/TSMM/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/density/bd/Vague/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/density/star/Dual-Soft-Selected/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/density/star/TSMM/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/density/star/Vague/density-summary.csv",
+      "v5/replication-staging/distribution-comparisons/outputs/tables/rasch-density-grid.csv"
+    ],
+    "density-distances.csv": [
+      "v6/analysis/application-storyline/supplement/population-density-distances.csv"
+    ],
+    "pooling-points.csv": [
+      "v6/analysis/tail-unit-pooling/unit-results.csv"
+    ],
+    "pooling-groups.csv": [
+      "v6/analysis/tail-unit-pooling/group-summary.csv"
+    ],
+    "pooling-halves.csv": [
+      "v6/analysis/tail-unit-pooling/split-chain-check.csv"
+    ],
+    "fixed-count.csv": [
+      "v6/analysis/tail-unit-pooling/robustness-fixed-K.csv"
+    ],
+    "cutoffs.csv": [
+      "v6/analysis/tail-unit-pooling/robustness-cutoffs.csv"
+    ],
+    "printed.csv": [
+      "v6/manuscript/amsart/main.tex",
+      "v6/manuscript/amsart/osm_body.tex"
+    ]
+  },
+  "files": {
+    "all-posteriors.csv": "cb2858eaec0e43cafc78cfdd0a0e664b7f5d597ae0bfd71e905f6dc1a72ac5ae",
+    "all-priors.csv": "a8e7b5617cc15a1b5738b5c9783dd01c402fde35f4ecd75104bee68b3e51d0a1",
+    "cdf-maxima.csv": "14038739bbe3bc41c5ca498602bee5b9968f4c8dcd44ecadaaa5f00acbbab319",
+    "cdf-ranges.csv": "9207abcb8e33a990d3935a86d8bb023a2fe859059e7385db4daef8fe53f12344",
+    "cdf.csv": "7e6965a77c3ce6a11e0d41873003003327595219ff5f91da944fc2158cfd93c2",
+    "chain-checks.csv": "54eee175ae40886ed50b33cd862c8a19e13d7875ce94818169cf4da2b7b77b9c",
+    "changes.csv": "d0d5fca35b169c8532d84b16e9490d170390607e2888bbccb7d9dba8fa4540a5",
+    "cutoffs.csv": "0dbb885a2462260acfba6099a0b32bb97b939a6fc2d4ea742928f3a3e1dc3501",
+    "density-distances.csv": "b24e05bb6f9ddb3343bad1039723dca0be8f0338781259ada74e771c772ba51d",
+    "density.csv": "6a943b4259930892f560b93c9c921a75cece8b7419d4931a44a772ef4f133f2f",
+    "figure5-a.csv": "861084c24028612502fd16de16ef4e8f939c5620a613a71dc9e159ff79c304b7",
+    "figure5-b.csv": "14b02d8cd383fb49ab36b4cc9c24b978d3a2c1aec365885c496d8c6cd31c91dd",
+    "fixed-count.csv": "b2eedd2e3518962d596e3cf1ffe49f5a63e147cd59721599aa953571e9947d0c",
+    "interval-exceptions.csv": "d6f01657f1b19f707765de9d857cc837418521381b3dc203368ed60c7717be3d",
+    "main-table.csv": "2f91e519c99fff056af64e0edcff9accb1a55e6615c87bf83a9da7e806afa302",
+    "pooling-groups.csv": "9d72076eec297da9670a82dd27b11f0cb2e0262963892e90b832be5b4c83cab4",
+    "pooling-halves.csv": "64e08d14f4e2c9fe203b37ab5402665c47cadbc22d1a00bf6551d6cc2b8f5ef9",
+    "pooling-points.csv": "39cbe9b6e68326373808ee99796912400135bb1f2c101d87c9b3f4f346590e1b",
+    "printed.csv": "484b419465fcaa4a54142fbcf782096a8a39fa4d9466639147b7797b732f5cdf",
+    "profiles.csv": "52a6b37a83c797accb7c18e80eee0574c3b05212a58ea3336cfad37aa2db7e62",
+    "score-changes.csv": "d6ccf1bc8acdcd7869c24ee75b703b1b4564949d1e470668b5dcd5807df30a31",
+    "spread.csv": "77e688da8e9a9e55754ea537bc76b9744bce645204454834863894aede3be106"
+  }
+}

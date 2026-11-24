@@ -25,3 +25,7 @@ Run these from the repository root. Outputs are written under `data-derived/simu
 6. **Fixed lambda:** compare the policy-selected value with .5 and .9 at two informativeness levels.
 
 `aggregation.R` retains the numerical aggregation and subset-selection functions from the manuscript. The public adapter replaces archive path discovery with explicit hashed inputs. No reference result is used to compute a new estimate: files under `verification/expected/` are read only for comparison. Figure rendering is handled by the exhibit build, separately from these numerical steps.
+
+## Revised distribution summaries
+
+After the six aggregation steps, run `Rscript simulation/v104/build.R` for Table 3, Figure 4 and their distribution-recovery supplements. The [simulation recovery guide](v104/README.md) defines eligible datasets, loss calculations and the four selected CDF replays.

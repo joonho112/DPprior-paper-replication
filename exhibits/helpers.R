@@ -6,7 +6,7 @@
 # displayed table or figure to the summaries used to build it.
 #
 # Sourced by the exhibit modules after common bootstrap.
-# Writes: outputs/main/, outputs/osm/ and outputs/exhibit-receipts/.
+# Writes: outputs/v104/ and outputs/exhibit-receipts/.
 # LaTeX tables are portable longtable fragments, not standalone documents.
 
 source(rp_path('exhibits', 'style.R', must_exist = TRUE))
@@ -33,7 +33,7 @@ ex_meta <- function(id, files, frame, sources, tier, note = '') {
     frame,
     rp_output_path(
       'outputs',
-      strsplit(id, '-', fixed = TRUE)[[1]][1],
+      'v104',
       paste0(id, '.csv')
     )
   )
@@ -65,7 +65,7 @@ ex_figure <- function(
     id,
     width_in = width,
     height_in = height,
-    dir = rp_path('outputs', strsplit(id, '-', fixed = TRUE)[[1]][1])
+    dir = rp_path('outputs', 'v104')
   )
   ex_meta(id, unname(out), frame, sources, tier, note)
 }
@@ -105,7 +105,7 @@ ex_table <- function(
     x[is.na(x) | x == 'NA'] <- '--'
     x
   })
-  area <- strsplit(id, '-', fixed = TRUE)[[1]][1]
+  area <- 'v104'
   html <- rp_output_path('outputs', area, paste0(id, '.html'))
   tex <- rp_output_path('outputs', area, paste0(id, '.tex'))
   dir.create(dirname(html), recursive = TRUE, showWarnings = FALSE)
@@ -117,7 +117,7 @@ ex_table <- function(
   )
   writeLines(
     c(
-      '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">',
+      '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="author" content="JoonHo Lee (jlee296@ua.edu)"><meta name="viewport" content="width=device-width, initial-scale=1">',
       paste0('<title>', title, '</title>'),
       '<style>body{font:16px/1.5 system-ui,sans-serif;color:#243040;margin:2rem auto;max-width:1100px;padding:0 1rem}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid #dde3e9;text-align:left}th{background:#eef3f8}tr:nth-child(even){background:#f8fafc}.scroll{overflow-x:auto}p{max-width:85ch}</style>',
       paste0(
@@ -136,6 +136,7 @@ ex_table <- function(
   )
   # A portable longtable fragment, for users who want to typeset the rebuilt table.
   writeLines(c(
+    '% Author: JoonHo Lee (jlee296@ua.edu)',
     '% Requires booktabs and longtable. Numeric source is the adjacent CSV.',
     paste0('\\begin{longtable}{', paste(rep('l', ncol(display)), collapse = ''), '}'),
     '\\toprule', paste0(paste(ex_tex(names(display)), collapse = ' & '), ' \\\\'),

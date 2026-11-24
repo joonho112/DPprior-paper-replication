@@ -1,14 +1,15 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
 % Requires booktabs and longtable. Numeric source is the adjacent CSV.
-\begin{longtable}{ll}
+\begin{longtable}{lll}
 \toprule
-Parameter & Value \\
+Parameter & Value & Role \\
 \midrule\endhead
-J & 25, 50, 100, 200 \\ \addlinespace[3pt]
-Between-site SD & .25 \\ \addlinespace[3pt]
-Within-component SD & .15 \\ \addlinespace[3pt]
-Separation span & 2.5 \\ \addlinespace[3pt]
-SE variance scale & 4 \\ \addlinespace[3pt]
-Site-size CV & .5 \\ \addlinespace[3pt]
-Minimum size & 5 \\ \addlinespace[3pt]
-Allocation & Exact integer; equal or 60\% dominant \\ \addlinespace[3pt]
+J & 25, 50, 100, 200 & Main comparison uses 100 sites. Design-size comparisons vary J. \\ \addlinespace[3pt]
+Between-site SD & 0.25 & Sample SD of the generated site effects, using denominator J-1. \\ \addlinespace[3pt]
+Within-component SD & 0.15 & Controls overlap among components. \\ \addlinespace[3pt]
+Separation span & 2.5 & Component means span the interval from -d to d. \\ \addlinespace[3pt]
+SE variance scale & 4 & Site sampling variance equals this scale divided by site size. \\ \addlinespace[3pt]
+Site-size CV & 0.5 & Coefficient of variation before applying the minimum and rounding. \\ \addlinespace[3pt]
+Minimum size & 5 & Lower bound on site size. \\ \addlinespace[3pt]
+Allocation & Exact integer counts & Equal or exactly 60\% dominant allocation. \\ \addlinespace[3pt]
 \bottomrule\end{longtable}

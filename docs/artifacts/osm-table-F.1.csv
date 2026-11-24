@@ -1,6 +1,6 @@
-"Suite","Cells","Fits"
-"Additional cells",71,14200
-"Central dominant",16,3200
-"Initial set",145,29000
-"Main N(0,1)",45,9000
-"Matched N(0,.01)",45,9000
+"Suite","Cells","Fits","Purpose"
+"Initial set",145,29000,"Prespecified sensitivity and design-size conditions under N(0,100)."
+"Matched N(0,.01)",45,9000,"Matched conditions for the grand-mean prior comparison."
+"Main N(0,1)",45,9000,"Primary conditions, including the 15 low-information cells."
+"Central dominant",16,3200,"Location sensitivity with a 60% component."
+"Additional cells",71,14200,"Additional misspecification, design-size and location conditions."

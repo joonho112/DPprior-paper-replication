@@ -49,3 +49,9 @@ The weight loss uses .25 as a target, whereas .40 determines whether a candidate
 Run `calibration/05_confidence_levels.R` to compare four confidence settings at $J=100$. The standard figure build uses the supplied calibration results, so optimization need only be repeated when examining the elicitation itself.
 
 [Worked-example table](artifacts/osm-table-G.1.html) · [Numerical results](artifacts/osm-table-G.1.csv)
+
+## Check the manuscript example and count ranges
+
+OSM G.2 executes the 50-unit worked example with the project policy and two numerical verification orders. Table G.1 reports the calibrated and adjusted count and weight summaries. Table E.1 computes the actual mass between each elicited pair of integer count endpoints. A stated 80% range and the mass delivered by the calibrated prior can differ. Table 2 uses unrounded parameters for its displayed probabilities. The VIF 1.25 probability is about 0.144969 and appears as 0.14. [G.2 listing](records/G2-example.R) · [G.2 runner](code/calibration/v104/worked.R) · [Table 2](artifacts/main-table-2.html) · [Table E.1](artifacts/osm-table-E.1.html)
+
+Box 1 summarizes the decision procedure. Figure 3 is reproduced from its editable diagram source. [Figure 3](artifacts/main-figure-3.png) · [TeX diagram](records/workflow.tex)

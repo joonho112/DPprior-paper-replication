@@ -1,15 +1,23 @@
 # Verification
 
-Author: JoonHo Lee (jlee296@ua.edu)
+From the package root, run the build, then the verifier.
 
-After rebuilding the outputs, run `Rscript verify_reproduction.R`. We compare 255 simulation columns and 290 application columns with independently stored results, check the WLE, score and density calculations, and compare 68 selected numbers. All 41 tables and figures have input/output checks. OSM Table F.7 is also compared with the 36 printed reference rows.
+```sh
+Rscript exhibits/00_build_all.R
+Rscript verify_reproduction.R
+```
 
-`python3 verification/check_book.py` checks the static examples, copied scripts and local links. Numerical data and figure geometry are checked separately from PDF creation metadata, which can vary between runs.
+The exhibit check requires 62 named receipts, the 186 corresponding files, and the G.2 example JSON. It checks their identities, input and display hashes, numeric CSV hashes, row counts and column lists against the exhibit contract. Independent numeric checks use fixed references under `verification/expected/`. The same package reproduces historical regression frames for the inherited simulations, applications and vocabulary example. Each result's scientific scope is recorded in the [reproduction map](../provenance/reproduction-map.csv).
 
-`python3 verification/negative_controls.py` introduces five numerical errors and tests six disclosure cases, including a clean control. The altered copies are temporary; the original expected values remain unchanged.
+The independent simulation check compares exact converged-fit membership, full-precision results and printed manuscript values. The application check covers five fitted priors per application, population and observed weights, score frequencies, chain splits, individual and percentile changes, and both signs used for upper-tail pooling. The checks read the regenerated tables and figures' numeric frames. They also read each rendered HTML and LaTeX table for the revised simulation and application results.
 
-`sh verification/cold_start.sh --execute` rebuilds the package in a separate directory using only the public file list and a cache of 26 installed dependencies. Personal R profiles are disabled. On macOS, the original home directory and network are also unavailable during the test. The command checks setup, the numerical build, verification and guide rendering. It does not install dependencies from source.
+```sh
+python3 verification/v104/simulation.py
+python3 verification/v104/applications.py
+Rscript verification/check_exhibits.R
+Rscript verification/check_refit_guards.R
+```
 
-`python3 verification/disclosure_scan.py /path/to/candidate` compares the files with the allowlist and inspects CSV units, text, PDF and image metadata, symlinks and archive contents. Use `--site-only` to check the rendered guide. The public files contain aggregate analysis inputs; respondent records and individual latent draws remain outside the package.
+For individual results, the checkers accept the package root through `--root` on their Python interfaces. The [comparison rules](comparison-rules.yml) document comparison tolerances. Optional fitting schedules and their actual execution coverage are in the [refit checks](refit-smoke.md). The [discrepancy ledger](../provenance/manuscript-discrepancies.csv) gives both source and computed values where the printed manuscript used a different parameterization.
 
-The [validation record](../provenance/validation-summary.json) gives the recorded checks, and the [platform record](../provenance/platform-matrix.csv) lists tested environments. The [Table 2 note](../provenance/manuscript-discrepancies.csv) retains the rounding difference. Full production posterior fits have not been repeated for this package.
+Run `python3 verification/v104/negative_controls.py` for the six numerical mutation tests. Each uses a disposable copy and checks the specific failure message before restoring the original bytes and rerunning the appropriate verifier. Results are written to `outputs/verification/v104-negative.json`.

@@ -1,13 +1,25 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="author" content="JoonHo Lee (jlee296@ua.edu)"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OSM Table H.6</title>
 <style>body{font:16px/1.5 system-ui,sans-serif;color:#243040;margin:2rem auto;max-width:1100px;padding:0 1rem}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;border-bottom:1px solid #dde3e9;text-align:left}th{background:#eef3f8}tr:nth-child(even){background:#f8fafc}.scroll{overflow-x:auto}p{max-width:85ch}</style>
-<h1>OSM Table H.6</h1><p>Location profiles preserve joint posterior group intervals; they are not reconstructed by averaging marginal school interval endpoints. Vague and Dual-Anchor appear as paired rows per location.</p><div class="scroll"><table><thead><tr><th>level</th><th>unit_count</th><th>observed_effect_mean</th><th>display_label</th><th>posterior_profile_mean</th><th>posterior_profile_q025</th><th>posterior_profile_q975</th></tr></thead><tbody>
-<tr><td>inner</td><td>16</td><td>0.229870</td><td>Vague</td><td>0.206386</td><td>0.0776113</td><td>0.336247</td></tr>
-<tr><td>rural</td><td>38</td><td>0.188341</td><td>Vague</td><td>0.188094</td><td>0.0820882</td><td>0.292489</td></tr>
-<tr><td>suburb</td><td>18</td><td>0.150915</td><td>Vague</td><td>0.186217</td><td>0.0617883</td><td>0.311521</td></tr>
-<tr><td>urban</td><td>7</td><td>0.218072</td><td>Vague</td><td>0.196680</td><td>0.0302762</td><td>0.366816</td></tr>
-<tr><td>inner</td><td>16</td><td>0.229870</td><td>Dual-Anchor</td><td>0.208215</td><td>0.0810289</td><td>0.340590</td></tr>
-<tr><td>rural</td><td>38</td><td>0.188341</td><td>Dual-Anchor</td><td>0.187949</td><td>0.0842474</td><td>0.292688</td></tr>
-<tr><td>suburb</td><td>18</td><td>0.150915</td><td>Dual-Anchor</td><td>0.184309</td><td>0.0570649</td><td>0.309339</td></tr>
-<tr><td>urban</td><td>7</td><td>0.218072</td><td>Dual-Anchor</td><td>0.195815</td><td>0.0250043</td><td>0.368200</td></tr>
+<h1>OSM Table H.6</h1><p>Sensitivity minus primary, within the same application/prior. Wider model scale and STAR HC3 change inputs beyond the concentration hyperprior.</p><div class="scroll"><table><thead><tr><th>Comparison</th><th>Application</th><th>Hyperprior</th><th>Change in mean count</th><th>Change in one-cluster probability</th><th>Unit-mean RMSD</th><th>Changed intervals / J</th></tr></thead><tbody>
+<tr><td>Wide scale</td><td>STAR</td><td>Vague</td><td>-0.744</td><td>+0.282</td><td>0.0043</td><td>2/79</td></tr>
+<tr><td>Wide scale</td><td>STAR</td><td>DORO-Unif</td><td>-1.067</td><td>+0.351</td><td>0.0036</td><td>0/79</td></tr>
+<tr><td>Wide scale</td><td>STAR</td><td>TSMM</td><td>-1.449</td><td>+0.395</td><td>0.0069</td><td>1/79</td></tr>
+<tr><td>Wide scale</td><td>STAR</td><td>Dual-Anchor</td><td>-1.616</td><td>+0.255</td><td>0.0044</td><td>1/79</td></tr>
+<tr><td>Wide scale</td><td>STAR</td><td>Dual-Anchor (hard)</td><td>-1.030</td><td>+0.064</td><td>0.0029</td><td>0/79</td></tr>
+<tr><td>Wide scale</td><td>Bangert--Drowns</td><td>Vague</td><td>-0.667</td><td>+0.291</td><td>0.0076</td><td>1/48</td></tr>
+<tr><td>Wide scale</td><td>Bangert--Drowns</td><td>DORO-Unif</td><td>-0.905</td><td>+0.341</td><td>0.0052</td><td>0/48</td></tr>
+<tr><td>Wide scale</td><td>Bangert--Drowns</td><td>TSMM</td><td>-0.695</td><td>+0.289</td><td>0.0053</td><td>1/48</td></tr>
+<tr><td>Wide scale</td><td>Bangert--Drowns</td><td>Dual-Anchor</td><td>-1.420</td><td>+0.363</td><td>0.0065</td><td>0/48</td></tr>
+<tr><td>Wide scale</td><td>Bangert--Drowns</td><td>Dual-Anchor (hard)</td><td>-1.834</td><td>+0.209</td><td>0.0032</td><td>0/48</td></tr>
+<tr><td>Wide scale</td><td>OCRS</td><td>Vague</td><td>-0.345</td><td>+0.181</td><td>0.0021</td><td>0/24</td></tr>
+<tr><td>Wide scale</td><td>OCRS</td><td>DORO-Unif</td><td>-0.700</td><td>+0.314</td><td>0.0054</td><td>0/24</td></tr>
+<tr><td>Wide scale</td><td>OCRS</td><td>TSMM</td><td>-0.378</td><td>+0.194</td><td>0.0041</td><td>0/24</td></tr>
+<tr><td>Wide scale</td><td>OCRS</td><td>Dual-Anchor</td><td>-0.771</td><td>+0.304</td><td>0.0079</td><td>0/24</td></tr>
+<tr><td>Wide scale</td><td>OCRS</td><td>Dual-Anchor (hard)</td><td>-1.569</td><td>+0.408</td><td>0.0060</td><td>0/24</td></tr>
+<tr><td>STAR HC3</td><td>STAR</td><td>Vague</td><td>+0.239</td><td>-0.053</td><td>0.1744</td><td>19/79</td></tr>
+<tr><td>STAR HC3</td><td>STAR</td><td>DORO-Unif</td><td>+0.560</td><td>-0.099</td><td>0.1738</td><td>19/79</td></tr>
+<tr><td>STAR HC3</td><td>STAR</td><td>TSMM</td><td>+0.314</td><td>-0.035</td><td>0.1712</td><td>20/79</td></tr>
+<tr><td>STAR HC3</td><td>STAR</td><td>Dual-Anchor</td><td>+0.455</td><td>-0.023</td><td>0.1709</td><td>19/79</td></tr>
+<tr><td>STAR HC3</td><td>STAR</td><td>Dual-Anchor (hard)</td><td>+0.309</td><td>-0.003</td><td>0.1692</td><td>19/79</td></tr>
 </tbody></table></div></html>

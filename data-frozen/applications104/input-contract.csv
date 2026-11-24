@@ -1,0 +1,15 @@
+file,rows,key,columns,bytes,sha256
+chain-mean-by-unit-or-score.csv,846,app prior block unit_or_score,app prior block unit_or_score frequency mean,41256,29b6ad520dad4c5b115cc0ecccec6803e39139fa88b3100d72e21e9968c5120d
+density-runs.csv,6,app prior_label,app prior_label parent_execution_fit_key grid_nodes grid_limit grid_step whole_grid_status numerical_status original_base_unit_diagnostic_pass precision_status nodes_verified nodes_constant nodes_diagnostic_unavailable nodes_diagnostic_failure nodes_chain_disagreement nodes_nonfinite max_mean_MCSE max_q025_MCSE max_q975_MCSE,1780,6fe0369169a181a4cff090887f9de9503a8414c4d0cd52dffa82009a3fd56633
+finite-cdf.csv,4215,app prior x,app n prior x mean lower upper status mcse_mean rhat ess_bulk ess_tail,540404,db78e02d603c37e03d8e8afeeb0aa3c6390e8e6914d3772ce970784a79d7fe90
+interval-endpoint-mcse.csv,3,app unit,app unit mcse_q025_vague mcse_q025_tsmm,182,2df03cf7595d70b9735f45f60ead78c74a943bf83392b3c91fcd9e0c079a8577
+percentile-values.csv,3582,app prior block p,app prior block p quantile,171484,d811e840e02399c44af38593d82807a2d043e0bf20ddeff15eed8e5ed5827027
+pooling-chain-halves.csv,16,app prior group half,app prior group half coassign displacement,1028,65cdf7772be37e1f079bf7722159cf34b882be085d630ab5a4f862f16f277505
+pooling-contrast-mcse.csv,4,app prior,app prior coassign distance,249,a0137e7d7238161f01cc61992c1e964a8c52d4f5ab0fc95081b924f37c33b3bb
+pooling-cutoffs.csv,16,app prior upper_fraction,app prior upper_fraction n_upper n_central upper_coassignment central_coassignment upper_gap central_gap,1659,b15c679bc4fc138d7e73ad99b1c61899bf61551df611e09580f3b961e07014c4
+pooling-fixed-count.csv,16,app prior K,app prior K retained_draws min_draws_per_chain upper_to_central central_to_other_central,939,975701cf9a292cd1e91fd3ebeb6c8e28512501b8168f167e74c93981fbd2f9f9
+pooling-unit.csv,254,app prior unit,app prior unit sharing mcse_mean,13868,903f0005f121a1da6e81125e4aaf63eb3c5f0dc2c06a7db2233a390ba22d0720
+population-density-normal.csv,1926,app prior x,app prior x mean lower upper status,174328,01f8527f102b47088699bebb70555db80d28f78fb20fbb7187cf9d29a9618fdc
+rank-bin-sums.csv,3600,app prior_a block_a prior_b block_b bin,app prior_a block_a prior_b block_b bin n_rank sum_sq,251598,117cfb13efb3b783a71aece854a72ddcfad89a79cd48f2222a87b3115bc2e4a7
+spread-by-count.csv,10,app prior_label,app prior_label J draws draws_one_component sd_mean_all sd_mean_one_component sd_mean_two_or_more,946,cb59a8aa85b61eec6498aed08555f8d17ccb00d602866b0f0cc8c89364e9f2f8
+spread-functionals.csv,30,app prior functional,app prior n functional mean lower upper rhat ess_bulk ess_tail mcse_mean mcse_lower mcse_upper,5547,9bb2eed06b395cd78c956dc38c9a9dfa903289254bec067ce0733aa493be2fc5

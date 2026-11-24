@@ -30,6 +30,20 @@ refit/simulation/run_one_fit.R,refit,One synthetic four-chain fit,dry run; --exe
 refit/applications/run_one_fit.R,refit,One selected public application fit,dry run; --execute required,OCRS bounded-smoke-tested,outputs/refit,none,four chains only when explicit
 refit/rasch/run_one_chain.R,refit,One declared Rasch chain,dry run; --execute required,bounded-smoke-tested,outputs/refit,none,one chain only when explicit
 refit/rasch/combine_and_check.R,refit,Combine four explicitly indexed same-attempt chains,dry run; --execute required,dry-run-and-component-tested,outputs/refit,none,no new fitting; conditional DP measure draws
-exhibits/00_build_all.R,rebuild,Reaggregate and render current 41 artifacts plus 68 key numbers,explicit rebuild,cold-start-tested-macOS,data-derived;outputs,none,none
-exhibits/05_key_numbers.R,rebuild,Calculate selected key-number ledger,explicit rebuild,tested-macOS,outputs/key_numbers.csv,none,none
-verify_reproduction.R,rebuild,Independent quick-path checks,read inputs; write receipts,cold-start-tested-macOS,outputs/verification,none,none
+exhibits/00_build_all.R,rebuild,"Build 43 current tables, 19 figures and numerical frames in an isolated staging directory",explicit rebuild,November tested macOS,data-derived; outputs,none,none
+exhibits/05_key_numbers.R,rebuild,Calculate inherited key-number regression ledger,explicit rebuild,tested-macOS,outputs/key_numbers.csv,none,none
+verify_reproduction.R,rebuild,"Verify current exhibit contracts, independent reference sets and inherited checks",read inputs; write receipts,November macOS,outputs/verification,none,none
+calibration/v104/build.R,rebuild,Reconstruct methods exhibits and execute published G.2 example,default build,November tested macOS,outputs/v104; data-derived/v104,none,none
+simulation/v104/build.R,rebuild,Recompute synthetic distribution and count exhibits,default build,November tested macOS,outputs/v104; data-derived/v104,none,none
+applications/v104/build.R,rebuild,Recompute application distributions and upper-unit comparisons,default build,November tested macOS,outputs/v104; data-derived/v104/applications,none,none
+verification/check_exhibits.R,rebuild,"Verify exact 62 IDs, 186 artifacts, schemas and SHA-256 receipts",verification,November tested macOS,outputs/verification,none,none
+verification/check_retained.R,rebuild,Verify inherited regression numbers and the F.7 cell frame,verification,November tested macOS,outputs/verification,none,none
+verification/v104/simulation.py,rebuild,"Check synthetic support, errors, panels and exact printed table values",verification,November tested macOS,none,none,none
+verification/v104/applications.py,rebuild,Check independently frozen three-application results and literal table displays,verification,November tested macOS,none,none,none
+verification/v104/methods.py,rebuild,"Check G.2, count and weight calculations and manuscript targets",verification,November tested macOS,none,none,none
+verification/check_application_grids.py,rebuild,Check application grid semantics and summary coverage,verification,November tested macOS,none,none,none
+verification/check_refit_guards.R,refit,"Check chain/run identity, safe reuse and corruption handling",synthetic fixture,November tested macOS,outputs/verification,none,none
+simulation/v104/check_inputs.py,rebuild,"Validate the eight synthetic CSV file hashes, keys and schemas",read-only,November tested macOS,none,none,none
+refit/simulation/replay_selected.R,refit,Replay one of four prespecified synthetic terminal fits,dry run unless --execute,November tested macOS,outputs/refit/selected-simulation-replay,none,selected fit only with --execute
+common/figure_runtime.py,rebuild,"Check the rendering executables, ReportLab runtime and fonts",read-only,November tested macOS,none,none,none
+verification/v104/negative_controls.py,rebuild,Inject six numerical or data-integrity errors in disposable file copies and require the expected verifier error,temporary fixture tests,November tested macOS,outputs/verification/v104-negative.json,none,none

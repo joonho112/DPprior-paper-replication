@@ -1,7 +1,9 @@
 platform,scope,status,evidence
-macOS arm64 R 4.6.0,quick numerical rebuild and Quarto Book,tested-local,provenance/validation-summary.json
-macOS arm64 R 4.6.0,bounded model smokes,tested-local,provenance/refit-status.csv
-macOS arm64 R 4.6.0,public-only isolated cold start,passed-original-home-and-network-denied,provenance/validation-summary.json; 26-package dependency cache; not a fresh install
+macOS arm64 R 4.6.0,November 104 numerical rebuild and local R profiles,tested-local,verification/check_exhibits.R; provenance/software-lock.csv
+macOS arm64 R 4.6.0,November 104 clean rebuild in a public-only directory with spaces using locked dependencies,passed-cached-offline,"verification/cold_start.py --execute; 27 R packages, 3 Python packages; network, original home and original source denied"
+macOS arm64 R 4.6.0,November 104 first-time installation into empty R and Python libraries,passed-fresh-install,verification/cold_start.py --execute --fresh-install; 21 exact R binaries and 6 source installs; 3 locked Python distributions
+macOS arm64 R 4.6.0,Bounded optional jobs and four selected production simulation replays,tested-local,provenance/refit-status.csv; provenance/selected-replay-verification.csv
+macOS arm64 R 4.6.0,September predecessor: public-only isolated cold start,historical-passed,September publication 827cf435addbd23aef656c4378f44ae67cc1e8df; preinstalled package cache
 Linux ubuntu-24.04,static Book and optional numerical CI,not-run,.github/workflows/check.yml
-GitHub Pages,manual static-only deployment,not-deployed,.github/workflows/pages.yml
+GitHub Pages,September predecessor: GitHub Pages; November candidate local only,local-candidate,.github/workflows/pages.yml; manual author release
 Windows,all execution paths,not-tested,no supported-platform claim

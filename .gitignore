@@ -1,6 +1,7 @@
 # Private execution history and local environments
 /log/
 /.library/
+/.venv/
 /.private/
 /.staging/
 /.cache/

@@ -1,0 +1,10 @@
+application,prior_role,J,stated_interval_lower,stated_interval_upper,gamma_shape,gamma_rate
+STAR,count-calibrated,79,2,8,5.13442324676452,4.93892479418199
+STAR,count-weight compromise,79,2,8,15.7700607119146,11.11176205211
+STAR,weight-bound sensitivity,79,2,8,3268997.89395,1634498.60040084
+Bangert-Drowns,count-calibrated,48,1,8,1.14529802964433,1.22058635247571
+Bangert-Drowns,count-weight compromise,48,1,8,3.78421442940703,2.4951087927481
+Bangert-Drowns,weight-bound sensitivity,48,1,8,11.5612132963812,5.44095761832015
+Rasch,count-calibrated,500,2,10,2.10622839376745,3.0788824875447
+Rasch,count-weight compromise,500,2,10,20.2967503116458,14.5088544096694
+Rasch,weight-bound sensitivity,500,2,10,3268991.12646551,1634495.21665859

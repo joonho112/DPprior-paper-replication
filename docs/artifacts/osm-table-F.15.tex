@@ -1,0 +1,11 @@
+% Author: JoonHo Lee (jlee296@ua.edu)
+% Requires booktabs and longtable. Numeric source is the adjacent CSV.
+\begin{longtable}{llllllll}
+\toprule
+Generating count & Prior & Replicate & Joint draws & Posterior CDF ISEL & Posterior CDF KS & GR ISEL & GR KS \\
+\midrule\endhead
+5 & TSMM & 1 & 32000 & 0.006453 & 0.1557 & 0.006472 & 0.1600 \\ \addlinespace[3pt]
+5 & Dual-Anchor & 1 & 240000 & 0.006661 & 0.1570 & 0.006679 & 0.1600 \\ \addlinespace[3pt]
+30 & Gamma(1,1) & 1 & 32000 & 0.002162 & 0.0858 & 0.002180 & 0.0900 \\ \addlinespace[3pt]
+30 & TSMM & 1 & 240000 & 0.002805 & 0.0949 & 0.002823 & 0.0900 \\ \addlinespace[3pt]
+\bottomrule\end{longtable}

@@ -60,9 +60,16 @@ for (i in which(needed)) {
     lock$version[i],
     ')\n'
   )
+  if (pass && p == 'DPprior') {
+    expected_library <- rp_path('.library', p)
+    project_install <- dir.exists(expected_library) &&
+      identical(normalizePath(find.package(p)), normalizePath(expected_library))
+    if (!project_install) cat('FAIL: DPprior must be installed in the project .library; use common/install_dependencies.R.\n')
+    pass <- pass && project_install
+  }
   ok <- ok && pass
 }
-if (profile %in% c('calibration', 'refit') &&
+if (profile %in% c('rebuild', 'calibration', 'refit') &&
   requireNamespace('digest', quietly = TRUE)) {
   functions <- rp_read_csv(rp_path('provenance', 'package-function-lock.csv', must_exist = TRUE))
   for (p in intersect(c('DPprior', 'DPMirt'), lock$package[needed])) {
@@ -91,6 +98,13 @@ if (profile %in% c('calibration', 'refit') &&
     )
     ok <- ok && all(valid)
   }
+}
+if (profile == 'rebuild') {
+  checker <- rp_path('common', 'figure_runtime.py', must_exist = TRUE)
+  python <- Sys.which('python3')
+  render_status <- if (nzchar(python)) system2(python, shQuote(checker)) else 1L
+  if (render_status != 0L) cat('FAIL: Figure runtime. See common/TOOLCHAIN.md.\n')
+  ok <- ok && render_status == 0L
 }
 if (profile == 'book') {
   quarto <- Sys.which('quarto')

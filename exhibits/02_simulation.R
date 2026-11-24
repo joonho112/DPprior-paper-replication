@@ -8,11 +8,11 @@
 #
 # Called by exhibits/00_build_all.R.
 # Reads: data-derived/simulation/ and selected frozen design records.
-# Builds: main Table 3, Figures 4-6 and the OSM F exhibits.
+# Builds OSM Figures F.1–F.4 and Tables F.1–F.5 and F.7–F.11.
 
 source(rp_path('exhibits', 'helpers.R'))
 
-# Figure 4: distributions across retained fits
+# OSM Figure F.4: distributions across retained fits
 primary <- ex_read('simulation', 'headline_primary.csv')
 fits <- ex_read('simulation', 'headline_fits.csv')
 fits$role <- ex_role(fits$prior)
@@ -31,44 +31,15 @@ p <- ggplot(fits, aes(role, E_K, fill = role)) +
   labs(x = NULL, y = 'Posterior mean cluster count') +
   theme_v3(legend = 'none') +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 9))
-ex_figure('main-figure-4',
+ex_figure('osm-figure-F.4',
   p,
   fits,
   'data-derived/simulation/headline_fits.csv',
   height = 7,
-  note = 'N(0,1) grand-mean prior. Boxes use 8,607 converged fits from 9,000 attempts; exact cell denominators are in OSM F.5. DORO-Unif is an external reference.'
+  note = 'N(0,1) grand-mean prior. Boxes use 8,607 converged fits from 9,000 attempts; exact cell denominators are in OSM F.5. Vague denotes Gamma(1,1). DORO-Unif is an external reference.'
 )
 
-# Main Table 3 and OSM F.6: the low-informativeness comparison
-low <- primary[primary$I_target == .2, ]
-low <- low[order(low$K_true, ex_role(low$prior)), ]
-display <- data.frame(
-  'K*' = low$K_true,
-  Prior = low$prior,
-  'Mean K (SD)' = paste0(ex_f(low$mean_E_K, 2), ' (', ex_f(low$sd_between_E_K, 2), ')'),
-  Bias = ex_f(low$mean_K_bias, 2),
-  RMSE = ex_f(low$rmse_E_K, 2),
-  'Collapse probability' = ex_f(low$mean_p_K1),
-  Coverage = ex_f(low$coverage95_K),
-  check.names = FALSE
-)
-ex_table('main-table-3',
-  low,
-  display,
-  sources = 'data-derived/simulation/headline_primary.csv',
-  note = 'I=.2 and N(0,1). SD describes between-replication variability of posterior means. Collapse is posterior P(K=1), averaged over retained fits.'
-)
-full <- display
-full[['n / planned']] <- paste0(low$n_scientific_eligible, '/', low$n_manifest)
-full[['Interval width']] <- ex_f(low$mean_interval_width_K, 2)
-ex_table('osm-table-F.6',
-  low,
-  full,
-  sources = 'data-derived/simulation/headline_primary.csv',
-  note = 'Full main Table 3, including exact denominators and mean 95% count interval width.'
-)
-
-# Figure 5: compare complete count-misspecification trajectories
+# OSM Figure F.2: compare complete count-misspecification trajectories
 m <- ex_read('simulation', 'misspecification_medium_balanced.csv')
 stopifnot(nrow(m) == 30L)
 m$role <- ex_role(m$prior)
@@ -96,7 +67,7 @@ p <- ggplot(m, aes(r, mean_E_K, colour = role, shape = role, linetype = role)) +
     linetype = NULL
   ) +
   theme_v3()
-ex_figure('main-figure-5',
+ex_figure('osm-figure-F.2',
   p,
   m,
   'data-derived/simulation/misspecification_medium_balanced.csv',
@@ -104,7 +75,7 @@ ex_figure('main-figure-5',
   note = 'Only complete three-point trajectories at VIF=2.5 are drawn. The missing Dual-Anchor K*=5 trajectory is a calibration exclusion, not a zero-valued result. Grand-mean variance is 100.'
 )
 
-# Figure 6: compare complete study-size trajectories
+# OSM Figure F.3: compare complete study-size trajectories
 ds <- ex_read('simulation', 'design_size_balanced.csv')
 ds <- ds[!(ds$prior == 'DORO-Unif' & is.finite(ds$r) & ds$r != 1), ]
 stopifnot(nrow(ds) == 80L)
@@ -132,12 +103,12 @@ p <- ggplot(ds, aes(J, mean_E_K, colour = role, shape = role, linetype = role)) 
     linetype = NULL
   ) +
   theme_v3()
-ex_figure('main-figure-6',
+ex_figure('osm-figure-F.3',
   p,
   ds,
   'data-derived/simulation/design_size_balanced.csv',
   height = 5.8,
-  note = 'Complete J trajectories under grand-mean variance 100. High-informativeness J=200 cells retain 30–93 of 200 fits. DORO-Unif is an external reference.'
+  note = 'Complete J trajectories under grand-mean variance 100. High-informativeness J=200 cells retain 30–93 of 200 fits. Vague denotes Gamma(1,1). DORO-Unif is an external reference.'
 )
 # Paired changes: right minus left, using joint convergence and common DGP seeds.
 
@@ -170,7 +141,7 @@ ex_figure('osm-figure-F.1',
   'data-derived/simulation/headline_paired.csv',
   width = 9,
   height = 8,
-  note = 'All 45 main-comparison conditions in each contrast. Whiskers are empirical 2.5–97.5 percentiles over paired replications, not confidence intervals for the mean.'
+  note = 'Each contrast includes 45 conditions with at least 111 jointly converged replications per condition. Whiskers give the empirical 2.5th and 97.5th percentiles of the paired differences.'
 )
 # Planned suites are recovered from batch/design membership, not hard-coded counts.
 
@@ -195,7 +166,18 @@ suite$display <- ifelse(suite$batch == 'extension',
 t <- aggregate(design_id ~ display, suite, length)
 names(t) <- c('Suite', 'Cells')
 t$Fits <- t$Cells * 200
-display_suite <- rbind(t, data.frame(Suite = 'Total', Cells = sum(t$Cells), Fits = sum(t$Fits)))
+purposes <- c(
+  'Initial set' = 'Prespecified sensitivity and design-size conditions under N(0,100).',
+  'Matched N(0,.01)' = 'Matched conditions for the grand-mean prior comparison.',
+  'Main N(0,1)' = 'Primary conditions, including the 15 low-information cells.',
+  'Central dominant' = 'Location sensitivity with a 60% component.',
+  'Additional cells' = 'Additional misspecification, design-size and location conditions.'
+)
+t <- t[match(names(purposes), t$Suite), ]
+t$Purpose <- unname(purposes[t$Suite])
+display_suite <- rbind(t, data.frame(Suite = 'Total', Cells = sum(t$Cells),
+                                    Fits = sum(t$Fits), Purpose = 'All planned conditions.'))
+display_suite <- display_suite[c('Suite', 'Purpose', 'Cells', 'Fits')]
 ex_table('osm-table-F.1',
   t,
   display_suite,
@@ -219,13 +201,18 @@ dgp <- data.frame(
   ),
   Value = c(
     paste(sort(unique(design$J)), collapse = ', '),
-    '.25',
-    '.15',
-    '2.5',
-    '4',
-    '.5',
-    '5',
-    'Exact integer; equal or 60% dominant'
+    policy$dgp$sigma_tau, policy$dgp$within_sd_raw, policy$dgp$cluster_span_d,
+    policy$dgp$kappa, policy$dgp$n_cv, policy$dgp$n_min, 'Exact integer counts'
+  ),
+  Role = c(
+    'Main comparison uses 100 sites. Design-size comparisons vary J.',
+    'Sample SD of the generated site effects, using denominator J-1.',
+    'Controls overlap among components.',
+    'Component means span the interval from -d to d.',
+    'Site sampling variance equals this scale divided by site size.',
+    'Coefficient of variation before applying the minimum and rounding.',
+    'Lower bound on site size.',
+    sprintf('Equal or exactly %.0f%% dominant allocation.', 100 * policy$dgp$dominant_share)
   )
 )
 ex_table('osm-table-F.2',
@@ -240,6 +227,7 @@ ex_table('osm-table-F.2',
 )
 i <- unique(design[c('I_target', 'n_mean')])
 i <- i[order(i$I_target), ]
+i$Status <- 'Frozen input'
 ex_table('osm-table-F.3',
   i,
   sources = 'data-frozen/simulation/design.csv',
@@ -293,7 +281,7 @@ ex_table('osm-table-F.4',
     'data-frozen/simulation/fit_status.csv',
     'data-frozen/simulation/design.csv'
   ),
-  note = 'External DORO-Unif parameters are the actual fitting inputs. The two calibrated count/weight roles coincide where TSMM already meets the trigger; duplicate rows are omitted.'
+  note = 'DORO-Unif is an external reference. At K*=30 the original projection shape rounds to 0.943 in the manuscript, and the independently optimized shape actually used by the fits rounds to 0.942. The accompanying CSV reports the fitting parameters. See simulation/v104/doro-projection-reference.csv for both projections.'
 )
 
 # OSM F.5: account for all planned fits and main-cell denominators
@@ -348,9 +336,9 @@ cols <- c(
 )
 ex_table('osm-table-F.7',
   m,
-  m[cols],
+  transform(m[cols], retained_out_of_planned = paste0(m$n_scientific_eligible, '/', m$n_manifest)),
   sources = 'data-derived/simulation/misspecification_balanced.csv',
-  note = 'The 36 completed trajectories in the current OSM: TSMM/Dual-Anchor at VIF=2.5 and the six displayed Dual-Anchor VIF=5 cells. The full medium-confidence audit contains 60 cells, 56 reportable; see data-derived/simulation/misspecification_medium.csv for that separate population.'
+  note = 'The 36 completed cells in the current OSM: TSMM/Dual-Anchor at VIF=2.5 and the six displayed Dual-Anchor VIF=5 cells. The full medium-confidence audit contains 60 cells, 56 reportable; see data-derived/simulation/misspecification_medium.csv for that separate population.'
 )
 
 # OSM F.8-F.9: place study sizes in columns while retaining each denominator

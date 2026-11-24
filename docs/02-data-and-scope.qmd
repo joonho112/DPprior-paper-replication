@@ -4,17 +4,19 @@ The package contains the summaries needed to reconstruct the reported comparison
 
 | Analysis | Included in the package | Source for data preparation or fitting |
 |---|---|---|
-| Simulation | Fit metrics, diagnostic status, designs and seeds | Synthetic data from the R model code |
+| Simulation | Convergence ledger, synthetic truth and site estimates, fit metrics, selected CDF replay summaries | Synthetic data from the R model code |
 | Project STAR | School effects, model summaries and location profiles | `mlmRev::star`, version 1.0-9 |
 | Writing-to-learn | Study effects and model summaries | `metadat::dat.bangertdrowns2004`, version 1.6-0 |
 | Online Credit Recovery Study | Effects for 24 schools and model summaries | AIR/ICPSR public-use impact file, project 202181 V1 |
-| Vocabulary checklist | Score frequencies, item estimates and model summaries | IRW table `gcbs_brotherton_2013_vcl` |
+| Vocabulary checklist | 14 score frequencies, 13 item summaries, CDF and population-density grids, chain-pair aggregates | IRW table `gcbs_brotherton_2013_vcl` |
 
 ## Stored analysis summaries
 
 We refer to the inputs in `data-frozen/` as frozen because the rebuilding scripts leave them unchanged. For the simulation, these files contain metrics from the individual retained fits, which we aggregate again. For the applications, they contain posterior summaries from the original fits.
 
 Some results require joint posterior information. In particular, location-profile intervals and population-density bands cannot be recovered from marginal intervals alone. We therefore supply these results as model-level summaries. The prior examples recalculate the concentration hyperpriors, and the WLE script independently solves the scoring equation using fixed item estimates. The [reproduction map](records/reproduction-map.csv) identifies the inputs and calculation for each result.
+
+The version-104 input records identify the additional public application tables by column, row count, compound key and SHA-256. The exact distances between distributions use sums of squared differences across empirical percentile ranks. Each Rasch block retains 14 score-group means and their frequencies. Personal responses, allocations and person-level posterior draws stay with the local data holder. [Application input contract](records/application-inputs.csv)
 
 ## Online Credit Recovery Study
 

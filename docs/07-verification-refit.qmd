@@ -1,16 +1,14 @@
 # Verification and refitting
 
-We first check that the supplied inputs reproduce the numerical summaries. Refitting addresses a further question: whether the models can be estimated again from synthetic or separately obtained source data. The commands below separate these tasks so that a table can be checked without running a long posterior simulation.
-
 ## Verify the reconstructed results
 
-~~~bash
+~~~sh
 Rscript verify_reproduction.R
 ~~~
 
-The checker compares the simulation and application calculations with independently stored results in `verification/expected/`. It also checks the WLE equation, extreme scores and reliability, and compares 68 selected numbers. Recorded hashes identify the inputs used for each table and figure. The [reproduction map](records/reproduction-map.csv) describes which results are recalculated and which use stored posterior summaries.
+The verifier compares reconstructed quantities with fixed references that the numerical build does not update. It checks the admitted simulation fit keys and common-dataset denominators, the direction of Gamma–Dual changes, Rasch score frequencies, interval endpoints, diagnostic gates and selected numeric claims. The G.2 calculation and the Table 2 and E.1 probabilities have independent checks. The reproduction map lists the validation path and evidence level for every one of the 62 current exhibits. [Reproduction map](records/reproduction-map.csv) · [Artifact contract](records/artifact-contract.csv) · [Calibration checks](code/verification/v104/methods.py) · [Simulation checks](code/verification/v104/simulation.py) · [Application checks](code/verification/v104/applications.py)
 
-There is one rounding difference in Table 2. For VIF=1.25, the tail probability calculated from unrounded parameters is .144969 and rounds to .14, whereas the printed reference gives .15. The rebuilt table uses .14. The [numerical note](records/manuscript-discrepancies.csv) records both values.
+The simulation build includes the two selected posterior-CDF replay summaries. Application verification uses finite-CDF curves, density integrals, matched ranks and group averages from existing fits. A fresh fit answers a further question about sampling variability and convergence. A short executable example for each family is described below.
 
 ## Fit one simulation or application model
 
@@ -21,7 +19,7 @@ Rscript refit/simulation/run_one_fit.R
 Rscript refit/simulation/run_one_fit.R --profile smoke --execute
 ~~~
 
-The default is a Vague-prior fit with $J=25$. Use `--fit-key` from the fit-status manifest to select another model. The `smoke` profile uses 200 iterations with 100 discarded as warmup to check that the code runs. The `production` profile uses the original longer schedules and the four assigned chain seeds for each attempt.
+The default is a Gamma(1,1) fit with $J=25$, called Vague in the fit manifest. Use `--fit-key` from the fit-status manifest to select another model. The `smoke` profile uses 200 iterations with 100 discarded as warmup to check that the code runs. The `production` profile uses the original longer schedules and the four assigned chain seeds for each attempt.
 
 After preparing the OCRS data, an application fit can be run with:
 
@@ -50,14 +48,8 @@ The [combiner](code/refit/rasch/combine_and_check.R) checks the chain identities
 
 ## Recorded fitting checks
 
-We checked data generation at 29 distinct settings, ran short four-chain simulation and OCRS fits, and ran one short Rasch chain followed by its conditional-density calculation. Eight additional checks exercised chain identity and reuse of completed results.
+The November replay repeated the four selected production fits for Figure F.5 and Table F.15 on two synthetic datasets. The recorded convergence decisions, per-site posterior means and SDs, posterior mean count and site RMSE agree with the archived fits within the reported tolerance. The [replay ledger](records/provenance/selected-replay-verification.csv) identifies each fit, the original settings and the observed discrepancies.
 
-| Short fitting run | Elapsed time on macOS arm64 |
-|---|---|
-| Simulation, four chains | 26.4 seconds |
-| OCRS, four chains | 17.7 seconds |
-| Rasch, one chain | 62.4 seconds |
+One short four-chain synthetic simulation fit took 18.9 seconds in the November check. The September tests included a short four-chain OCRS fit (17.7 seconds), a single Rasch chain (62.4 seconds) and its conditional-density calculation. These timings include compilation and model construction and exclude installation. End-to-end combination of four newly fitted Rasch chains remains untested. The November guard tests exercised missing, duplicate and incompatible chains, repeated seeds, nonfinite draws, completed-result reuse and hash corruption. [Fitting checks](records/verification/refit-smoke.md) · [Fit status](records/provenance/refit-status.csv)
 
-These times include model construction and compilation but exclude installation. Full production fitting takes longer and requires convergence assessment. The four-chain Rasch combination has been checked with component tests and a dry run; the full production fits have not been repeated for this package. The [fitting record](records/refit-smoke.md) and [status table](records/refit-status.csv) give the details.
-
-Each run is identified by its settings, input data, seeds, code and software hashes. `--resume --execute` reuses a completed result with the same identity after checking its hash. It does not resume an interrupted chain. Incomplete outputs are retained, and long jobs can be submitted individually to a computing system. Person-level latent draws produced by refitting remain in the local output directory and are excluded from the public package.
+Each run records its settings, inputs, seeds, code and software hashes. `--resume --execute` checks the hash before reusing a completed result. Keep person-level latent draws produced by an optional refit in the local output directory.
